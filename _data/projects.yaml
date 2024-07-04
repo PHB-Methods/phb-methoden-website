@@ -1,0 +1,35 @@
+- title: "B.Sc.: Lorem Ipsum"
+  subtitle: dolor sit amet consqeuetur
+  group: qualifikation
+  image: images/photo.jpg
+  link: https://example.org
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tags:
+    - resource
+
+- title: "M.Sc.: Aenean vulputate"
+  subtitle: Aenean leo ligula, porttitor eu
+  group: qualifikation
+  image: images/photo.jpg
+  link: https://example.org
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tags:
+    - resource
+
+- title: Learning Statistics With R
+  subtitle: frei verfügbares Buch von Danielle Navarro
+  image: images/photo.jpg
+  link: https://learningstatisticswithr.com/
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tags:
+    - resource
+    - publication
+
+- title: Noise Fields for Procedural Art
+  subtitle: a tutorial for procedural art in R
+  image: images/photo.jpg
+  link: https://files.selfawaresoup.com/procedural-art/howto-curl-noise.html
+  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  tags:
+    - tutorial
+    - resource

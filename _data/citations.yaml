@@ -1,0 +1,1179 @@
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: doi:10.1371/journal.pone.0269867
+  title: Performance of an electronic health record-based predictive model to identify
+    patients with atrial fibrillation across countries
+  authors:
+  - Ruth Mokgokong
+  - Renate Schnabel
+  - Henning Witt
+  - Robert Miller
+  - Theodore C. Lee
+  publisher: PLOS ONE
+  date: '2022-07-08'
+  link: https://doi.org/gt3gnc
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/r5gmy
+  title: 'Means to valuable exploration:  II. How to explore data to modify existing
+    claims and create new ones (revised version)'
+  authors:
+  - "Michael H\xF6fler"
+  - Brennan McDonald
+  - Philipp Kanske
+  - Robert Miller
+  publisher: Center for Open Science
+  date: '2022-05-10'
+  link: https://doi.org/gt3gnd
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/yb4km
+  title: Means to valuable exploration - II. How to explore data to modify existing
+    claims and create new ones (revised)
+  authors:
+  - "Michael H\xF6fler"
+  - Stefan Scherbaum
+  - Philipp Kanske
+  - Brennan McDonald
+  - Robert Miller
+  publisher: Center for Open Science
+  date: '2022-03-01'
+  link: https://doi.org/gt3gnf
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12891-021-04180-1
+  title: 'The burden of chronic pain for patients with osteoarthritis in Germany:
+    a retrospective cohort study of claims data'
+  authors:
+  - Marie Schild
+  - "Ulrike M\xFCller"
+  - Ursula von Schenck
+  - Sigurd Prieur
+  - Robert Miller
+  publisher: BMC Musculoskeletal Disorders
+  date: '2021-03-31'
+  link: https://doi.org/gt3gng
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/mtzqj
+  title: 'Means to valuable exploration:  I. The blending of confirmation and exploration
+    and how to resolve it'
+  authors:
+  - "Michael H\xF6fler"
+  - Stefan Scherbaum
+  - Philipp Kanske
+  - Brennan McDonald
+  - Robert Miller
+  publisher: Center for Open Science
+  date: '2021-11-22'
+  link: https://doi.org/gt3gnh
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/dev0001193
+  title: Temporal stability and effect dynamics between executive functions, perceived
+    chronic stress, and hair cortisol concentrations.
+  authors:
+  - Lisa Juliane Weckesser
+  - Kornelius Schmidt
+  - "Marcus M\xF6schl"
+  - Clemens Kirschbaum
+  - "S\xF6ren Enge"
+  - Robert Miller
+  publisher: Developmental Psychology
+  date: '2021-07-01'
+  link: https://doi.org/gt3gnj
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/psfqw
+  title: A call to accompany pre-registration with means to valuable and effective
+    exploration
+  authors:
+  - "Michael H\xF6fler"
+  - Stefan Scherbaum
+  - Philipp Kanske
+  - Robert Miller
+  publisher: Center for Open Science
+  date: '2021-04-04'
+  link: https://doi.org/gt3gnk
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/pas0000829
+  title: 'Reconsidering the construct validity of self-reported chronic stress: A
+    multidimensional item response theory approach.'
+  authors:
+  - Kornelius Schmidt
+  - "S\xF6ren Enge"
+  - Robert Miller
+  publisher: Psychological Assessment
+  date: '2020-11-01'
+  link: https://doi.org/gmwh8n
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.psyneuen.2018.12.236
+  title: 'Cultures under stress: A cross-national meta-analysis of cortisol responses
+    to the Trier Social Stress Test and their association with anxiety-related value
+    orientations and internalizing mental disorders'
+  authors:
+  - Robert Miller
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2019-07-01'
+  link: https://doi.org/gfs6g4
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41598-018-37526-2
+  title: The psychometric properties and temporal dynamics of subjective stress, retrospectively
+    assessed by different informants and questionnaires, and hair cortisol concentrations
+  authors:
+  - Lisa J. Weckesser
+  - Friedericke Dietz
+  - Kornelius Schmidt
+  - Juliane Grass
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: Scientific Reports
+  date: '2019-01-31'
+  link: https://doi.org/gfvpxb
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1080/10253890.2018.1479393
+  title: Reduced self-regulation mirrors the distorting effects of burnout symptomatology
+    on task difficulty perception during an inhibition task
+  authors:
+  - Magdalena Katharina Wekenborg
+  - LaBarron K. Hill
+  - Robert Miller
+  - Tobias Stalder
+  - Julian Francis Thayer
+  - Marlene Sophie Penz
+  - Clemens Kirschbaum
+  publisher: Stress
+  date: '2018-06-09'
+  link: https://doi.org/gt3gnm
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3758/s13428-018-1036-5
+  title: Comparability, stability, and reliability of internet-based mental chronometry
+    in domestic and laboratory settings
+  authors:
+  - R. Miller
+  - K. Schmidt
+  - C. Kirschbaum
+  - S. Enge
+  publisher: Behavior Research Methods
+  date: '2018-03-15'
+  link: https://doi.org/gd2xqz
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2018.05.006
+  title: Stressful life events predict one-year change of leukocyte composition in
+    peripheral blood
+  authors:
+  - Marlene Penz
+  - Clemens Kirschbaum
+  - Angelika Buske-Kirschbaum
+  - Magdalena K. Wekenborg
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2018-08-01'
+  link: https://doi.org/gdttwq
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/3wmnr
+  title: Comparability, Stability, and Reliability of Internet-based Mental Chronometry
+    in Domestic and Laboratory Settings
+  authors:
+  - Robert Miller
+  - Kornelius Schmidt
+  - Clemens Kirschbaum
+  - "S\xF6ren Enge"
+  publisher: Center for Open Science
+  date: '2018-03-06'
+  link: https://doi.org/gt3gnn
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2018.01.020
+  title: Glucocorticoid receptor gene methylation moderates the association of childhood
+    trauma and cortisol stress reactivity
+  authors:
+  - Nina Alexander
+  - Clemens Kirschbaum
+  - Matthis Wankerl
+  - Benjamin J. Stauch
+  - Tobias Stalder
+  - Susann Steudte-Schmiedgen
+  - Markus Muehlhan
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2018-04-01'
+  link: https://doi.org/gdf6jw
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2017.07.485
+  title: Hair cortisol as a biological marker for burnout symptomatology
+  authors:
+  - Marlene Penz
+  - Tobias Stalder
+  - Robert Miller
+  - Vera M. Ludwig
+  - Magdalena K. Kanthak
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2018-01-01'
+  link: https://doi.org/gcsz2r
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2017.12.019
+  title: 'How to disentangle psychobiological stress reactivity and recovery: A comparison
+    of model-based and non-compartmental analyses of cortisol concentrations'
+  authors:
+  - Robert Miller
+  - Jan-Georg Wojtyniak
+  - Lisa J. Weckesser
+  - Nina C. Alexander
+  - Veronika Engert
+  - Thorsten Lehr
+  publisher: Psychoneuroendocrinology
+  date: '2018-04-01'
+  link: https://doi.org/gdgmbv
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1177/0146621617710465
+  title: On the Relation Between the (Censored) Shifted Wald and the Wiener Distribution
+    as Measurement Models for Choice Response Times
+  authors:
+  - Robert Miller
+  - Stefan Scherbaum
+  - Daniel W. Heck
+  - Thomas Goschke
+  - "S\xF6ren Enge"
+  publisher: Applied Psychological Measurement
+  date: '2017-05-30'
+  link: https://doi.org/gd3vr3
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28135674
+  title: 'Stress-related and basic determinants of hair cortisol in humans: A meta-analysis.'
+  authors:
+  - Tobias Stalder
+  - Susann Steudte-Schmiedgen
+  - Nina Alexander
+  - Tim Klucken
+  - Annika Vater
+  - Susann Wichmann
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2017-01-10'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28135674
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/int0000086
+  title: "Habituation of stress in psychotherapists performing subsequent in vivo\
+    \ exposures\u2014A case series."
+  authors:
+  - Sarah Schumacher
+  - Felix Betzler
+  - Robert Miller
+  - Clemens Kirschbaum
+  - "Andreas Str\xF6hle"
+  publisher: Journal of Psychotherapy Integration
+  date: '2017-01-01'
+  link: https://doi.org/gt3gnp
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.euroneuro.2017.07.003
+  title: NMDA receptor modulation by dextromethorphan and acute stress selectively
+    alters electroencephalographic indicators of partial report processing
+  authors:
+  - Lisa J. Weckesser
+  - "S\xF6ren Enge"
+  - Philipp Riedel
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: European Neuropsychopharmacology
+  date: '2017-10-01'
+  link: https://doi.org/gbz4rv
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2017.04.002
+  title: Reply to the commentary by Parrot and Downey (2017)
+  authors:
+  - Tobias Stalder
+  - Susann Steudte-Schmiedgen
+  - Nina Alexander
+  - Tim Klucken
+  - Annika Vater
+  - Susann Wichmann
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2017-07-01'
+  link: https://doi.org/gt3gnq
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2016.07.221
+  title: In vitro influence of light radiation on hair steroid concentrations
+  authors:
+  - Juliane Grass
+  - Robert Miller
+  - Esther H.D. Carlitz
+  - Fabian Patrovsky
+  - Wei Gao
+  - Clemens Kirschbaum
+  - Tobias Stalder
+  publisher: Psychoneuroendocrinology
+  date: '2016-11-01'
+  link: https://doi.org/gt3gnr
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2016.07.201
+  title: 'The CIRCORT database: Reference ranges and seasonal changes in diurnal salivary
+    cortisol derived from a meta-dataset comprised of 15 field studies'
+  authors:
+  - Robert Miller
+  - Tobias Stalder
+  - Marc Jarczok
+  - David M. Almeida
+  - Ellena Badrick
+  - Meike Bartels
+  - Dorret I. Boomsma
+  - Christopher L. Coe
+  - Marieke C.J. Dekker
+  - Bonny Donzella
+  - Joachim E. Fischer
+  - Megan R. Gunnar
+  - Meena Kumari
+  - Florian Lederbogen
+  - Christine Power
+  - Carol D. Ryff
+  - S.V. Subramanian
+  - Henning Tiemeier
+  - Sarah E. Watamura
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2016-11-01'
+  link: https://doi.org/f88mk9
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27378327
+  title: Hydrocortisone Counteracts Adverse Stress Effects on Dual-Task Performance
+    by Improving Visual Sensory Processes.
+  authors:
+  - Lisa J Weckesser
+  - Nina C Alexander
+  - Clemens Kirschbaum
+  - Eva Mennigen
+  - Robert Miller
+  publisher: Journal of cognitive neuroscience
+  date: '2016-07-05'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27378327
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27147264
+  title: "Effects of Ginkgo biloba extract EGb 761\xAE on cognitive control functions,\
+    \ mental activity of the prefrontal cortex and stress reactivity in elderly adults\
+    \ with subjective memory impairment - a randomized double-blind placebo-controlled\
+    \ trial."
+  authors:
+  - Stefanie M Beck
+  - Hannes Ruge
+  - Christoph Schindler
+  - Martin Burkart
+  - Robert Miller
+  - Clemens Kirschbaum
+  - Thomas Goschke
+  publisher: Human psychopharmacology
+  date: '2016-05-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27147264
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26649618
+  title: Impact of Antenatal Glucocorticoid Therapy and Risk of Preterm Delivery on
+    Intelligence in Term-Born Children.
+  authors:
+  - Nina Alexander
+  - "Franziska Rosenl\xF6cher"
+  - Lucia Dettenborn
+  - Tobias Stalder
+  - Julia Linke
+  - Wolfgang Distler
+  - Joachim Morgner
+  - Robert Miller
+  - Matthias Kliegel
+  - Clemens Kirschbaum
+  publisher: The Journal of clinical endocrinology and metabolism
+  date: '2015-12-09'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26649618
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26563991
+  title: 'Assessment of the cortisol awakening response: Expert consensus guidelines.'
+  authors:
+  - Tobias Stalder
+  - Clemens Kirschbaum
+  - Brigitte M Kudielka
+  - Emma K Adam
+  - Jens C Pruessner
+  - "Stefan W\xFCst"
+  - Samantha Dockray
+  - Nina Smyth
+  - Phil Evans
+  - Dirk H Hellhammer
+  - Robert Miller
+  - Mark A Wetherell
+  - Sonia J Lupien
+  - Angela Clow
+  publisher: Psychoneuroendocrinology
+  date: '2015-10-20'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26563991
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1162/jocn_a_01006
+  title: Hydrocortisone Counteracts Adverse Stress Effects on Dual-Task Performance
+    by Improving Visual Sensory Processes
+  authors:
+  - Lisa J. Weckesser
+  - Nina C. Alexander
+  - Clemens Kirschbaum
+  - Eva Mennigen
+  - Robert Miller
+  publisher: Journal of Cognitive Neuroscience
+  date: '2016-11-01'
+  link: https://doi.org/gt3gns
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27050418
+  title: Measuring Hair Cortisol Concentrations to Assess the Effect of Anthropogenic
+    Impacts on Wild Chimpanzees (Pan troglodytes).
+  authors:
+  - Esther H D Carlitz
+  - Robert Miller
+  - Clemens Kirschbaum
+  - Wei Gao
+  - "Daniel C H\xE4nni"
+  - Carel P van Schaik
+  publisher: PloS one
+  date: '2016-04-06'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27050418
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26545614
+  title: 'Therapists'' and patients'' stress responses during graduated versus flooding
+    in vivo exposure in the treatment of specific phobia: A preliminary observational
+    study.'
+  authors:
+  - Sarah Schumacher
+  - Robert Miller
+  - Lydia Fehm
+  - Clemens Kirschbaum
+  - Thomas Fydrich
+  - "Andreas Str\xF6hle"
+  publisher: Psychiatry research
+  date: '2015-11-10'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26545614
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26409891
+  title: Effects of body region and time on hair cortisol concentrations in chimpanzees
+    (Pan troglodytes).
+  authors:
+  - Esther H D Carlitz
+  - Clemens Kirschbaum
+  - Robert Miller
+  - Joshua Rukundo
+  - Carel P van Schaik
+  publisher: General and comparative endocrinology
+  date: '2015-09-26'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26072152
+  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
+    symptom increase after trauma exposure during military deployment.
+  authors:
+  - Susann Steudte-Schmiedgen
+  - Tobias Stalder
+  - "Sabine Sch\xF6nfeld"
+  - Hans-Ulrich Wittchen
+  - Sebastian Trautmann
+  - Nina Alexander
+  - Robert Miller
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2015-05-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/cpp.1936
+  title: 'Baseline Patient Characteristics Predicting Outcome and Attrition in Cognitive
+    Therapy for Social Phobia: Results from a Large Multicentre Trial'
+  authors:
+  - Juergen Hoyer
+  - Joerg Wiltink
+  - Wolfgang Hiller
+  - Robert Miller
+  - Simone Salzer
+  - Stephan Sarnowsky
+  - Ulrich Stangier
+  - Bernhard Strauss
+  - Ulrike Willutzki
+  - Eric Leibing
+  publisher: Clinical Psychology &amp; Psychotherapy
+  date: '2014-12-11'
+  link: https://doi.org/gt3gnt
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2014.12.016
+  title: 'Hydrocortisone accelerates the decay of iconic memory traces: On the modulation
+    of executive and stimulus-driven constituents of sensory information maintenance'
+  authors:
+  - Robert Miller
+  - Lisa J. Weckesser
+  - Michael N. Smolka
+  - Clemens Kirschbaum
+  - Franziska Plessow
+  publisher: Psychoneuroendocrinology
+  date: '2015-03-01'
+  link: https://doi.org/f632qj
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2014.12.023
+  title: Sweat-inducing physiological challenges do not result in acute changes in
+    hair cortisol concentrations
+  authors:
+  - Juliane Grass
+  - Clemens Kirschbaum
+  - Robert Miller
+  - Wei Gao
+  - Susann Steudte-Schmiedgen
+  - Tobias Stalder
+  publisher: Psychoneuroendocrinology
+  date: '2015-03-01'
+  link: https://doi.org/f27knk
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2014.04.005
+  title: Cortisol increase in empathic stress is modulated by emotional closeness
+    and observation modality
+  authors:
+  - Veronika Engert
+  - Franziska Plessow
+  - Robert Miller
+  - Clemens Kirschbaum
+  - Tania Singer
+  publisher: Psychoneuroendocrinology
+  date: '2014-07-01'
+  link: https://doi.org/f554cr
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/tp.2014.88
+  title: DNA methylation profiles within the serotonin transporter gene moderate the
+    association of 5-HTTLPR and cortisol stress reactivity
+  authors:
+  - N Alexander
+  - M Wankerl
+  - J Hennig
+  - R Miller
+  - "S Z\xE4nkert"
+  - S Steudte-Schmiedgen
+  - T Stalder
+  - C Kirschbaum
+  publisher: Translational Psychiatry
+  date: '2014-09-16'
+  link: https://doi.org/f6qchj
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2014.04.012
+  title: Do venepuncture procedures induce cortisol responses? A review, study, and
+    synthesis for stress research
+  authors:
+  - Lisa J. Weckesser
+  - Franziska Plessow
+  - Maximilian Pilhatsch
+  - Markus Muehlhan
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2014-08-01'
+  link: https://doi.org/f582tx
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.biopsycho.2014.08.005
+  title: Effect of a naturalistic prospective memory-related task on the cortisol
+    awakening response in young children
+  authors:
+  - "Damaris B\xE4umler"
+  - Matthias Kliegel
+  - Clemens Kirschbaum
+  - Robert Miller
+  - Nina Alexander
+  - Tobias Stalder
+  publisher: Biological Psychology
+  date: '2014-12-01'
+  link: https://doi.org/f6sc7x
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/tp.2014.37
+  title: Effects of genetic and early environmental risk factors for depression on
+    serotonin transporter expression and methylation profiles
+  authors:
+  - M Wankerl
+  - R Miller
+  - C Kirschbaum
+  - J Hennig
+  - T Stalder
+  - N Alexander
+  publisher: Translational Psychiatry
+  date: '2014-06-17'
+  link: https://doi.org/f6cv2m
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.jrp.2013.09.007
+  title: Need for cognition relates to low-level visual performance in a metacontrast
+    masking paradigm
+  authors:
+  - Monika Fleischhauer
+  - Robert Miller
+  - "S\xF6ren Enge"
+  - Thorsten Albrecht
+  publisher: Journal of Research in Personality
+  date: '2014-02-01'
+  link: https://doi.org/f5sbt6
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.biopsycho.2014.02.011
+  title: The relation of the cortisol awakening response and prospective memory functioning
+    in young children
+  authors:
+  - "Damaris B\xE4umler"
+  - Babett Voigt
+  - Robert Miller
+  - Tobias Stalder
+  - Clemens Kirschbaum
+  - Matthias Kliegel
+  publisher: Biological Psychology
+  date: '2014-05-01'
+  link: https://doi.org/f53xvk
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1002/hbm.22434
+  title: Transcranial electrical stimulation modifies the neuronal response to psychosocial
+    stress exposure
+  authors:
+  - Andrea Antal
+  - Thomas Fischer
+  - Catarina Saiote
+  - Robert Miller
+  - Leila Chaieb
+  - Danny J.J. Wang
+  - Franziska Plessow
+  - Walter Paulus
+  - Clemens Kirschbaum
+  publisher: Human Brain Mapping
+  date: '2013-12-31'
+  link: https://doi.org/f6bs68
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2014.07.016
+  title: Who is stressed? A pilot study of salivary cortisol and alpha-amylase concentrations
+    in agoraphobic patients and their novice therapists undergoing in vivo exposure
+  authors:
+  - Sarah Schumacher
+  - Katharina Gaudlitz
+  - Jens Plag
+  - Robert Miller
+  - Clemens Kirschbaum
+  - Lydia Fehm
+  - Thomas Fydrich
+  - "Andreas Str\xF6hle"
+  publisher: Psychoneuroendocrinology
+  date: '2014-11-01'
+  link: https://doi.org/f6ms9b
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1097/PSY.0000000000000002
+  title: Classification Criteria for Distinguishing Cortisol Responders From Nonresponders
+    to Psychosocial Stress
+  authors:
+  - Robert Miller
+  - Franziska Plessow
+  - Clemens Kirschbaum
+  - Tobias Stalder
+  publisher: Psychosomatic Medicine
+  date: '2013-11-01'
+  link: https://doi.org/f5q3tx
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2012.04.019
+  title: Comparison of salivary cortisol as measured by different immunoassays and
+    tandem mass spectrometry
+  authors:
+  - Robert Miller
+  - Franziska Plessow
+  - Manfred Rauh
+  - "Michael Gr\xF6schl"
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2013-01-01'
+  link: https://doi.org/f4mnxv
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1210/jc.2013-1056
+  title: Cortisol in Hair and the Metabolic Syndrome
+  authors:
+  - Tobias Stalder
+  - Clemens Kirschbaum
+  - Nina Alexander
+  - Stefan R. Bornstein
+  - Wei Gao
+  - Robert Miller
+  - Sabine Stark
+  - Jos A. Bosch
+  - Joachim E. Fischer
+  publisher: The Journal of Clinical Endocrinology &amp; Metabolism
+  date: '2013-06-01'
+  link: https://doi.org/f4z4ww
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fpsyg.2013.00672
+  title: 'Neuroticism explains unwanted variance in Implicit Association Tests of
+    personality: possible evidence for an affective valence confound'
+  authors:
+  - Monika Fleischhauer
+  - "S\xF6ren Enge"
+  - Robert Miller
+  - Alexander Strobel
+  - Anja Strobel
+  publisher: Frontiers in Psychology
+  date: '2013-01-01'
+  link: https://doi.org/gbfnfb
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2012.07.015
+  title: 'The cortisol awakening response in infants: Ontogeny and associations with
+    development-related variables'
+  authors:
+  - Tobias Stalder
+  - "Damaris B\xE4umler"
+  - Robert Miller
+  - Nina Alexander
+  - Matthias Kliegel
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2013-04-01'
+  link: https://doi.org/f4tm3x
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/mp.2012.124
+  title: 'The serotonin transporter gene-linked polymorphic region (5-HTTLPR) and
+    cortisol stress reactivity: a meta-analysis'
+  authors:
+  - R Miller
+  - M Wankerl
+  - T Stalder
+  - C Kirschbaum
+  - N Alexander
+  publisher: Molecular Psychiatry
+  date: '2012-09-04'
+  link: https://doi.org/f48kf7
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2012.09.013
+  title: 'Transformation techniques for cross-sectional and longitudinal endocrine
+    data: Application to salivary cortisol concentrations'
+  authors:
+  - Robert Miller
+  - Franziska Plessow
+  publisher: Psychoneuroendocrinology
+  date: '2013-06-01'
+  link: https://doi.org/f4zff4
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.biopsycho.2012.03.010
+  title: Cortisol in hair, body mass index and stress-related measures
+  authors:
+  - Tobias Stalder
+  - Susann Steudte
+  - Nina Alexander
+  - Robert Miller
+  - Wei Gao
+  - Lucia Dettenborn
+  - Clemens Kirschbaum
+  publisher: Biological Psychology
+  date: '2012-07-01'
+  link: https://doi.org/gt3gnv
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3402/ejpt.v3i0.19384
+  title: Evaluation of classification criteria for the detection of cortisol pulses
+    in repeated-measures designs
+  authors:
+  - Robert Miller
+  - Tobias Stalder
+  - Franziska Plessow
+  publisher: European Journal of Psychotraumatology
+  date: '2012-09-10'
+  link: https://doi.org/gt3gnw
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psyneuen.2011.08.007
+  title: Intraindividual stability of hair cortisol concentrations
+  authors:
+  - Tobias Stalder
+  - Susann Steudte
+  - Robert Miller
+  - Nadine Skoluda
+  - Lucia Dettenborn
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2012-05-01'
+  link: https://doi.org/bzqzgv
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1027/1866-5888/a000060
+  title: Never Use One When Two Will Do  *The first two authors contributed equally
+    to this paper.
+  authors:
+  - Anna Koch
+  - Anja Strobel
+  - Robert Miller
+  - Annegret Garten
+  - Christin Cimander
+  - Karl Westhoff
+  publisher: Journal of Personnel Psychology
+  date: '2012-01-01'
+  link: https://doi.org/gpcz67
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.lindif.2010.08.010
+  title: 'Decay of iconic memory traces is related to psychometric intelligence: A
+    fixed-links modeling approach'
+  authors:
+  - Robert Miller
+  - Thomas H. Rammsayer
+  - Karl Schweizer
+  - Stefan J. Troche
+  publisher: Learning and Individual Differences
+  date: '2010-12-01'
+  link: https://doi.org/d3qgr6
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1080/10503307.2023.2259072
+  title: Who are the skilled therapists? Associations between personal characteristics
+    and interpersonal skills of future psychotherapists
+  authors:
+  - Antje Gumz
+  - Merle Longley
+  - Fabian Franken
+  - Bernd Janning
+  - Georg Hosoya
+  - Leonie Derwahl
+  - "Denise K\xE4stner"
+  publisher: Psychotherapy Research
+  date: '2023-09-18'
+  link: https://doi.org/gt3gnz
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fpsyg.2021.701730
+  title: 'Absolute and Relative Judgment Accuracy: Early Childhood Teachers'' Competence
+    to Evaluate Children''s Mathematical Skills'
+  authors:
+  - Georg Hosoya
+  - "Sigrid Bl\xF6meke"
+  - Katja Eilerts
+  - "Lars Jen\xDFen"
+  - Michael Eid
+  publisher: Frontiers in Psychology
+  date: '2021-10-18'
+  link: https://doi.org/gt3gn2
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fpsyg.2021.667173
+  title: 'Dimensions and Clusters of Aesthetic Emotions: A Semantic Profile Analysis'
+  authors:
+  - Ursula Beermann
+  - Georg Hosoya
+  - Ines Schindler
+  - Klaus R. Scherer
+  - Michael Eid
+  - Valentin Wagner
+  - Winfried Menninghaus
+  publisher: Frontiers in Psychology
+  date: '2021-05-28'
+  link: https://doi.org/gmvkvs
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.psychsport.2020.101710
+  title: Long-term effects of a dyadic planning intervention with couples motivated
+    to increase physical activity
+  authors:
+  - Jan Keller
+  - Diana Hilda Hohl
+  - Georg Hosoya
+  - Silke Heuse
+  - Urte Scholz
+  - Aleksandra Luszczynska
+  - Nina Knoll
+  publisher: Psychology of Sport and Exercise
+  date: '2020-07-01'
+  link: https://doi.org/ghc9tx
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/aca0000239
+  title: 'The artwork and the beholder: A probabilistic model for the joint scaling
+    of persons and objects.'
+  authors:
+  - Georg Hosoya
+  publisher: Psychology of Aesthetics, Creativity, and the Arts
+  date: '2020-05-01'
+  link: https://doi.org/gt3gn3
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1177/2167702620901724
+  title: Within- and Between-Persons Effects of Self-Esteem and Affective State as
+    Antecedents and Consequences of Dysfunctional Behaviors in the Everyday Lives
+    of Patients With Borderline Personality Disorder
+  authors:
+  - Philip S. Santangelo
+  - Jana Holtmann
+  - Georg Hosoya
+  - Martin Bohus
+  - Tobias D. Kockler
+  - Susanne Koudela-Hamila
+  - Michael Eid
+  - Ulrich W. Ebner-Priemer
+  publisher: Clinical Psychological Science
+  date: '2020-05-01'
+  link: https://doi.org/ggwrt4
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-658-27886-1_8
+  title: "Effects of Early Childhood Teachers\u2018 Mathematics Anxiety on the Development\
+    \ of Childrens\u2018 Mathematical Competencies"
+  authors:
+  - "L. Jen\xDFen"
+  - G. Hosoya
+  - A. Jegodtka
+  - K. Eilerts
+  - M. Eid
+  - "S. Bl\xF6meke"
+  publisher: Student Learning in German Higher Education
+  date: '2020-01-01'
+  link: https://doi.org/gt3gn4
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.4135/9781526421036831956
+  title: Hierarchical Linear Models for Discontinuous Change
+  authors: []
+  publisher: SAGE Research Methods Foundations
+  date: '2020-01-01'
+  link: https://doi.org/gt3gn5
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/aca0000123
+  title: 'Mapping the conceptual domain of aesthetic emotion terms: A pile-sort study.'
+  authors:
+  - Georg Hosoya
+  - Ines Schindler
+  - Ursula Beermann
+  - Valentin Wagner
+  - Winfried Menninghaus
+  - Michael Eid
+  - Klaus R. Scherer
+  publisher: Psychology of Aesthetics, Creativity, and the Arts
+  date: '2017-11-01'
+  link: https://doi.org/gf4cfb
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0178899
+  title: 'Measuring aesthetic emotions: A review of the literature and a new assessment
+    tool'
+  authors:
+  - Ines Schindler
+  - Georg Hosoya
+  - Winfried Menninghaus
+  - Ursula Beermann
+  - Valentin Wagner
+  - Michael Eid
+  - Klaus R. Scherer
+  publisher: PLOS ONE
+  date: '2017-06-05'
+  link: https://doi.org/gbgrn5
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0136675
+  title: Path Models of Vocal Emotion Communication
+  authors:
+  - "Tanja B\xE4nziger"
+  - Georg Hosoya
+  - Klaus R. Scherer
+  publisher: PLOS ONE
+  date: '2015-09-01'
+  link: https://doi.org/f3ptmg
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s11577-014-0262-9
+  title: "L\xE4ngsschnittdaten und Mehrebenenanalyse"
+  authors:
+  - Georg Hosoya
+  - Tobias Koch
+  - Michael Eid
+  publisher: "KZfSS K\xF6lner Zeitschrift f\xFCr Soziologie und Sozialpsychologie"
+  date: '2014-09-01'
+  link: https://doi.org/gdsmxr
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/a0036394
+  title: Honey, I got fired! A longitudinal dyadic analysis of the effect of unemployment
+    on life satisfaction in couples.
+  authors:
+  - Maike Luhmann
+  - Pola Weiss
+  - Georg Hosoya
+  - Michael Eid
+  publisher: Journal of Personality and Social Psychology
+  date: '2014-01-01'
+  link: https://doi.org/f58bs8
+  orcid: 0000-0002-8130-2259
+  georg-hosoya: true
+  plugin: orcid.py
+  file: orcid.yaml
