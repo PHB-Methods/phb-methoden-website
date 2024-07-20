@@ -11,6 +11,9 @@
 {% if title %}
   {% assign fulltitle = fulltitle | push: title %}
 {% endif %}
+{% if site.subtitle %}
+  {% assign fulltitle = fulltitle | push: site.subtitle %}
+{% endif %}
 {% if site.title %}
   {% assign fulltitle = fulltitle | push: site.title %}
 {% endif %}
@@ -47,10 +50,10 @@
 
 <link rel="icon" href="{{ icon }}">
 
-<meta name="title" content="{{ title }}">
+<meta name="title" content="{{ fulltitle }}">
 <meta name="description" content="{{ description }}">
 
-<meta property="og:title" content="{{ title }}">
+<meta property="og:title" content="{{ fulltitle }}">
 <meta property="og:site_title" content="{{ site.title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}">
