@@ -50,8 +50,9 @@ header a {
 }
 
 .subtitle {
-  opacity: 0.65;
-  font-weight: var(--thin);
+  opacity: 1;
+  font-size: var(--large);
+  font-weight: var(--regular);
 }
 
 .nav-toggle {
@@ -136,10 +137,10 @@ header[data-big] .title-text {
   text-align: center;
 }
 header[data-big] .title {
-  font-size: var(--xxl);
+  font-size: var(--large);
 }
 header[data-big] .subtitle {
-  font-size: var(--large);
+  font-size: var(--xxl);
 }
 
 /*# sourceMappingURL=header.css.map */
