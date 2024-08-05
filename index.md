@@ -7,7 +7,7 @@
 
 {% capture text %}
 
-z.B. regelmäßiges Kolloquium für Fragen zur psychologischen Methodenlehre
+Services für Interne und Externe Kollegen und Studierende.
 
 {%
   include button.html
@@ -30,7 +30,7 @@ z.B. regelmäßiges Kolloquium für Fragen zur psychologischen Methodenlehre
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Das Team der Psychologischen Methodenlehre stellt sich vor.
 
 {%
   include button.html
