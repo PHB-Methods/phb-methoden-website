@@ -9,7 +9,7 @@ nav:
 
 Die Arbeitsgruppe bietet Beratungen zu Statistik- und Methodenfragen für Studierende im Rahmen eines wöchentlichen Kolloquiums an. 
 
-Wir offerieren darüber hinaus individuelle Untersützung bei der biometrischen Planung und Durchführung von klinischen Studien (inkl. Datenmanagement), sowohl intern als auch für Kollegen außerhalb der Hochschule. Bitte richten Sie entsprechende Anfragen mit dem Betreff direkt via Email oder Telefon an das Team.
+Wir offerieren darüber hinaus individuelle Untersützung bei der biometrischen Planung und Durchführung von klinischen Studien (inkl. Datenmanagement), sowohl intern als auch für Kollegen außerhalb der Hochschule. Bitte richten Sie entsprechende Anfragen mit dem Betreff direkt via Email oder Telefon an Prof. [Robert Miller](http://methodenlehre.phb.de/members/robert-miller.html).
 
 
 {% capture text %}
