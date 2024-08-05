@@ -11,7 +11,7 @@ The Chair of Psychological Methods focuses on advancing the theoretical and prac
 
 To this end our key research areas include:
 
-1. Core Topics: Stress and Digital Health Applications
+1. Stress and Digital Health Applications
 We investigate the impact of stress and the efficacy of digital health applications in managing psychological well-being. By exploring these contemporary issues, we strive to develop effective interventions and tools that leverage technology to improve mental health outcomes.
 
 2. Theory-Based Modeling of Trait Distributions and Changes
@@ -26,7 +26,7 @@ Our work addresses the challenges of analyzing high-dimensional data where the n
 5. Bayesian Methods of Evidence Generation and Evaluation
 We employ Bayesian approaches to evidence generation and evaluation, including adaptive study designs, sample size planning, and effect size pooling (meta-analyses). These methods allow for more flexible and robust inferences in psychological research.
 
-6. Meta-Psychology: Standardization of Research Processes
+6. Standardization of Research Processes and Meta-Psychology
 Our research aims to harmonize research processes and develop consensus guidelines. By promoting transparency and reproducibility, we contribute to the integrity and credibility of psychological science.
 
 
@@ -36,7 +36,7 @@ Our research aims to harmonize research processes and develop consensus guidelin
 
 {% capture text %}
 
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+...
 
 {%
   include button.html
