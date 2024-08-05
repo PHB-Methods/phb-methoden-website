@@ -7,7 +7,10 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-school" %}Beratung
 
-Die Arbeitsgruppe zur psychologischen Methodenlehre bietet Beratungen zu Methodenfragen an.
+Die Arbeitsgruppe bietet Beratungen zu Statistik- und Methodenfragen für Studierende im Rahmen eines wöchentlichen Kolloquiums an. 
+
+Wir offerieren darüber hinaus individuelle Untersützung bei der biometrischen Planung und Durchführung von klinischen Studien (inkl. Datenmanagement), sowohl intern als auch für Kollegen außerhalb der Hochschule. Bitte richten Sie entsprechende Anfragen mit dem Betreff direkt via Email oder Telefon an das Team.
+
 
 {% capture text %}
 
