@@ -7,14 +7,14 @@
   tags:
     - Link
 
-- title: "M.Sc.: Aenean vulputate"
-  subtitle: Aenean leo ligula, porttitor eu
+- title: "Meta-Analysen von Interventionsstudien"
+  subtitle: M.Sc. Psychologie
   group: qualifikation
   image: images/photo.jpg
-  link: https://example.org
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://www.cochrane.de/
+  description: Themen-offene Studien zur Evaluation der Wirksamkeit und Sicherheit von psycho- oder pharmakotherapeutischer Interventionen.
   tags:
-    - resource
+    - Link
 
 - title: Learning Statistics With R
   subtitle: frei verfügbares Buch von Danielle Navarro
