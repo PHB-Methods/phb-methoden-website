@@ -1,11 +1,11 @@
-- title: "B.Sc.: Lorem Ipsum"
-  subtitle: dolor sit amet consqeuetur
+- title: "Reproduktion und Replikation von Forschungsbefunden"
+  subtitle: B.Sc. Psychologie
   group: qualifikation
   image: images/photo.jpg
-  link: https://example.org
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  link: https://i4replication.org/
+  description: Themen-offene Studien zur Bestätigung existierender Forschungsbefunde. 
   tags:
-    - resource
+    - Link
 
 - title: "M.Sc.: Aenean vulputate"
   subtitle: Aenean leo ligula, porttitor eu
