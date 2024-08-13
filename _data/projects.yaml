@@ -1,18 +1,18 @@
-- title: "Reproduktion und Replikation von Forschungsbefunden"
+- title: Reproduktion und Replikation von Forschungsbefunden
   subtitle: B.Sc. Psychologie
   group: qualifikation
   image: images/photo.jpg
   link: https://i4replication.org/
-  description: Themen-offene Studien zur Bestätigung existierender Forschungsbefunde. 
+  description: Themen-offene Studien zur Bestätigung existierender Forschungsbefunde. Sowohl Reanalysen von publizierten Primärdaten als auch die Durchführung eigener Replikationsstudien sind möglich.
   tags:
     - Link
 
-- title: "Meta-Analysen von Interventionsstudien"
+- title: Meta-Analysen von Interventionsstudien
   subtitle: M.Sc. Psychologie
   group: qualifikation
   image: images/photo.jpg
   link: https://www.cochrane.de/
-  description: Themen-offene Studien zur Evaluation der Wirksamkeit und Sicherheit von psycho- oder pharmakotherapeutischer Interventionen.
+  description: Themen-offene Evaluation der Wirksamkeit und Sicherheit von psychotherapeutischen oder pharmakotherapeutischen Interventionen.
   tags:
     - Link
 
