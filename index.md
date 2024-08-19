@@ -7,12 +7,12 @@
 
 {% capture text %}
 
-Services für Interne und Externe Kollegen und Studierende.
+Services für interne und externe Kollegen und Studierende.
 
 {%
   include button.html
   link="beratung"
-  text="Mehr zu Beratungaangeboten"
+  text="Mehr zu Beratungsangeboten"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -22,7 +22,7 @@ Services für Interne und Externe Kollegen und Studierende.
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/kolloquium.jpg"
   link="research"
   title="Beratung"
   text=text
