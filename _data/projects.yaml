@@ -8,7 +8,7 @@
 - title: Meta-Analysen von Interventionsstudien
   subtitle: M.Sc. / Robert Miller
   group: qualifikation
-  image: images/quali-Asklepios-staff.jpeg
+  image: images/quali-Asklepios-staff.jpg
   link: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/
   description: Themen-offene Evaluation der Wirksamkeit und Sicherheit von psychotherapeutischen oder pharmakotherapeutischen Interventionen.
 
@@ -16,7 +16,7 @@
   subtitle: frei verfügbares Buch von Danielle Navarro
   image: images/photo.jpg
   link: https://learningstatisticswithr.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Dieses englisch-sprachige Buch basiert auf einem einführenden Statistikkurs für Psychologiestudenten, der an der Universität von Adelaide angeboten wird und die Statistiksoftware R als primäres Werkzeug verwendet.
   tags:
     - resource
     - publication
@@ -25,7 +25,7 @@
   subtitle: a tutorial for procedural art in R
   image: images/photo.jpg
   link: https://files.selfawaresoup.com/procedural-art/howto-curl-noise.html
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: R Code, der weitgehend von Danielle Navarros „Art from Code“-Lehrgang adaptiert wurde (https://art-from-code.netlify.app)
   tags:
     - tutorial
     - resource
