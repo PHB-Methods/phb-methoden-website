@@ -31,7 +31,7 @@ Das Methoden-Kolloquium findet während der Vorlesungszeit wöchentlich statt. T
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/kolloquium.jpg"
   link="research"
   title="Methoden-Kolloquium"
   text=text
