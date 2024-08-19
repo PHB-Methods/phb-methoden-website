@@ -1,16 +1,20 @@
 - title: Reproduktion und Replikation von Forschungsbefunden
-  subtitle: B.Sc. / Robert Miller
+  subtitle: Betreuer: Robert Miller
   group: qualifikation
   image: images/quali-ouroboros.jpg
   link: https://i4replication.org/
   description: Themen-offene Studien zur Bestätigung existierender Forschungsbefunde. Sowohl Reanalysen von publizierten Primärdaten als auch die Durchführung eigener Replikationsstudien sind möglich.
+  tags:
+  - Bachelor Thesis
 
 - title: Meta-Analysen von Interventionsstudien
-  subtitle: M.Sc. / Robert Miller
+  subtitle: Betreuer: Robert Miller
   group: qualifikation
   image: images/quali-Asklepios-staff.jpg
   link: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/
   description: Themen-offene Evaluation der Wirksamkeit und Sicherheit von psychotherapeutischen oder pharmakotherapeutischen Interventionen.
+  tags:
+  - Master Thesis
 
 - title: Learning Statistics With R
   subtitle: frei verfügbares Buch von Danielle Navarro
@@ -18,8 +22,8 @@
   link: https://learningstatisticswithr.com/
   description: Dieses englisch-sprachige Buch basiert auf einem einführenden Statistikkurs für Psychologiestudenten, der an der Universität von Adelaide angeboten wird und die Statistiksoftware R als primäres Werkzeug verwendet.
   tags:
-    - resource
-    - publication
+    - Resource
+    - Publication
 
 - title: Noise Fields for Procedural Art
   subtitle: a tutorial for procedural art in R
@@ -27,5 +31,5 @@
   link: https://files.selfawaresoup.com/procedural-art/howto-curl-noise.html
   description: R Code, der weitgehend von Danielle Navarros „Art from Code“-Lehrgang adaptiert wurde (https://art-from-code.netlify.app)
   tags:
-    - tutorial
-    - resource
+    - Tutorial
+    - Resource
