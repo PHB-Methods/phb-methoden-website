@@ -25,7 +25,7 @@
   subtitle: a tutorial for procedural art in R
   image: images/photo.jpg
   link: https://files.selfawaresoup.com/procedural-art/howto-curl-noise.html
-  description: R Code, der weitgehend von Danielle Navarros „Art from Code“-Lehrgang adaptiert wurde (https://art-from-code.netlify.app)
+  description: R Code, der weitgehend von Danielle Navarros Art-from-Code-Lehrgang adaptiert wurde (https://art-from-code.netlify.app)
   tags:
     - Tutorial
     - Resource
