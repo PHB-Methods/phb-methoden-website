@@ -1,5 +1,5 @@
 - title: Reproduktion und Replikation von Forschungsbefunden
-  subtitle: Betreut durch Robert Miller
+  subtitle: "Betreuer: Robert Miller"
   group: qualifikation
   image: images/quali-ouroboros.jpg
   link: https://i4replication.org/
@@ -8,7 +8,7 @@
     - Bachelor
     
 - title: Meta-Analysen von Interventionsstudien
-  subtitle: Betreut durch Robert Miller
+  subtitle: "Betreuer: Robert Miller"
   group: qualifikation
   image: images/quali-Asklepios-staff.jpg
   link: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/
