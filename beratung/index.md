@@ -7,11 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-school" %}Beratung
 
-Die Arbeitsgruppe bietet Beratungen zu Statistik- und Methodenfragen für Studierende im Rahmen eines wöchentlichen Kolloquiums an. 
+Für Wissenschaftler und Sponsoren offerieren wir individuelle Beratung und Unterstützung bei der biometrischen Planung, Durchführung, und Berichtlegung von klinischen Interventions- und Beobachtungsstudien (inkl. Datenmanagement). Diese Services umfassen nicht nur Projekte zur Erhebung und Analyse von Primärdaten, sondern auch Versorgungsforschungsprojekte auf Basis von sekundären Datenanalysen. Bitte richten Sie entsprechende Anfragen mit dem Betreff direkt via Email oder Telefon an Prof. Dr. [Robert Miller](http://methodenlehre.phb.de/members/robert-miller.html).
 
-Wir offerieren darüber hinaus individuelle Beratung und Unterstützung bei der biometrischen Planung, Durchführung, und Berichtlegung von klinischen Interventions- und Beobachtungsstudien (inkl. Datenmanagement), sowohl intern als auch für Kollegen außerhalb der Hochschule. Diese Services umfassen nicht nur Projekte zur Erhebung und Analyse von Primärdaten, sondern auch Versorgungsforschungsprojekte auf Basis von sekundären Datenanalysen.
-
-Bitte richten Sie entsprechende Anfragen mit dem Betreff direkt via Email oder Telefon an Prof. Dr. [Robert Miller](http://methodenlehre.phb.de/members/robert-miller.html).
+Für Studierende bietet die Arbeitsgruppe Beratungen zu Statistik- und Methodenfragen im wöchentlichen Methoden-Kolloquium an. 
 
 
 {% capture text %}
