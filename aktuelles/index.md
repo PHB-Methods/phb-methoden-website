@@ -5,9 +5,7 @@ nav:
   tooltip: Neuigkeiten und Ankündigungen
 ---
 
-# {% include icon.html icon="fa-solid fa-feather-pointed" %}Blog
-
-Neuigkeiten und Ankündigungen der Arbeitsgruppe.
+# {% include icon.html icon="fa-solid fa-feather-pointed" %}Neuigkeiten und Ankündigungen
 
 {% include section.html %}
 
