@@ -8,6 +8,7 @@ aliases:
   - Robert Miller
 links:
   home-page: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
+  calendar: https://calendly.com/rmllr1984/30min
 ---
 
 ## Forschungsschwerpunkte
