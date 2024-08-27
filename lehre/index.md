@@ -18,6 +18,6 @@ Themen für akademische Qualifikationsarbeiten (aka Abschlussarbeiten), die mome
 
 {% include section.html %}
 
-## Weitere Themen
+## Literatur
 
 {% include list.html component="card" data="projects" filters="group: "%}
