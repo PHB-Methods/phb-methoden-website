@@ -20,4 +20,6 @@ Themen für akademische Qualifikationsarbeiten (aka Abschlussarbeiten), die mome
 
 ## Literatur
 
+Im Folgenden finden Sie interessante frei zugängliche Literatur zu Themen der Psychologischen Methodenlehre und angewandeten Datenanalyse.
+
 {% include list.html component="card" data="projects" filters="group: "%}
