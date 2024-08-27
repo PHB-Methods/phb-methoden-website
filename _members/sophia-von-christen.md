@@ -6,10 +6,11 @@ role: shk
 aliases:
   - S von Christen
   - Sophia von Christen
+links:
+  email: s.vonchristen@stud.phb.de
 ---
 
-## Lehrveranstaltungen
+## Lehrveranstaltung: Tutorium Statistik 1
 
-Tutorium Statistik 1
-
+Das Tutorium findem während der Vorlesungszeit Donnerstags zwischen 12 bis 14 Uhr statt. 
 
