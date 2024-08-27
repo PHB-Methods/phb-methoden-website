@@ -6,10 +6,11 @@ role: undergrad
 aliases:
   - I Hawlitschek
   - Ida Hawlitschek
+email: i.hawlitschek@stud.phb.de
 ---
 
 ## Forschungsprojekt
 
-Leistungsmonitoring Modul 3
+Determinanten des Lehr- und Lernerfolgs im Modul Statistik und Forschungsmethoden
 
-
+Ausgehend von der Prämisse, dass ein substantieller Anteil Studierender, die mit dem Psychologiestudium beginnen Angst vor Statistikmodulen haben und entsprechenden Beobachtungen einer damit einhergehender Reduktion der akademischer Leistung untersucht das Projekt Zusammenhänge zwischen der Angst vor der Statistik-Vorlesung, täglichen Stressoren, dem allgemeinen Wohlbefinden, sowie der Didaktik der Lehrenden und dem Lern-Commitment der Studierenden, um die Lernbedingungen für Studierende zu verbessern und die psychologischen Belastungen zu verringern.
