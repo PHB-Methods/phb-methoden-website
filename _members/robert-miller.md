@@ -1,7 +1,7 @@
 ---
 name: Prof. Dr. Robert Miller
 image: images/portrait-robert-miller.jpg
-description: Lehrstuhlinhaber
+description: Ordinarius
 role: prof
 aliases:
   - R Miller
