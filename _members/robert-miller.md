@@ -1,7 +1,7 @@
 ---
 name: Prof. Dr. Robert Miller
 image: images/portrait-robert-miller.jpg
-description: Professur für Psychologische Methodenlehre
+description: Lehrstuhlinhaber
 role: prof
 aliases:
   - R Miller
