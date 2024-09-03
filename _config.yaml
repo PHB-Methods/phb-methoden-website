@@ -50,7 +50,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
-  - jekyll-toc
 
 # code block syntax highlighting
 highlighter: rouge
@@ -61,11 +60,6 @@ theme: null
 # sass settings
 sass:
   sass_dir: _styles
-
-# TOC Settings
-toc:
- min_level: 1
- max_level: 3
 
 # force jekyll to include certain files/folders
 include:

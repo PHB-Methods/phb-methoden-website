@@ -42,9 +42,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: build statistics compendium pages
-        uses: ./.github/workflows/build-statistics-compendium
-
       # for debugging
       - if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
