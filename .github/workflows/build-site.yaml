@@ -45,7 +45,7 @@ jobs:
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
       - name: build statistics compendium pages
-        uses: build-statistics-compendium
+        uses: ./.github/workflows/build-statistics-compendium
 
       - name: Build live version of site
         run: |
