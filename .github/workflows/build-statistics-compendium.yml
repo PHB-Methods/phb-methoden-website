@@ -30,11 +30,11 @@ jobs:
         with:
           cache-version: 2
           extra-packages: |
-          any::tidyverse
-          any::scico
-          any::pwr
-          any::car
-          any::afex
+            any::tidyverse
+            any::scico
+            any::pwr
+            any::car
+            any::afex
       - name: execute knit script
         working-directory: _kompendium-statistik
         run: Rscript knit-and-copy.R
