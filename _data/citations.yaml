@@ -404,22 +404,6 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
-- id: pmid:27378327
-  title: Hydrocortisone Counteracts Adverse Stress Effects on Dual-Task Performance
-    by Improving Visual Sensory Processes.
-  authors:
-  - Lisa J Weckesser
-  - Nina C Alexander
-  - Clemens Kirschbaum
-  - Eva Mennigen
-  - Robert Miller
-  publisher: Journal of cognitive neuroscience
-  date: '2016-07-05'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/27378327
-  orcid: 0000-0002-8665-5248
-  robert-miller: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: pmid:27147264
   title: "Effects of Ginkgo biloba extract EGb 761\xAE on cognitive control functions,\
     \ mental activity of the prefrontal cortex and stress reactivity in elderly adults\
