@@ -21,6 +21,13 @@ RUN python3 -m pip install --no-cache-dir --upgrade --requirement requirements.t
 # install python package for listening for file changes
 RUN pip install "watchdog[watchmedo]==3.0.0"
 
+# install R and $ packages
+RUN apt install -y r-base r-base-dev r-cran-tidyverse r-cran-knitr r-cran-car r-cran-afex r-cran-pwr
+
+RUN Rscript -e 'install.packages(c("scico"))'
+
+#RUN pwd && ls -1 && cd _kompendium-statistik && Rscript knit-and-copy.R
+
 # ports used by jekyll
 EXPOSE 4000
 EXPOSE 35729

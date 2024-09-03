@@ -44,6 +44,9 @@ jobs:
         run: |
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
+      - name: build statistics compendium pages
+        uses: ./.github/workflows/build-statistics-compendium
+
       - name: Build live version of site
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
