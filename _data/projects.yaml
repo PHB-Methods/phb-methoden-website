@@ -19,9 +19,9 @@
 - title: Assurance-basierte Stichprobenplanung
   subtitle: "Betreuer: Robert Miller"
   group: qualifikation
-  image: images/quali-ouroboros.jpg
+  image: images/quali-assurance.png
   link: https://www.tandfonline.com/doi/full/10.1080/03610918.2016.1259476
-  description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt ist oder nur sehr unpräzise geschätzt wurde?
+  description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt sind oder nur sehr unpräzise geschätzt wurde?
   tags:
     - Master
     
