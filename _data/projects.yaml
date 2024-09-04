@@ -24,7 +24,23 @@
   description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt sind oder nur sehr unpräzise geschätzt wurde?
   tags:
     - Master
-    
+
+- title: Kompendium Statistik I
+  subtitle:
+  image: images/photo.jpg
+  link: /lehre/kompendium-statistik/statistik-1.html
+  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik I
+  tags:
+    - Resource
+
+- title: Kompendium Statistik II
+  subtitle:
+  image: images/photo.jpg
+  link: /lehre/kompendium-statistik/statistik-2.html
+  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik II
+  tags:
+    - Resource
+
 - title: Learning Statistics With R
   subtitle: frei verfügbares Buch von Danielle Navarro
   image: images/photo.jpg
@@ -41,21 +57,4 @@
   description: R Code, der weitgehend von Danielle Navarros Art-from-Code-Lehrgang adaptiert wurde (https://art-from-code.netlify.app)
   tags:
     - Tutorial
-    - Resource
-
-
-- title: Kompendium Statistik I
-  subtitle:
-  image: images/photo.jpg
-  link: /lehre/kompendium-statistik/statistik-1.html
-  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik I
-  tags:
-    - Resource
-
-- title: Kompendium Statistik II
-  subtitle:
-  image: images/photo.jpg
-  link: /lehre/kompendium-statistik/statistik-2.html
-  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik II
-  tags:
     - Resource
