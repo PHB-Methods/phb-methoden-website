@@ -3,8 +3,19 @@ title: "B.Sc. Psychologie Statisik I"
 author: "Esther Weidauer"
 layout: post
 toc: true
+output: 
+  html_document: 
+    df_print: tibble
 ---
-<!-- math equations in RMarkdown: https://rpruim.github.io/s341/S19/from-class/MathinRmd.html -->
+
+<!--
+
+AFTER EDITING THIS FILE:
+
+1. open publish.Rmd and run it
+2. then commit the changes to version control
+
+-->
 
 
 
@@ -57,8 +68,18 @@ wide <- tibble(
   measurement.3 = rnorm(n = 5, mean = 100, sd = 10)
 )
 
-wide
+knitr::kable(wide)
 ```
+
+
+
+| code| measurement.1| measurement.2| measurement.3|
+|----:|-------------:|-------------:|-------------:|
+|    1|     112.62954|      84.60050|     107.63593|
+|    2|      96.73767|      90.71433|      92.00991|
+|    3|     113.29799|      97.05280|      88.52343|
+|    4|     112.72429|      99.94233|      97.10538|
+|    5|     104.14641|     124.04653|      97.00785|
 
 **Umwandlung in Langformat:** Jede Messung in einer eigenen Zeile
 
@@ -126,10 +147,6 @@ data.short %>%
   ungroup() %>%
   arrange(-wind.top) %>%
   top_n(10)
-```
-
-```
-## Selecting by wind.top
 ```
 
 # Stratifizierung

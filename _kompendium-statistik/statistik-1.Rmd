@@ -3,6 +3,9 @@ title: "B.Sc. Psychologie Statisik I"
 author: "Esther Weidauer"
 layout: post
 toc: true
+output: 
+  html_document: 
+    df_print: tibble
 ---
 
 <!--
@@ -76,7 +79,7 @@ wide <- tibble(
   measurement.3 = rnorm(n = 5, mean = 100, sd = 10)
 )
 
-wide
+knitr::kable(wide)
 ```
 
 **Umwandlung in Langformat:** Jede Messung in einer eigenen Zeile
@@ -88,7 +91,8 @@ wide %>%
     names_prefix = "measurement.",
     names_to = "measurement"
   ) -> long
-long
+
+knitr::kable(long)
 ```
 
 ## Winsorisierung
@@ -121,7 +125,7 @@ data.short %>%
     absolute.cumulative = cumsum(absolute),
     relative = absolute / sum(absolute),
     relative.cumulative = cumsum(relative)
-  )
+  ) %>% (knitr::kable)
 ```
 
 # Split-Apply-Combine
@@ -130,13 +134,14 @@ data.short %>%
 1. **Apply:** Aggregation ausführen (zb Summen, Mittelwerte, Minima/Maxima)
 1. **Combine:** Gruppierung aufheben
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 data.short %>%
   group_by(name) %>%
   summarize(wind.top = max(wind)) %>%
   ungroup() %>%
   arrange(-wind.top) %>%
-  top_n(10)
+  top_n(10) %>%
+  (knitr::kable)
 ```
 
 # Stratifizierung
@@ -156,7 +161,8 @@ data.long %>%
       right = FALSE
     )
   ) %>%
-  group_by(decade) %>% summarize(top.wind = max(wind))
+  group_by(decade) %>% summarize(top.wind = max(wind)) %>%
+  (knitr::kable)
 ```
 
 # Zentrale Tendenz

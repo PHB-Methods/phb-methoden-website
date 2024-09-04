@@ -4,7 +4,15 @@ author: "Esther Weidauer"
 layout: post
 toc: true
 ---
-<!-- math equations in RMarkdown: https://rpruim.github.io/s341/S19/from-class/MathinRmd.html -->
+
+<!--
+
+AFTER EDITING THIS FILE:
+
+1. open publish.Rmd and run it
+2. then commit the changes to version control
+
+-->
 
 
 

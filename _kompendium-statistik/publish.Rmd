@@ -2,7 +2,6 @@
 title: "Statistik Kompendium - "
 author: "Esther Weidauer"
 date: "2024-09-04"
-output: html_document
 ---
 
 # Statistik-Kompendium in Webseite integrieren
@@ -38,7 +37,8 @@ build <- function(rmd_name) {
     fig.path = paste0(figure_dirname, "/"),
     fig.align = "center",
     fig.retina = 2,
-    fig.width = 8
+    fig.width = 8,
+    results = "asis"
   )
 
   print(rmd_name)
@@ -50,7 +50,7 @@ build <- function(rmd_name) {
     file.copy(f, file.path(target_dir_path, f))
   }
   
-  unlink(md_name)
+  #unlink(md_name)
   unlink(figure_dirname, recursive = TRUE)
 }
 
