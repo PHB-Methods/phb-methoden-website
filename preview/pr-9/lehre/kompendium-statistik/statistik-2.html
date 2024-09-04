@@ -63,10 +63,10 @@
 
   <meta name="author" content="Esther Weidauer">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2024-09-04T12:51:05+00:00">
+  <meta property="og:updated_time" content="2024-09-04T12:59:19+00:00">
   <meta property="article:published_time" content="">
-  <meta property="article:modified_time" content="2024-09-04T12:51:05+00:00">
-  <meta name="revised" content="2024-09-04T12:51:05+00:00">
+  <meta property="article:modified_time" content="2024-09-04T12:59:19+00:00">
+  <meta name="revised" content="2024-09-04T12:59:19+00:00">
 
 
 <script type="application/ld+json">
@@ -76,7 +76,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "B.Sc. Psychologie Statisik II" },
       "datePublished": "",
-      "dateModified": "2024-09-04T12:51:05+00:00",
+      "dateModified": "2024-09-04T12:59:19+00:00",
     
     "name": "B.Sc. Psychologie Statisik II",
     "description": "Psychologische Methodenlehre. Statistik und Forschungsmethoden an der Psychologischen Hochschule Berlin",
@@ -577,11 +577,36 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#standardisierter-effekt-cohens-delta">Standardisierter Effekt: Cohen’s $\delta$</a></li>
 <li class="toc-entry toc-h3"><a href="#konfidenzintervalle-f%C3%BCr-cohens-delta">Konfidenzintervalle für Cohen’s $\delta$</a></li>
-<li class="toc-entry toc-h3"><a href="#einstichproben-gauss-test">Einstichproben-Gauss-Test</a></li>
-<li class="toc-entry toc-h3"><a href="#einstichproben-t-test">Einstichproben T-Test</a></li>
-<li class="toc-entry toc-h3"><a href="#einstichproben-t-test-f%C3%BCr-abh%C3%A4ngige-beobachtungen">Einstichproben T-Test für abhängige Beobachtungen</a></li>
-<li class="toc-entry toc-h3"><a href="#einstichproben-binomialtest">Einstichproben Binomialtest</a></li>
-<li class="toc-entry toc-h3"><a href="#zweistichproben-t-test">Zweistichproben T-Test</a></li>
+<li class="toc-entry toc-h3">
+<a href="#einstichproben-gauss-test">Einstichproben-Gauss-Test</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#einstichproben-gauss-test-in-r">Einstichproben-Gauss-Test in R</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#einstichproben-t-test">Einstichproben T-Test</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#einstichproben-t-test-in-r">Einstichproben T-Test in R</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#einstichproben-t-test-f%C3%BCr-abh%C3%A4ngige-beobachtungen">Einstichproben T-Test für abhängige Beobachtungen</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#einstichproben-t-test-f%C3%BCr-abh%C3%A4ngige-beobachtungen-t-test-in-r">Einstichproben T-Test für abhängige Beobachtungen T-Test in R</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#einstichproben-binomialtest">Einstichproben Binomialtest</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#binomialtest-in-r">Binomialtest in R</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#zweistichproben-t-test">Zweistichproben T-Test</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#zweistichproben-t-test-in-r">Zweistichproben T-Test in R</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h2">
@@ -595,7 +620,13 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#chi2-statistik">$\chi^2$-Statistik</a></li>
 <li class="toc-entry toc-h3"><a href="#cramers-v">Cramer’s $V$</a></li>
-<li class="toc-entry toc-h3"><a href="#chi2-test">$\chi^2$-Test</a></li>
+<li class="toc-entry toc-h3">
+<a href="#chi2-test">$\chi^2$-Test</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#chi2-test-in-r">$\chi^2$-Test in R</a></li>
+<li class="toc-entry toc-h4"><a href="#kontinuit%C3%A4tskorrektur">Kontinuitätskorrektur</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -615,22 +646,44 @@
 <li class="toc-entry toc-h2">
 <a href="#einfaktorielle-varianzanalyse">Einfaktorielle Varianzanalyse</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#messwertezerlegung">Messwertezerlegung</a></li>
+<li class="toc-entry toc-h3">
+<a href="#messwertezerlegung">Messwertezerlegung</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#effekt-von-faktorstufen">Effekt von Faktorstufen</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#quadratsummenzerlegung">Quadratsummenzerlegung</a></li>
 <li class="toc-entry toc-h3"><a href="#effektgr%C3%B6%C3%9Fensch%C3%A4tzer-hateta2">Effektgrößenschätzer $\hat{\eta}^2$</a></li>
 <li class="toc-entry toc-h3"><a href="#effektgr%C3%B6%C3%9Fensch%C3%A4tzer-hatomega2">Effektgrößenschätzer $\hat{\omega}^2$</a></li>
-<li class="toc-entry toc-h3"><a href="#effektgr%C3%B6%C3%9Fe-phi2-signal-rausch-verh%C3%A4ltnis">Effektgröße $\phi^2$, Signal-Rausch-Verhältnis</a></li>
+<li class="toc-entry toc-h3">
+<a href="#effektgr%C3%B6%C3%9Fe-phi2-signal-rausch-verh%C3%A4ltnis">Effektgröße $\phi^2$, Signal-Rausch-Verhältnis</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#konventionen-f%C3%BCr-phi2">Konventionen für $\phi^2$:</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#effektgr%C3%B6%C3%9Fe-phi">Effektgröße $\phi$</a></li>
 <li class="toc-entry toc-h3"><a href="#effektgr%C3%B6%C3%9Fe-lambda">Effektgröße $\lambda$</a></li>
 <li class="toc-entry toc-h3"><a href="#beziehungen-zwischen-effektgr%C3%B6%C3%9Fensch%C3%A4tzern">Beziehungen zwischen Effektgrößenschätzern</a></li>
 <li class="toc-entry toc-h3"><a href="#konfidenzintervalle-der-effektgr%C3%B6%C3%9Fen">Konfidenzintervalle der Effektgrößen</a></li>
-<li class="toc-entry toc-h3"><a href="#sch%C3%A4tzung-der-populationsparameter">Schätzung der Populationsparameter</a></li>
+<li class="toc-entry toc-h3">
+<a href="#sch%C3%A4tzung-der-populationsparameter">Schätzung der Populationsparameter</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#sch%C3%A4tzung-des-populationsmittelwertes">Schätzung des Populationsmittelwertes</a></li>
+<li class="toc-entry toc-h4"><a href="#sch%C3%A4tzung-des-effektes-tau_j">Schätzung des Effektes $\tau_j$</a></li>
+<li class="toc-entry toc-h4"><a href="#sch%C3%A4tzung-der-varianz-der-residuen-in-der-population">Schätzung der Varianz der Residuen in der Population</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h2">
 <a href="#hypothesenpr%C3%BCfung-in-der-varianzanalyse">Hypothesenprüfung in der Varianzanalyse</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#f-test">F-Test</a></li>
+<li class="toc-entry toc-h3">
+<a href="#f-test">F-Test</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#beispiel-f%C3%BCr-f-test">Beispiel für F-Test</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#automatische-durchf%C3%BChrung-in-r">Automatische Durchführung in R</a></li>
 </ul>
 </li>
@@ -642,7 +695,13 @@
 <li class="toc-entry toc-h3"><a href="#sch%C3%A4tzung-der-haupteffekte">Schätzung der Haupteffekte</a></li>
 <li class="toc-entry toc-h3"><a href="#sch%C3%A4tzung-des-residuums">Schätzung des Residuums</a></li>
 <li class="toc-entry toc-h3"><a href="#sch%C3%A4tzung-der-populationsresidualvarianz">Schätzung der Populationsresidualvarianz</a></li>
-<li class="toc-entry toc-h3"><a href="#hypothesenpr%C3%BCfung-bei-zweifaktorieller-varianzanalyse">Hypothesenprüfung bei zweifaktorieller Varianzanalyse</a></li>
+<li class="toc-entry toc-h3">
+<a href="#hypothesenpr%C3%BCfung-bei-zweifaktorieller-varianzanalyse">Hypothesenprüfung bei zweifaktorieller Varianzanalyse</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#zerlegung-der-freiheitsgrade">Zerlegung der Freiheitsgrade</a></li>
+<li class="toc-entry toc-h4"><a href="#hypothesenpaare">Hypothesenpaare</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#varianzanalyse-mit-messwiederholung">Varianzanalyse mit Messwiederholung</a></li>
@@ -657,7 +716,13 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#bestimmung-der-regressionskoeffizienten">Bestimmung der Regressionskoeffizienten</a></li>
 <li class="toc-entry toc-h3"><a href="#standardfehler-der-modellparameter">Standardfehler der Modellparameter</a></li>
-<li class="toc-entry toc-h3"><a href="#alternative-wege-zur-bestimmung-der-regressionskoeffizienten">Alternative Wege zur Bestimmung der Regressionskoeffizienten</a></li>
+<li class="toc-entry toc-h3">
+<a href="#alternative-wege-zur-bestimmung-der-regressionskoeffizienten">Alternative Wege zur Bestimmung der Regressionskoeffizienten</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#kriterium-der-kleinsten-quadrate">Kriterium der kleinsten Quadrate</a></li>
+<li class="toc-entry toc-h4"><a href="#likelihood-maximierung">Likelihood-Maximierung</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#hypothesenpr%C3%BCfung-bei-einfacher-linearer-regression">Hypothesenprüfung bei einfacher linearer Regression</a></li>
 <li class="toc-entry toc-h3"><a href="#konfidenzintervalle-f%C3%BCr-regressionskoeffizienten">Konfidenzintervalle für Regressionskoeffizienten</a></li>
 <li class="toc-entry toc-h3"><a href="#einfache-lineare-regression-in-r">Einfache lineare Regression in R</a></li>
@@ -669,21 +734,67 @@
 <li class="toc-entry toc-h3"><a href="#modellgleichung">Modellgleichung</a></li>
 <li class="toc-entry toc-h3"><a href="#bestimmung-der-regressionskoeffizienten-1">Bestimmung der Regressionskoeffizienten</a></li>
 <li class="toc-entry toc-h3"><a href="#kompensatorisches-modell">Kompensatorisches Modell</a></li>
-<li class="toc-entry toc-h3"><a href="#dummy-kodierung">Dummy Kodierung</a></li>
-<li class="toc-entry toc-h3"><a href="#interpretation-von-multiplen-regressionsgewichten">Interpretation von multiplen Regressionsgewichten</a></li>
+<li class="toc-entry toc-h3">
+<a href="#dummy-kodierung">Dummy Kodierung</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#schritte-der-dummy-kodieruung">Schritte der Dummy-Kodieruung</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#interpretation-von-multiplen-regressionsgewichten">Interpretation von multiplen Regressionsgewichten</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#als-regressionsgewicht-einer-bedingten-einfacher-regression">Als Regressionsgewicht einer bedingten einfacher Regression.</a></li>
+<li class="toc-entry toc-h4"><a href="#als-regressionsgewicht-zweier-regressionsredsiduen">Als Regressionsgewicht zweier Regressionsredsiduen</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#inkrementelle-varianzaufkl%C3%A4rung">Inkrementelle Varianzaufklärung</a></li>
-<li class="toc-entry toc-h3"><a href="#punktsch%C3%A4tzung-der-varianzaufkl%C3%A4rung">Punktschätzung der Varianzaufklärung</a></li>
-<li class="toc-entry toc-h3"><a href="#hypothesenpr%C3%BCfung-mit-multipler-linearer-regression">Hypothesenprüfung mit multipler linearer Regression</a></li>
-<li class="toc-entry toc-h3"><a href="#modellvergleiche-in-r">Modellvergleiche in R</a></li>
+<li class="toc-entry toc-h3">
+<a href="#punktsch%C3%A4tzung-der-varianzaufkl%C3%A4rung">Punktschätzung der Varianzaufklärung</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#wherry-1-adjustierung">Wherry-1-Adjustierung</a></li>
+<li class="toc-entry toc-h4"><a href="#adjustierung-nach-olkin--pratt-2017">Adjustierung nach Olkin &amp; Pratt (2017)</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#hypothesenpr%C3%BCfung-mit-multipler-linearer-regression">Hypothesenprüfung mit multipler linearer Regression</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#hypothesen-zum-gesamtmodell-globale-hypothesen">Hypothesen zum Gesamtmodell, globale Hypothesen</a></li>
+<li class="toc-entry toc-h4"><a href="#hypothesen-%C3%BCber-einzelne-regressionsgewichte">Hypothesen über einzelne Regressionsgewichte</a></li>
+<li class="toc-entry toc-h4"><a href="#hypothesen-%C3%BCber-modellvergleiche">Hypothesen über Modellvergleiche</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#modellvergleiche-in-r">Modellvergleiche in R</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#likelihood-quotienten-test">Likelihood-Quotienten-Test</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h3"><a href="#interaktionseffekte-bei-mutlipler-linearer-regression">Interaktionseffekte bei mutlipler linearer Regression</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2">
 <a href="#annahmen-des-allgemeinen-linearen-modells">Annahmen des allgemeinen linearen Modells</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#korrekte-spezifikation-linearit%C3%A4t">Korrekte Spezifikation, Linearität</a></li>
-<li class="toc-entry toc-h3"><a href="#pr%C3%BCfung-der-homoskedastizit%C3%A4t">Prüfung der Homoskedastizität</a></li>
-<li class="toc-entry toc-h3"><a href="#normalverteilung-der-residuen">Normalverteilung der Residuen</a></li>
+<li class="toc-entry toc-h3">
+<a href="#korrekte-spezifikation-linearit%C3%A4t">Korrekte Spezifikation, Linearität</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#pr%C3%BCfung-der-linearit%C3%A4t">Prüfung der Linearität</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#pr%C3%BCfung-der-homoskedastizit%C3%A4t">Prüfung der Homoskedastizität</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#breusch-pagan-test-in-r">Breusch-Pagan-Test in R</a></li>
+<li class="toc-entry toc-h4"><a href="#visuelle-pr%C3%BCfung-der-heteroskedastizit%C3%A4t">Visuelle Prüfung der Heteroskedastizität</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#normalverteilung-der-residuen">Normalverteilung der Residuen</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#shapiro-wilk-test">Shapiro-Wilk-Test</a></li>
+<li class="toc-entry toc-h4"><a href="#visuelle-pr%C3%BCfung-der-normalverteilung">Visuelle Prüfung der Normalverteilung</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1213,7 +1324,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p>Siehe auch: <a href="#signifikanztests">Signifikanztests</a></p>
 
-<h4 id="einstichproben-gauss-test-in-r">Einstichproben-Gauss-Test in R</h4>
+<h4 id="einstichproben-gauss-test-in-r">
+<a class="anchor" href="#einstichproben-gauss-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Einstichproben-Gauss-Test in R</h4>
 
 <p>Samples mit $\mu = 0.5$, $\sigma = 1.0$, und $n = 20$</p>
 
@@ -1281,7 +1393,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p><img src="statistik-2-abbildungen/unnamed-chunk-26-1.png" alt="plot of chunk unnamed-chunk-26" width="576" style="display: block; margin: auto;"></p>
 
-<h4 id="einstichproben-t-test-in-r">Einstichproben T-Test in R</h4>
+<h4 id="einstichproben-t-test-in-r">
+<a class="anchor" href="#einstichproben-t-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Einstichproben T-Test in R</h4>
 
 <p>Samples mit $\mu = 0.5$, $\sigma = 1.0$, und $n = 20$</p>
 
@@ -1323,7 +1436,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p>Der Rest der Tests verläuft wie beim Einstichproben T-Test.</p>
 
-<h4 id="einstichproben-t-test-für-abhängige-beobachtungen-t-test-in-r">Einstichproben T-Test für abhängige Beobachtungen T-Test in R</h4>
+<h4 id="einstichproben-t-test-für-abhängige-beobachtungen-t-test-in-r">
+<a class="anchor" href="#einstichproben-t-test-f%C3%BCr-abh%C3%A4ngige-beobachtungen-t-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Einstichproben T-Test für abhängige Beobachtungen T-Test in R</h4>
 
 <p>$n=20$ Samples,</p>
 
@@ -1405,7 +1519,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p><img src="statistik-2-abbildungen/unnamed-chunk-34-1.png" alt="plot of chunk unnamed-chunk-34" width="576" style="display: block; margin: auto;"></p>
 
-<h4 id="binomialtest-in-r">Binomialtest in R</h4>
+<h4 id="binomialtest-in-r">
+<a class="anchor" href="#binomialtest-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binomialtest in R</h4>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">binom.test</span><span class="p">(</span><span class="m">39</span><span class="p">,</span><span class="w"> </span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -1460,7 +1575,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p><img src="statistik-2-abbildungen/unnamed-chunk-37-1.png" alt="plot of chunk unnamed-chunk-37" width="576" style="display: block; margin: auto;"></p>
 
-<h4 id="zweistichproben-t-test-in-r">Zweistichproben T-Test in R</h4>
+<h4 id="zweistichproben-t-test-in-r">
+<a class="anchor" href="#zweistichproben-t-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Zweistichproben T-Test in R</h4>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">t.test</span><span class="p">(</span><span class="n">samples2</span><span class="o">$</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">samples1</span><span class="o">$</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -1627,7 +1743,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 
 <p>Die Prüfgröße folgt einer $\chi^2$-Verteilung mit Freiheitsgraden $df = (r-1) \cdot (c-1)$.</p>
 
-<h4 id="chi2-test-in-r">$\chi^2$-Test in R</h4>
+<h4 id="chi2-test-in-r">
+<a class="anchor" href="#chi2-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>$\chi^2$-Test in R</h4>
 
 <p>Beispieldaten:</p>
 
@@ -1646,7 +1763,8 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:</p>
 ## X-squared = 22.002, df = 2, p-value = 1.669e-05
 </code></pre></div></div>
 
-<h4 id="kontinuitätskorrektur">Kontinuitätskorrektur</h4>
+<h4 id="kontinuitätskorrektur">
+<a class="anchor" href="#kontinuit%C3%A4tskorrektur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kontinuitätskorrektur</h4>
 
 <p>Zellen mit $f_{ij} \lt 5$ gelten als “unterbesetzt”. Der $\chi^2$-Test reagiert dann progressiv, das $\alpha$-Fehlerniveau wird unterschritten und die Wahrscheinlichkeit, die $H_1$ anzunehmen steigt.</p>
 
@@ -1818,7 +1936,8 @@ $$1-0.774 = 0.226 = \alpha_{FWER}$$</p>
 
 <p>Der Messwert $x_{mj}$ wird zerlegt in den Gruppenmittelwert $\overline{x}<em>j$ und das Residuum $e</em>{mj}$.</p>
 
-<h4 id="effekt-von-faktorstufen">Effekt von Faktorstufen</h4>
+<h4 id="effekt-von-faktorstufen">
+<a class="anchor" href="#effekt-von-faktorstufen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Effekt von Faktorstufen</h4>
 
 <p>Der Effekt $t_j$ jeder Faktorstufe (Bedingung) ist die Abweichung des jeweiligen Gruppenmittelwertes $\overline{x}_j$ vom Gesamtmittelwert $\overline{x}$:</p>
 
@@ -1909,7 +2028,8 @@ Der Effekt $t_j$ ist <em>nur bedingt interpretierbar</em>, da er sowohl eine sys
 
 <p>$$\hat{\phi}^2 = \frac{\hat{\eta}^2}{1 - \hat{\eta}^2}$$</p>
 
-<h4 id="konventionen-für-phi2">Konventionen für $\phi^2$:</h4>
+<h4 id="konventionen-für-phi2">
+<a class="anchor" href="#konventionen-f%C3%BCr-phi2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Konventionen für $\phi^2$:</h4>
 
 <ul>
   <li>$\phi^2 \approx 0.01$: kleiner Effekt</li>
@@ -1995,17 +2115,20 @@ Für die Effektgrößen in der Population gelten die Formeln analog ohne Schätz
 <h3 id="schätzung-der-populationsparameter">
 <a class="anchor" href="#sch%C3%A4tzung-der-populationsparameter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schätzung der Populationsparameter</h3>
 
-<h4 id="schätzung-des-populationsmittelwertes">Schätzung des Populationsmittelwertes</h4>
+<h4 id="schätzung-des-populationsmittelwertes">
+<a class="anchor" href="#sch%C3%A4tzung-des-populationsmittelwertes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schätzung des Populationsmittelwertes</h4>
 
 <p>$$\hat{\mu} = \overline{x} = \frac{\sum_{j=1}^J{\sum_{m=1}^{n_j}{x_{mj}}}}{n}$$</p>
 
 <p>Der Gesamtmittelwert aller Messungen $x_{mj}$ ist der Schätzer für den Mittelwert der Population $\hat{\mu}$.</p>
 
-<h4 id="schätzung-des-effektes-tau_j">Schätzung des Effektes $\tau_j$</h4>
+<h4 id="schätzung-des-effektes-tau_j">
+<a class="anchor" href="#sch%C3%A4tzung-des-effektes-tau_j" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schätzung des Effektes $\tau_j$</h4>
 
 <p>$$\hat{\tau_j} = t_j = x_{mj} - \overline{x}$$</p>
 
-<h4 id="schätzung-der-varianz-der-residuen-in-der-population">Schätzung der Varianz der Residuen in der Population</h4>
+<h4 id="schätzung-der-varianz-der-residuen-in-der-population">
+<a class="anchor" href="#sch%C3%A4tzung-der-varianz-der-residuen-in-der-population" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schätzung der Varianz der Residuen in der Population</h4>
 
 <p>Die geschätzte Varianz der Residuen in der Population $\hat{\sigma}<em>\epsilon^2$ entspricht der mittleren Quadratsumme $MQS</em>{inn}$ innerhalb der einzelnen Bedingungen $MQS_{j}$:</p>
 
@@ -2056,7 +2179,8 @@ Für die Effektgrößen in der Population gelten die Formeln analog ohne Schätz
 
 <p>Der F-Test <strong>prüft nur die globale Nullhypothese</strong>, also dass ALLE Effekte $\tau_j$ in der Population 0 sind. Er gibt keine Auskunft darüber, welche Mittelwertunterschiede zwischen welchen Faktorstufen signifikant sind.</p>
 
-<h4 id="beispiel-für-f-test">Beispiel für F-Test</h4>
+<h4 id="beispiel-für-f-test">
+<a class="anchor" href="#beispiel-f%C3%BCr-f-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Beispiel für F-Test</h4>
 
 <p>Zwei Faktorgruppen (Studienarme), je 10 Versuchspersonen, $J = 2, n_j = 10$</p>
 
@@ -2281,7 +2405,8 @@ $$\hat{\eta}<em>{A \times B}^2 = \frac{QS</em>{A \times B}}{QS_{total}}$$</p>
 <h3 id="hypothesenprüfung-bei-zweifaktorieller-varianzanalyse">
 <a class="anchor" href="#hypothesenpr%C3%BCfung-bei-zweifaktorieller-varianzanalyse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesenprüfung bei zweifaktorieller Varianzanalyse</h3>
 
-<h4 id="zerlegung-der-freiheitsgrade">Zerlegung der Freiheitsgrade</h4>
+<h4 id="zerlegung-der-freiheitsgrade">
+<a class="anchor" href="#zerlegung-der-freiheitsgrade" aria-hidden="true"><span class="octicon octicon-link"></span></a>Zerlegung der Freiheitsgrade</h4>
 
 <p>$$df_{zw} = df_A + df_B + df_{A \times B} = J \cdot K - 1$$</p>
 
@@ -2317,7 +2442,8 @@ F_{A \times B} &amp;= \frac{MQS_{A \times B}}{MQS_{inn}}
 
 <p>F-Tests und Konfidenzintervalle funktionieren genau wie bei der einfaktoriellen Varianzanalyse.</p>
 
-<h4 id="hypothesenpaare">Hypothesenpaare</h4>
+<h4 id="hypothesenpaare">
+<a class="anchor" href="#hypothesenpaare" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesenpaare</h4>
 
 <ul>
   <li>
@@ -2454,13 +2580,15 @@ $y_m - \hat{y}_m$ ist die Abweichung des tatsächlichen Messwertes vom modellier
 <h3 id="alternative-wege-zur-bestimmung-der-regressionskoeffizienten">
 <a class="anchor" href="#alternative-wege-zur-bestimmung-der-regressionskoeffizienten" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternative Wege zur Bestimmung der Regressionskoeffizienten</h3>
 
-<h4 id="kriterium-der-kleinsten-quadrate">Kriterium der kleinsten Quadrate</h4>
+<h4 id="kriterium-der-kleinsten-quadrate">
+<a class="anchor" href="#kriterium-der-kleinsten-quadrate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kriterium der kleinsten Quadrate</h4>
 
 <p>Die Regressionskoeffizienten werden so geschätzt, dass die Summe der quadrierten Abweichungen der tatsächlichen Messwerte von den modellierten Werten minimal wird.</p>
 
 <p>$$\sum_{m=1}^n{(y_m - \hat{y}_m)^2} \rightarrow min$$</p>
 
-<h4 id="likelihood-maximierung">Likelihood-Maximierung</h4>
+<h4 id="likelihood-maximierung">
+<a class="anchor" href="#likelihood-maximierung" aria-hidden="true"><span class="octicon octicon-link"></span></a>Likelihood-Maximierung</h4>
 
 <p>Die Grundannahme, dass die abhängige Variable in der Population normalverteilt ist, führt dazu, dass sie wie folgt modelliert werden kann:</p>
 
@@ -2625,7 +2753,8 @@ Geometrische Sicht:</p>
 
 <p>Bei UVs, die mehr als zwei Faktorstufen beinhalten, wird jede eine Referenzkategorie definiert und alle anderen Stufen als “Dummy”-Variablen kodiert die jeweils Ausprägungen 0 oder 1 haben.</p>
 
-<h4 id="schritte-der-dummy-kodieruung">Schritte der Dummy-Kodieruung</h4>
+<h4 id="schritte-der-dummy-kodieruung">
+<a class="anchor" href="#schritte-der-dummy-kodieruung" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schritte der Dummy-Kodieruung</h4>
 
 <ol>
   <li>
@@ -2645,7 +2774,8 @@ Geometrische Sicht:</p>
 <h3 id="interpretation-von-multiplen-regressionsgewichten">
 <a class="anchor" href="#interpretation-von-multiplen-regressionsgewichten" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interpretation von multiplen Regressionsgewichten</h3>
 
-<h4 id="als-regressionsgewicht-einer-bedingten-einfacher-regression">Als Regressionsgewicht einer bedingten einfacher Regression.</h4>
+<h4 id="als-regressionsgewicht-einer-bedingten-einfacher-regression">
+<a class="anchor" href="#als-regressionsgewicht-einer-bedingten-einfacher-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Als Regressionsgewicht einer bedingten einfacher Regression.</h4>
 
 <p>Alle UVs bis auf eine werden konstant gehalten.</p>
 
@@ -2653,7 +2783,8 @@ Geometrische Sicht:</p>
 
 <p>Entspricht dem Modell für eine Subgruppe an Personen, die hinsichtlich aller UVs bis auf eine identisch sind.</p>
 
-<h4 id="als-regressionsgewicht-zweier-regressionsredsiduen">Als Regressionsgewicht zweier Regressionsredsiduen</h4>
+<h4 id="als-regressionsgewicht-zweier-regressionsredsiduen">
+<a class="anchor" href="#als-regressionsgewicht-zweier-regressionsredsiduen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Als Regressionsgewicht zweier Regressionsredsiduen</h4>
 
 <p>Es werden zwei Residuen von einfachen Regressionen gebildet:</p>
 
@@ -2711,7 +2842,8 @@ Geometrische Sicht:</p>
 
 <p>Es muss eine Adjustierung vorgenommen werden, damit $\rho^2$ nicht überschätzt wird.</p>
 
-<h4 id="wherry-1-adjustierung">Wherry-1-Adjustierung</h4>
+<h4 id="wherry-1-adjustierung">
+<a class="anchor" href="#wherry-1-adjustierung" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wherry-1-Adjustierung</h4>
 
 <p>$$\hat{\rho}^2 = 1 - \frac{n-1}{n-k-1} \cdot (1-R^2)$$
 ($n$: Stichprobengröße, $k$: Anzahl der Regressionsgewichte)</p>
@@ -2730,7 +2862,8 @@ Geometrische Sicht:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] -0.006197947
 </code></pre></div></div>
 
-<h4 id="adjustierung-nach-olkin--pratt-2017">Adjustierung nach Olkin &amp; Pratt (2017)</h4>
+<h4 id="adjustierung-nach-olkin--pratt-2017">
+<a class="anchor" href="#adjustierung-nach-olkin--pratt-2017" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adjustierung nach Olkin &amp; Pratt (2017)</h4>
 
 <p>$$\hat{\rho}^2 = 1= \frac{n-3}{n-k-1} \cdot ((1-R^2) + \frac{2}{n-k-1} \cdot (1-R^2))$$</p>
 
@@ -2755,7 +2888,8 @@ Geometrische Sicht:</p>
 <h3 id="hypothesenprüfung-mit-multipler-linearer-regression">
 <a class="anchor" href="#hypothesenpr%C3%BCfung-mit-multipler-linearer-regression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesenprüfung mit multipler linearer Regression</h3>
 
-<h4 id="hypothesen-zum-gesamtmodell-globale-hypothesen">Hypothesen zum Gesamtmodell, globale Hypothesen</h4>
+<h4 id="hypothesen-zum-gesamtmodell-globale-hypothesen">
+<a class="anchor" href="#hypothesen-zum-gesamtmodell-globale-hypothesen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesen zum Gesamtmodell, globale Hypothesen</h4>
 
 <p>$$H_0: \beta_1 = \beta_2 = \dots = \beta_k = 0 \rightarrow H_o: \rho^2 = 0$$</p>
 
@@ -2769,7 +2903,8 @@ Geometrische Sicht:</p>
 
 <p>$$F = \frac{n-k-1}{k} \cdot \frac{R^2}{1-R^2} \sim F(df_1 = k, df_2 = n-k-1)$$</p>
 
-<h4 id="hypothesen-über-einzelne-regressionsgewichte">Hypothesen über einzelne Regressionsgewichte</h4>
+<h4 id="hypothesen-über-einzelne-regressionsgewichte">
+<a class="anchor" href="#hypothesen-%C3%BCber-einzelne-regressionsgewichte" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesen über einzelne Regressionsgewichte</h4>
 
 <p>$$H_0 : \beta_j = 0$$</p>
 
@@ -2779,7 +2914,8 @@ Geometrische Sicht:</p>
 
 <p>Das geschätzte Regressionsgewicht $\hat\beta_j$ wird am <a href="#standardfehler-der-modellparameter">geschätzten Standardfehler</a> $\hat\sigma_{\beta_j}$ standardisiert und folgt dann eine Student-T-Verteilung.</p>
 
-<h4 id="hypothesen-über-modellvergleiche">Hypothesen über Modellvergleiche</h4>
+<h4 id="hypothesen-über-modellvergleiche">
+<a class="anchor" href="#hypothesen-%C3%BCber-modellvergleiche" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hypothesen über Modellvergleiche</h4>
 
 <p>Die “Nützlichkeit” einer oder mehrerer unabhängiger Variablen kann durch den Vergleich eines uneingeschränkten Modells, welches alle UVs enthält, mit einem eingeschränkten Modell, in dem eine oder mehrere UV fehlen, bestimmt werden.</p>
 
@@ -2846,7 +2982,8 @@ Geometrische Sicht:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] 0.0442245
 </code></pre></div></div>
 
-<h4 id="likelihood-quotienten-test">Likelihood-Quotienten-Test</h4>
+<h4 id="likelihood-quotienten-test">
+<a class="anchor" href="#likelihood-quotienten-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Likelihood-Quotienten-Test</h4>
 
 <p>Wilks’ $\Lambda$: Quotient der Likelihoods der empirischen Daten unter dem eingeschränkten und dem uneingeschränkten Modell.</p>
 
@@ -2904,7 +3041,8 @@ $H_0: \rho^2_u - \rho^2_e = 0$, die Interaktion von $X_1$ und $X_2$ klärt keine
   <li>falsche Schlussfolgerungen</li>
 </ul>
 
-<h4 id="prüfung-der-linearität">Prüfung der Linearität</h4>
+<h4 id="prüfung-der-linearität">
+<a class="anchor" href="#pr%C3%BCfung-der-linearit%C3%A4t" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prüfung der Linearität</h4>
 
 <p>Plot der Residuen gegenüber den vorhergesagten (fitted) Werten</p>
 
@@ -2921,7 +3059,8 @@ $H_0: \rho^2_u - \rho^2_e = 0$, die Interaktion von $X_1$ und $X_2$ klärt keine
 <h3 id="prüfung-der-homoskedastizität">
 <a class="anchor" href="#pr%C3%BCfung-der-homoskedastizit%C3%A4t" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prüfung der Homoskedastizität</h3>
 
-<h4 id="breusch-pagan-test-in-r">Breusch-Pagan-Test in R</h4>
+<h4 id="breusch-pagan-test-in-r">
+<a class="anchor" href="#breusch-pagan-test-in-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>Breusch-Pagan-Test in R</h4>
 
 <p>(mit Paket <code class="language-plaintext highlighter-rouge">lmtest</code>)</p>
 
@@ -2941,7 +3080,8 @@ $H_0: \rho^2_u - \rho^2_e = 0$, die Interaktion von $X_1$ und $X_2$ klärt keine
 
 <p><strong>Der Breusch-Pagan-Test ist auch sensitiv für eine Verletzung der Unabhängigkeit der Residuen.</strong></p>
 
-<h4 id="visuelle-prüfung-der-heteroskedastizität">Visuelle Prüfung der Heteroskedastizität</h4>
+<h4 id="visuelle-prüfung-der-heteroskedastizität">
+<a class="anchor" href="#visuelle-pr%C3%BCfung-der-heteroskedastizit%C3%A4t" aria-hidden="true"><span class="octicon octicon-link"></span></a>Visuelle Prüfung der Heteroskedastizität</h4>
 
 <p>Plot der Residuen gegenüber den vorhergesagten (fitted) Werten.</p>
 
@@ -2959,7 +3099,8 @@ $H_0: \rho^2_u - \rho^2_e = 0$, die Interaktion von $X_1$ und $X_2$ klärt keine
 <h3 id="normalverteilung-der-residuen">
 <a class="anchor" href="#normalverteilung-der-residuen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Normalverteilung der Residuen</h3>
 
-<h4 id="shapiro-wilk-test">Shapiro-Wilk-Test</h4>
+<h4 id="shapiro-wilk-test">
+<a class="anchor" href="#shapiro-wilk-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shapiro-Wilk-Test</h4>
 
 <ul>
   <li>testet beliebige Werte auf Normalverteilung</li>
@@ -2977,7 +3118,8 @@ $H_0: \rho^2_u - \rho^2_e = 0$, die Interaktion von $X_1$ und $X_2$ klärt keine
 
 <p>Wenn $p \ge 0.05$, dann kann Normalverteilung der Residuen angenommen werden.</p>
 
-<h4 id="visuelle-prüfung-der-normalverteilung">Visuelle Prüfung der Normalverteilung</h4>
+<h4 id="visuelle-prüfung-der-normalverteilung">
+<a class="anchor" href="#visuelle-pr%C3%BCfung-der-normalverteilung" aria-hidden="true"><span class="octicon octicon-link"></span></a>Visuelle Prüfung der Normalverteilung</h4>
 
 <p><strong>Histogram der Residuen</strong></p>
 
