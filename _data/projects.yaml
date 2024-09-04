@@ -42,3 +42,20 @@
   tags:
     - Tutorial
     - Resource
+
+
+- title: Kompendium Statistik I
+  subtitle:
+  image: images/photo.jpg
+  link: /lehre/kompendium-statistik/statistik-1.html
+  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik I
+  tags:
+    - Resource
+
+- title: Kompendium Statistik II
+  subtitle:
+  image: images/photo.jpg
+  link: /lehre/kompendium-statistik/statistik-2.html
+  description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik II
+  tags:
+    - Resource

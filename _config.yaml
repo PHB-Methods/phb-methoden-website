@@ -50,6 +50,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-toc
 
 # code block syntax highlighting
 highlighter: rouge

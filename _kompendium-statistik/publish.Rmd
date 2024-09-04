@@ -1,0 +1,60 @@
+---
+title: "Statistik Kompendium - "
+author: "Esther Weidauer"
+date: "2024-09-04"
+output: html_document
+---
+
+# Statistik-Kompendium in Webseite integrieren
+
+Diesen Code-Chunk hier ausführen, um die Seiten für Statistik I und II in die Website zu integrieren.
+
+Beide RMarkdown-Dokumente werden in normales Markdown umgewandelt und Grafiken sowie R-Output erzeugt.
+
+Anschließend werden die erzeugten Markdown-Seiten und die Grafiken an die richtige Stelle kopiert,
+so dass der Website-Generator sie findet und im Layout der Website veröffentlicht.
+
+```{r include=FALSE}
+library(knitr)
+
+clear_directory_contents <- function(directory) {
+  for (f in list.files(directory, full.names = TRUE)) {
+    file.copy(f, file.path(target_dir_path, f))
+  }
+  
+}
+
+
+build <- function(rmd_name) {
+  base_name <- gsub("\\.rmd", "", ignore.case = TRUE, rmd_name)
+  figure_dirname <- paste0(base_name, "-abbildungen")
+  md_name <- paste0(base_name, ".md")
+  target_dir_path <- file.path("..", "lehre", "kompendium-statistik")
+  
+  dir.create(target_dir_path, showWarnings = FALSE)
+  dir.create(file.path(target_dir_path, figure_dirname), showWarnings = FALSE)
+  
+  knitr::opts_chunk$set(
+    fig.path = paste0(figure_dirname, "/"),
+    fig.align = "center",
+    fig.retina = 2,
+    fig.width = 8
+  )
+
+  print(rmd_name)
+  knit(rmd_name, envir = new.env())
+  
+  file.copy(md_name, file.path(target_dir_path, md_name))
+
+  for (f in list.files(path = figure_dirname, full.names = TRUE)) {
+    file.copy(f, file.path(target_dir_path, f))
+  }
+  
+  unlink(md_name)
+  unlink(figure_dirname, recursive = TRUE)
+}
+
+build("statistik-1.Rmd")
+build("statistik-2.Rmd")
+```
+
