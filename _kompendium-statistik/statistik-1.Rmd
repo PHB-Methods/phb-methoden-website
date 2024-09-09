@@ -1,13 +1,10 @@
 ---
-title: "B.Sc. Psychologie Statisik I"
-author: "Esther Weidauer"
-layout: post
-toc: true
+output_dir: "../lehre/kompendium-statistik"
 output: 
-  md_document:
-    variant: gfm
-    preserve_yaml: true
-    df_print: default
+  html_document: 
+    theme: null
+    toc: true
+    self_contained: false
 ---
 
 ```{r Setup, include=FALSE}
@@ -20,7 +17,6 @@ theme_linedraw() %+replace% theme(
 ) -> theme_custom
 
 knitr::opts_chunk$set(
-  fig.path = "statistik-1/",
   fig.align = "center",
   fig.retina = 2,
   fig.width = 8,
@@ -34,7 +30,7 @@ storms %>% filter(year >= 2010, year < 2020) -> data.short
 
 # Einleitung 
 
-**TODO**
+**still TODO**
 
 # Wahrscheinlichkeitstheorie
 
