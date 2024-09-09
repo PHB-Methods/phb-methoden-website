@@ -3,16 +3,12 @@ title: "B.Sc. Psychologie Statisik II"
 author: "Esther Weidauer"
 layout: post
 toc: true
+output: 
+  md_document:
+    variant: gfm
+    preserve_yaml: true
+    df_print: default
 ---
-
-<!--
-
-AFTER EDITING THIS FILE:
-
-1. open publish.Rmd and run it
-2. then commit the changes to version control
-
--->
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -20,6 +16,8 @@ library(pwr)
 library(scico)
 library(car)
 library(afex)
+library(MBESS)
+library(BSDA)
 
 rm(list=ls())
 set.seed(0)
@@ -28,6 +26,13 @@ theme_linedraw() %+replace% theme(
 
 ) -> theme_custom
 
+knitr::opts_chunk$set(
+  fig.path = "statistik-2/",
+  fig.align = "center",
+  fig.retina = 2,
+  fig.width = 8,
+  results = "markup"
+)
 
 storms -> data.long
 storms %>% filter(year >= 2010, year < 2020) -> data.short
@@ -1363,7 +1368,7 @@ Zellen mit $f_{ij} \lt 5$ gelten als "unterbesetzt". Der $\chi^2$-Test reagiert 
 
 Die Prüfgröße muss in diesem Fall adjustiert werden:
 
-$$\chi^2_{adj} = \sum_{i=1}^r{\sum_{j=1}^c{\frac{(|f_{ij} - e_{ij}| - 0.5)^2}{e_{ij}}}}$$
+\(\chi^2_{adj} = \sum_{i=1}^r{\sum_{j=1}^c{\frac{(f_{ij} - e_{ij} - 0.5)^2}{e_{ij}}}}\)
 
 In R erfolgt die Korrektur automatisch, kann aber auch mit der `correct`-Option explizit aktiviert oder deaktiviert werden:
 

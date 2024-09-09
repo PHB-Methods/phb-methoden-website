@@ -14,47 +14,42 @@ Anschließend werden die erzeugten Markdown-Seiten und die Grafiken an die richt
 so dass der Website-Generator sie findet und im Layout der Website veröffentlicht.
 
 ```{r include=FALSE}
-library(knitr)
-
-clear_directory_contents <- function(directory) {
-  for (f in list.files(directory, full.names = TRUE)) {
-    file.copy(f, file.path(target_dir_path, f))
-  }
-  
-}
-
+library(rmarkdown)
 
 build <- function(rmd_name) {
   base_name <- gsub("\\.rmd", "", ignore.case = TRUE, rmd_name)
-  figure_dirname <- paste0(base_name, "-abbildungen")
   md_name <- paste0(base_name, ".md")
-  target_dir_path <- file.path("..", "lehre", "kompendium-statistik")
+  yml_name <- paste0(base_name, ".yml")
+  files_dir <- base_name
+  target_base_dir <- file.path("..", "lehre", "kompendium-statistik")
   
-  dir.create(target_dir_path, showWarnings = FALSE)
-  dir.create(file.path(target_dir_path, figure_dirname), showWarnings = FALSE)
+  target_md <- file.path(target_base_dir, md_name)
+  target_files_dir <- file.path(target_base_dir, files_dir)
   
-  knitr::opts_chunk$set(
-    fig.path = paste0(figure_dirname, "/"),
-    fig.align = "center",
-    fig.retina = 2,
-    fig.width = 8,
-    results = "asis"
-  )
-
-  print(rmd_name)
-  knit(rmd_name, envir = new.env())
+  rmarkdown::render(rmd_name, envir = new.env(), runtime = "static")
   
-  file.copy(md_name, file.path(target_dir_path, md_name))
-
-  for (f in list.files(path = figure_dirname, full.names = TRUE)) {
-    file.copy(f, file.path(target_dir_path, f))
+  if (file.exists(target_md)) {
+    unlink(target_md)
+  }
+    
+  if (dir.exists(target_files_dir)) {
+    unlink(target_files_dir, recursive = TRUE)
   }
   
-  #unlink(md_name)
-  unlink(figure_dirname, recursive = TRUE)
+  dir.create(target_files_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  file.copy(md_name, target_md)
+  
+  for (f in list.files(path = files_dir, full.names = TRUE)) {
+    print(f)
+    file.copy(f, file.path(target_base_dir, f))
+  }
+  
+  # yml <- read_file(yml_name)
+  # md <- paste0(yml, read_file(target_md))
+  # write_file(md, target_md)
 }
 
 build("statistik-1.Rmd")
 build("statistik-2.Rmd")
 ```
-

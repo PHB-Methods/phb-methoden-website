@@ -72,3 +72,14 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+
+jekyll-spaceship:
+    processors:
+        - mathjax-processor
+        - table-processor
+        - plantuml-processor
+        - mermaid-processor
+        - polyfill-processor
+        - media-processor
+        - emoji-processor
+        - element-processor

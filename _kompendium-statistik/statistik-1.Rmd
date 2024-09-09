@@ -4,18 +4,11 @@ author: "Esther Weidauer"
 layout: post
 toc: true
 output: 
-  html_document: 
-    df_print: tibble
+  md_document:
+    variant: gfm
+    preserve_yaml: true
+    df_print: default
 ---
-
-<!--
-
-AFTER EDITING THIS FILE:
-
-1. open publish.Rmd and run it
-2. then commit the changes to version control
-
--->
 
 ```{r Setup, include=FALSE}
 library(tidyverse)
@@ -25,6 +18,14 @@ set.seed(0)
 theme_linedraw() %+replace% theme(
 
 ) -> theme_custom
+
+knitr::opts_chunk$set(
+  fig.path = "statistik-1/",
+  fig.align = "center",
+  fig.retina = 2,
+  fig.width = 8,
+  results = "markup"
+)
 
 
 storms -> data.long
@@ -69,16 +70,18 @@ $$Pr(E_{1} \cap E_{2} \cap \dots) = Pr(E_{1}) \cdot Pr(E_{2}) \cdot \dots$$
 
 ## Querformat/Langformat
 
-**Daten in Querformat:** mehre messungen des gleichen Merkmals in jeweils eigener Spalte
+**Daten in Querformat:** mehre Messungen des gleichen Merkmals in jeweils eigener Spalte
 
 ```{r}
-wide <- tibble(
+tibble(
   code = c(1,2,3,4,5),
   measurement.1 = rnorm(n = 5, mean = 100, sd = 10),
   measurement.2 = rnorm(n = 5, mean = 100, sd = 10),
   measurement.3 = rnorm(n = 5, mean = 100, sd = 10)
-)
+) -> wide
+```
 
+```{r echo=FALSE}
 knitr::kable(wide)
 ```
 
@@ -91,7 +94,9 @@ wide %>%
     names_prefix = "measurement.",
     names_to = "measurement"
   ) -> long
+```
 
+```{r echo=FALSE}
 knitr::kable(long)
 ```
 
