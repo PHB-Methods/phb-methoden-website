@@ -1,6 +1,6 @@
 ---
 name: Ida Hawlitschek
-image: images/portrait-ida-hawlitschek.JPG
+image: images/portrait-ida-hawlitschek.jpg
 description: Projektstudentin
 role: undergrad
 aliases:
