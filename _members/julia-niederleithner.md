@@ -7,10 +7,10 @@ aliases:
   - J Niederleithner
   - Julia Niederleithner
 links:
-  email: s.niederleithner@stud.phb.de
+  email: j.niederleithner@stud.phb.de
 ---
 
 ## Lehrveranstaltung: Tutorium Statistik 1
 
-Das Tutorium findem während der Vorlesungszeit Donnerstags zwischen 12 bis 14 Uhr statt.
+Das Tutorium findet während der Vorlesungszeit Donnerstags zwischen 12 bis 14 Uhr statt.
 
