@@ -16,6 +16,16 @@ links:
 #   youtube: YourLabChannel
 
 ### jekyll settings
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
 
 # front matter defaults
 defaults:
