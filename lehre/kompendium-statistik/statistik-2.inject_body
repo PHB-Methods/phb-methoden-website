@@ -5,6 +5,6 @@ layout: post
 ---
 
 BODY_FROM: _kompendium-statistik/statistik-2.html
-ASSETS_FROM: _kompendium-statistik/statistik-2/*
-ASSETS_TO: lehre/kompendium-statistik/statistik-2
-
+ASSETS_FROM: _kompendium-statistik/statistik-2_files
+ASSETS_TO: lehre/kompendium-statistik/statistik-2_files
+ASSETS_GLOB: **/*

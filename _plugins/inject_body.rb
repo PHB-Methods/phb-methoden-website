@@ -2,6 +2,7 @@
 
 require "nokogiri"
 require "fileutils"
+require "pathname"
 
 module Jekyll
   class InjectBodyConverter < Converter
@@ -15,6 +16,9 @@ module Jekyll
 
     def convert(content)
       @content = content.strip
+
+      #copy_assets(assets_from_path, assets_to_path)
+
       load_html
       sanitize(body).to_html
     end
@@ -34,6 +38,18 @@ module Jekyll
     def assets_to_path
       line = @content.split("\n").find {|i| i.strip =~ /^ASSETS_TO/ }
       line.split(":").last.strip
+    end
+
+    def copy_assets(from, to)
+      pp Dir.glob(from)
+      pp to
+      FileUtils.mkdir_p(to)
+      FileUtils.cp_r(Dir.glob(from), to)
+
+      puts "writing test fime"
+      File.write("#{to}/test", "TESTTEST")
+
+      pp File.read("#{to}/test")
     end
 
     def load_html
@@ -57,17 +73,11 @@ module Jekyll
 
   class InjectBodyGenerator < Generator
     def generate(site)
-      return
+      #return
       @site = site
 
       injected_pages.each do |p|
-        from = assets_from(p)
-        to = assets_to(p)
-
-        pp from
-        pp to
-
-        copy_assets(from, to)
+        register_files(p)
       end
     end
 
@@ -89,9 +99,51 @@ module Jekyll
       line.split(":").last.strip
     end
 
-    def copy_assets(from, to)
-      FileUtils.mkdir_p(to)
-      FileUtils.cp_r(Dir.glob(from), to)
+    def assets_glob(page)
+      line = page.content.split("\n").find {|i| i.strip =~ /^ASSETS_GLOB/ }
+      line.split(":").last.strip
+    end
+
+    def register_files(page)
+      to_copy = []
+      from = assets_from(page)
+      glob = assets_glob(page)
+      to = assets_to(page)
+
+      Dir.chdir(from) do
+        Dir.glob(glob).each do |i|
+          to_copy << i
+        end
+      end
+
+      source_base_path = Pathname.new(from)
+      target_base_path = Pathname.new(to)
+
+      to_copy.each do |i|
+        source_path = source_base_path.join(i)
+        target_path = target_base_path.join(i)
+
+        matching_known_files = @site.static_files.find do |f|
+          f.path[target_path.to_s]
+        end
+
+        if matching_known_files.nil?
+          if Dir.exist?(source_path)
+            FileUtils.mkdir_p(target_path)
+          end
+
+          if File.file?(source_path)
+            FileUtils.cp(source_path, target_path)
+          end
+
+          @site.static_files << StaticFile.new(
+            @site,
+            Dir.pwd,
+            target_path.dirname,
+            target_path.basename
+          )
+        end
+      end
     end
   end
 end
