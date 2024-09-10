@@ -30,4 +30,11 @@ div.highlighter-rouge div.highlight pre.highlight {
   color: var(--white);
 }
 
+pre {
+  text-align: left;
+  color: var(--light-gray);
+  background-color: var(--dark-gray);
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=code.css.map */
