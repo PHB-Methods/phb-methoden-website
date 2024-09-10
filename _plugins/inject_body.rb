@@ -134,14 +134,15 @@ module Jekyll
 
           if File.file?(source_path)
             FileUtils.cp(source_path, target_path)
+
+            @site.static_files << StaticFile.new(
+              @site,
+              Dir.pwd,
+              target_path.dirname,
+              target_path.basename
+            )
           end
 
-          @site.static_files << StaticFile.new(
-            @site,
-            Dir.pwd,
-            target_path.dirname,
-            target_path.basename
-          )
         end
       end
     end
