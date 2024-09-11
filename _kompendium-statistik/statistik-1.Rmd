@@ -414,9 +414,285 @@ data.rbn
 
 Nach der Rang-basierten Normalisierung sind $p$ und $z$ normalverteilt.
 
-# Korrelation 
+# Bedingte Wahrtscheinlichkeit
 
-**TODO**
+Bedingte Wahrscheinlichkeit $Pr(B|A)$ ist die Wahrscheinlichkeit, dass A und B gemeinsam auftreten ($A \cap B$) unter der Bedingung, dass A bereits eingetreten ist, z.B. die Wahrscheinlichkeit, dass eine Person tatsächlich schwanger ist (B), wenn ein Schwangerschaftstest positiv ausgefallen ist (A).
+
+
+
+$$Pr(A|B) = \frac{Pr(A \cap B)}{Pr(A)}$$
+
+## Bayes-Theorem
+
+Das Bayes-Theorem stellt den Zusammenhang zwischen den bedingten Wahrscheinlichkeiten $Pr(B|A)$ und $Pr(A|B)$ her:
+
+$$Pr(A|B) = \frac{Pr(B|A) \cdot Pr(A)}{Pr(B)}$$
+
+## Kontingenztabellen
+
+Kontingenztabellen sind ein Mittel, um Bedingte Wahrscheinlichkeiten zu untersuchen. Die Tabelle enthält alle möglichen Kombinationen zweier diskreter Variablen und deren Häufigkeiten.
+
+Beispiel Schwangerschaftstest:
+
+- $A_+$: Test positiv
+- $A_-$: Test negativ
+- $B_+$: Schwangerschaft liegt vor
+- $B_-$: Schwangerschaft liegt nicht vor
+
+- $A_+ \cap B_-$: falsch-positiver Test
+- $A_- \cap B_-$: falsch-negativer Test
+- $A_- \cap B_-$: richtig-negativer Test
+- $A_+ \cap B_+$: richtig-positiver Test
+
+(fiktive Daten)
+
+```{r echo=FALSE}
+matrix(c(208, 11, 19, 762), ncol = 2) -> samples
+colnames(samples) <- c("A+", "A-")
+rownames(samples) <- c("B+", "B-")
+samples
+```
+
+Randsummen stellen jeweils die Summe der Häufigkeiten in jeder Zeile und Spalte, also die Einzelwahrscheinlichkeiten $Pr(A_+), Pr(A_-), Pr(B_+), Pr(B_-)$.
+
+Die Randsummen können in R automatisch ermittelt werden:
+
+```{r}
+addmargins(samples)
+```
+
+Ausgedrückt als relative Häufigkeiten:
+
+```{r}
+addmargins(samples) / sum(samples)
+```
+
+### Sensitivität
+
+Sensitivität ist die Wahrscheinlichkeit, dass ein Test eine tatsächlich vorliegende Merkmalsausprägung auch erfasst.
+
+Im Beispiel: dass bei vorliegender Schwangerschaft ($B_+$), der Test positiv ausfällt ($A_+$)
+
+$$Pr(A_+|B_+) = \frac{Pr(A_+ \cap B_+)}{Pr(B_+)}$$
+
+$$Pr(A_+|B_+) = \frac{0.208}{0.227} \approx 0.916 $$
+
+### Spezifität
+
+*(engl.: specificity)*
+
+Spezifität ist die Wahrscheinlichkeit, dass eine nicht vorhandene Ausprägung zu einem negativen Testergebnis führt.
+
+Im Beispiel: dass bei nicht vorhandener Schwangerschaft der Test negativ ausfällt
+
+$$Pr(A_-|B_-) = \frac{Pr(A_- \cap B_-)}{Pr(B_-)}$$
+
+$$Pr(A_-|B_-) = \frac{0.762}{0.773} \approx 0.987 $$
+
+**Sensitivität und Spezifität geben NICHT an, ob eine positiv ode negativ ausgefallener Test zuverlässig ist. Dafür sind [PPV](#positiver-vorhersagewert) und [NPV](#negativer-vorhersagewert) relevant.**
+
+### Positiver Vorhersagewert
+
+*(engl.: positive preditive value, PPV)*
+
+Der PPV gibt an wie wahrscheinlich eine Merkmalsausprägung bei einem positiven Test vorliegt.
+
+Im Beispiel: wie wahrscheinlich jemand bei einem positiver Schwangerschaftstest tatsächlich schwanger ist.
+
+$$Pr(B_+|A_+) = \frac{Pr(B_+ \cap A_+)}{Pr(A_+)}$$
+
+$$Pr(B_+|A_+) = \frac{0.762}{0.781} \approx 0.976 $$
+
+### Negativer Vorhersagewert
+
+*(engl.: negative predictive value, NPV)*
+
+Der NPV gibt an wie wahrscheinlich bei einem negativen Test die getestete Merkmalsausprägung auch tatsächlich nicht vorliegt.
+
+Im Beispiel: wie wahrscheinlich eine negativer Schwangerschaftstest bedeutet, dass die getestete Person wirklich nicht schwanger ist.
+
+$$Pr(B_-|A_-) = \frac{Pr(B_- \cap A_-)}{Pr(A_-)}$$
+
+$$Pr(A_-|B_-) = \frac{0.762}{0.773} \approx 0.987 $$
+
+### Weitere Test-Charakteristiken
+
+- Falsch-Positiv-Rate: $1 - Spezifität$, weil $Pr(B_-|A_+) + Pr(B_+|A_+) = 1$
+- Falsch-Negativ-Rate: $1 - Sensitivität$, weil $Pr(B_+|A_-) + Pr(B_-|A_-) = 1$
+
+# Korrelation
+
+Korrelation beschreibt den Zusammenhang zwischen zwei Merkmalen, also wie stark eine Merkmal sich ändert, wenn ein damit korreliertes geändert wird.
+
+Korrelationskoeffizienten sind normierte Maße für die beobachteten Zusammenhänge zwischen Variablen. Sie treffen jedoch keine Aussage über kausale Zusammenhänge.
+
+Beispiel: Alter von Kindern und Körpergröße
+
+Die meisten Kinder werden mit zunehmendem Alter größer. Alter und Größe sind positiv korreliert.
+
+Es existieren verschiedene Korrelationsmaße für verschiedene Einsatzfälle.
+
+| Korrelationsmaß                                  | Skalenniveau        |
+|--------------------------------------------------|---------------------|
+| Matthew-Phi<br>Chancenverhältnis                 | Nominal (dichotom ) |
+| Chi-Quadrat<br>Cramer-V                          | Nominal (polytom)   |
+| Spearman-Rho<br>Kendall-Tau                      | mindestens Ordinal  |
+| Bravais-Pearson<br>(Produkt-Moment-Korrelation)  | minestens Intervall |
+
+
+## Matthew-Korrelationskoeffizient
+
+- geeignet für nominal-skalierte Merkmale mit je zwei Ausprägungen (dichotom).
+- Wertebereich: $[-1, +1]$
+- bei $\phi = 0$ besteht kein Zusammenhang zwischen den Merkmalen
+
+|       | $A_1$     | $A_2$     |
+|-------|-----------|-----------|
+| $B_1$ | $n_{1,1}$ | $n_{1,2}$ |
+| $B_2$ | $n_{2,1}$ | $n_{2,2}$ |
+
+$$\phi = \frac{n_{1,1} \cdot n_{2,2} - n_{1,2} \cdot n_{2,1}}{\sqrt{(n_{1,1} + n_{2,1}) \cdot (n_{1,2} + n_{2,2}) \cdot (n_{1,2} + n_{2,1}) \cdot (n_{2,1} + n_{2,2})}}$$
+
+## Chancenverhältnis (Odds Ratio)
+
+- geeignet für nominal-skalierte Merkmale mit je zwei Ausprägungen (dichotom)
+- Wertebereich: $[0, +\infty]$
+- bei $OR = 1$ besteht kein Zusammenhang zwischen den Merkmalen
+
+Eine Chance ist das Verhältnis zweier Häufigkeiten 
+
+$$OR = \frac{\frac{n_{1,1}}{n_{1,2}}}{\frac{n_{2,1}}{n_{2,2}}} = \frac{n_{1,1} \cdot {n_{2,2}}}{n_{1,2} \cdot n_{2,1}}$$
+
+## Chi-Quadrat-Koeffizient
+
+- geeignet für nominal-skalierte Merkmale mit mehreren Ausprägungen (polytom)
+- Wertebereich: $[0, +\infty]$
+- bei $\chi^2 = 0$ besteht kein Zusammenhang zwischen den Merkmalen
+- $\chi^2$ gibt keine Auskunft über die Richtung des Zusammenhangs
+- abhängig von der Stichprobengröße
+
+$$\chi^2 = \sum_{i=1}^k\sum_{j = 1}^l\frac{(n_{ij} - e_{ij})^2}{e_{ij}}$$
+$e_{ij}$ ist die erwartete Häufigkeit unter der Annahme, dass kein Zusammenhang besteht:
+
+$$e_{ij} = \frac{n_i \cdot n_j}{n}$$
+
+## Craver-V-Keoffizient
+
+- abgeleitet von $\chi^2$
+- geeignet für nominal-skalierte Merkmale mit mehreren Ausprägungen (polytom)
+- Wertebereich: $[0,1]$
+- bei $V = 0$ besteht kein Zusammenhang zwischen den Merkmalen
+- $V$ gibt keine Auskunft über die Richtung des Zusammenhangs
+- unabhängig von der Stichprobengröße
+
+$$V = \sqrt{\frac{\chi^2}{n \cdot (s-1)}}$$
+
+$s$ ist die kleinere Anzahl an Kategorien (Ausprägungen) der Variablen. Wenn z.B. eine Variable 5 Kategorien aufweist, die andere jedoch nur 3, so ist $s=3$.
+
+## Spearman-Rho-Korrelationskoeffizient
+
+- geeignet für ordinal-skalierte Variablen mit Rangbindung, bzw. rang-transformierte metrische Variablen
+- Wertebereich: [-1, +1]
+- bei $\rho = 0$ besteht kein Zusammenhang
+
+$$\rho = \frac{1}{n-1}\sum_{i=1}^{n}{\frac{(r_{i,1} - \overline{x}_1)}{s_1} \cdot \frac{(r_{i,2} - \overline{x}_2)}{s_2}}$$
+- $r_{i,1}$, $r_{i,2}$: rang-transformierte Ausprägungen von Merkmal 1 und 2
+- $\overline{x}_1$, $\overline{x}_2$: arithmetische Mittel der Rangreihe 1 und 2
+- $s_1$, $s_2$: Stichproben-Standardabweichungen der Rangreihen 1 und 2
+- $n$: Anzahl der Zeilen (Stichprobengröße)
+
+$\rho$ ist vereinfacht die mittlere Produktsumme der [z-transformierten](#z-werte-z-standardisierung) Rangwerte:
+
+$$\rho = \frac{1}{n-1}\sum_{i=1}^{n}{z_1 \cdot z_2}$$
+
+
+## Kendall-Tau-Korrelationskoeffzient
+
+- geeignet für ordinal-skalierte Variablen ohne Rangbindung
+- ohne Modifikation nicht geeignet, wenn geteilte Ränge vorliegen
+- Wertebereich: [-1, +1]
+- bei $\tau = 0$ besteht kein Zusammenhang
+
+$$\tau = \frac{n_K - n_D}{n_k + n_D}$$
+- $n_K$: Anzahl der konkordanten Paarvergleiche
+- $n_D$: Anzahl der Diskordanten Paarvergleiche
+
+**Konkordanz/Diskordanz:**
+
+Eine Tabelle mit beiden ordinalen Merkmalen (A und B) wird nach Merkmal A aufsteigend sortiert:
+
+```{r echo=FALSE}
+set.seed(1)
+
+tibble(
+  A = floor(runif(n = 10, min = 21, max = 80)),
+  B = A + floor(runif(n = 10, min = -20, max = 20)),
+) %>% arrange(A) -> samples
+
+knitr::kable(samples)
+```
+
+Anschließend wird Zeilenweise verglichen, wie viele nachfolgende Werte in Spalte B größer sind als B in der aktuellen Zeile. Z.B in Zeile 1 ist $B=35$ und 7 der darauf folgenden Werte in Spalte B (42, 61, 53, 78, 69, 73, 84) sind größer, diese sind konkordante Paare. Paare, bei denen der weiter unten stehende Wert kleiner ist, sind diskordant. Beide werden ausgezählt.
+
+```{r echo=FALSE}
+con <- c()
+dis <- c()
+
+b <- samples$B
+l <- length(b)
+
+for (i in 1:(l-1)) {
+  c <- 0
+  d <- 0
+  for (j in (i+1):l) {
+    if (b[[j]] > b[[i]]) {
+      c <- c + 1
+    } else {
+      d <- d + 1
+    }
+  }
+  con <- append(con, c)
+  dis <- append(dis, d)
+}
+
+samples %>%
+  add_column(konkordant = append(con, 0)) %>%
+  add_column(diskordant = append(dis ,0)) -> samples
+
+knitr::kable(samples)
+```
+
+Dann werden die Anzahlen der konkordanten und diskordanten Paare summiert:
+
+```{r echo=FALSE}
+list(
+  n_k = sum(samples$konkordant),
+  n_d = sum(samples$diskordant)
+)
+```
+
+## Kovarianz
+
+- geeignet für metrische Variablen
+- Wertebereich: $[0, +\infty]$
+- **keine Korrelation**
+- empfindlich für Extremwerte
+
+$$COV = \frac{1}{n-1} \cdot \sum_{i=1}^n{(x_{i,1} - \overline{x}_1)\cdot((x_{i,2} - \overline{x}_2)}$$
+
+Analog zur [Stichprobenvarianz](#stichprobenvarianz). Diese ist die Kovarianz eines Merkmals mit sich selbst.
+
+## Bravias-Pearson-Korrealationskoeffzient
+
+- geeignet für metrische Variablen
+- abgeleitet aus der Kovarianz
+- Wertebereich: $[-1, +1]$
+
+$$r = \frac{COV}{s_1 \cdot s_2} = \frac{1}{n-1} \cdot \sum_{i=1}^n{\frac{(x_{i,1} - \overline{x}_1)}{s_1} \cdot \frac{(x_{i,2} - \overline{x}_2)}{s_2}}$$
+
+Analog zu [Spearman-$\rho$](#spearman-rho-korrelationskoeffizient) ist auch $r$ die mittlere Produktsumme der Z-Werte der beiden Merkmale:
+
+$$r = \frac{1}{n-1}\sum_{i=1}^{n}{z_1 \cdot z_2}$$
 
 # Modellbildung
 
