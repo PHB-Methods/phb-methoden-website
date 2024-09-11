@@ -63,10 +63,10 @@
 
   <meta name="author" content="Esther Weidauer">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2024-09-10T00:52:09+00:00">
+  <meta property="og:updated_time" content="2024-09-11T23:48:11+00:00">
   <meta property="article:published_time" content="">
-  <meta property="article:modified_time" content="2024-09-10T00:52:09+00:00">
-  <meta name="revised" content="2024-09-10T00:52:09+00:00">
+  <meta property="article:modified_time" content="2024-09-11T23:48:11+00:00">
+  <meta name="revised" content="2024-09-11T23:48:11+00:00">
 
 
 <script type="application/ld+json">
@@ -76,7 +76,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "B.Sc. Psychologie Statisik I" },
       "datePublished": "",
-      "dateModified": "2024-09-10T00:52:09+00:00",
+      "dateModified": "2024-09-11T23:48:11+00:00",
     
     "name": "B.Sc. Psychologie Statisik I",
     "description": "Psychologische Methodenlehre. Statistik und Forschungsmethoden an der Psychologischen Hochschule Berlin",
@@ -510,7 +510,7 @@
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>September 10, 2024</span>
+      <span>September 11, 2024</span>
     </span>
   
 </div>
@@ -614,7 +614,37 @@ Z-Standardisierung</a></li>
 Normalisierung</a></li>
 </ul>
 </li>
-<li><a href="#korrelation" id="toc-korrelation">Korrelation</a></li>
+<li>
+<a href="#bedingte-wahrtscheinlichkeit" id="toc-bedingte-wahrtscheinlichkeit">Bedingte Wahrtscheinlichkeit</a>
+<ul>
+<li><a href="#bayes-theorem" id="toc-bayes-theorem">Bayes-Theorem</a></li>
+<li>
+<a href="#kontingenztabellen" id="toc-kontingenztabellen">Kontingenztabellen</a>
+<ul>
+<li><a href="#sensitivit%C3%A4t" id="toc-sensitivität">Sensitivität</a></li>
+<li><a href="#spezifit%C3%A4t" id="toc-spezifität">Spezifität</a></li>
+<li><a href="#positiver-vorhersagewert" id="toc-positiver-vorhersagewert">Positiver Vorhersagewert</a></li>
+<li><a href="#negativer-vorhersagewert" id="toc-negativer-vorhersagewert">Negativer Vorhersagewert</a></li>
+<li><a href="#weitere-test-charakteristiken" id="toc-weitere-test-charakteristiken">Weitere
+Test-Charakteristiken</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#korrelation" id="toc-korrelation">Korrelation</a>
+<ul>
+<li><a href="#matthew-korrelationskoeffizient" id="toc-matthew-korrelationskoeffizient">Matthew-Korrelationskoeffizient</a></li>
+<li><a href="#chancenverh%C3%A4ltnis-odds-ratio" id="toc-chancenverhältnis-odds-ratio">Chancenverhältnis (Odds
+Ratio)</a></li>
+<li><a href="#chi-quadrat-koeffizient" id="toc-chi-quadrat-koeffizient">Chi-Quadrat-Koeffizient</a></li>
+<li><a href="#craver-v-keoffizient" id="toc-craver-v-keoffizient">Craver-V-Keoffizient</a></li>
+<li><a href="#spearman-rho-korrelationskoeffizient" id="toc-spearman-rho-korrelationskoeffizient">Spearman-Rho-Korrelationskoeffizient</a></li>
+<li><a href="#kendall-tau-korrelationskoeffzient" id="toc-kendall-tau-korrelationskoeffzient">Kendall-Tau-Korrelationskoeffzient</a></li>
+<li><a href="#kovarianz" id="toc-kovarianz">Kovarianz</a></li>
+<li><a href="#bravias-pearson-korrealationskoeffzient" id="toc-bravias-pearson-korrealationskoeffzient">Bravias-Pearson-Korrealationskoeffzient</a></li>
+</ul>
+</li>
 <li><a href="#modellbildung" id="toc-modellbildung">Modellbildung</a></li>
 </ul>
 </div>
@@ -1375,9 +1405,466 @@ bilden</strong></p>
 <p>Nach der Rang-basierten Normalisierung sind <span class="math inline">\(p\)</span> und <span class="math inline">\(z\)</span> normalverteilt.</p>
 </div>
 </div>
+<div id="bedingte-wahrtscheinlichkeit" class="section level1">
+<h1>Bedingte Wahrtscheinlichkeit</h1>
+<p>Bedingte Wahrscheinlichkeit <span class="math inline">\(Pr(B|A)\)</span> ist die Wahrscheinlichkeit, dass
+A und B gemeinsam auftreten (<span class="math inline">\(A \cap
+B\)</span>) unter der Bedingung, dass A bereits eingetreten ist, z.B.
+die Wahrscheinlichkeit, dass eine Person tatsächlich schwanger ist (B),
+wenn ein Schwangerschaftstest positiv ausgefallen ist (A).</p>
+<p><span class="math display">\[Pr(A|B) = \frac{Pr(A \cap
+B)}{Pr(A)}\]</span></p>
+<div id="bayes-theorem" class="section level2">
+<h2>Bayes-Theorem</h2>
+<p>Das Bayes-Theorem stellt den Zusammenhang zwischen den bedingten
+Wahrscheinlichkeiten <span class="math inline">\(Pr(B|A)\)</span> und
+<span class="math inline">\(Pr(A|B)\)</span> her:</p>
+<p><span class="math display">\[Pr(A|B) = \frac{Pr(B|A) \cdot
+Pr(A)}{Pr(B)}\]</span></p>
+</div>
+<div id="kontingenztabellen" class="section level2">
+<h2>Kontingenztabellen</h2>
+<p>Kontingenztabellen sind ein Mittel, um Bedingte Wahrscheinlichkeiten
+zu untersuchen. Die Tabelle enthält alle möglichen Kombinationen zweier
+diskreter Variablen und deren Häufigkeiten.</p>
+<p>Beispiel Schwangerschaftstest:</p>
+<ul>
+<li><p><span class="math inline">\(A_+\)</span>: Test positiv</p></li>
+<li><p><span class="math inline">\(A_-\)</span>: Test negativ</p></li>
+<li><p><span class="math inline">\(B_+\)</span>: Schwangerschaft liegt
+vor</p></li>
+<li><p><span class="math inline">\(B_-\)</span>: Schwangerschaft liegt
+nicht vor</p></li>
+<li><p><span class="math inline">\(A_+ \cap B_-\)</span>:
+falsch-positiver Test</p></li>
+<li><p><span class="math inline">\(A_- \cap B_-\)</span>:
+falsch-negativer Test</p></li>
+<li><p><span class="math inline">\(A_- \cap B_-\)</span>:
+richtig-negativer Test</p></li>
+<li><p><span class="math inline">\(A_+ \cap B_+\)</span>:
+richtig-positiver Test</p></li>
+</ul>
+<p>(fiktive Daten)</p>
+<pre><code>##     A+  A-
+## B+ 208  19
+## B-  11 762</code></pre>
+<p>Randsummen stellen jeweils die Summe der Häufigkeiten in jeder Zeile
+und Spalte, also die Einzelwahrscheinlichkeiten <span class="math inline">\(Pr(A_+), Pr(A_-), Pr(B_+), Pr(B_-)\)</span>.</p>
+<p>Die Randsummen können in R automatisch ermittelt werden:</p>
+<pre class="r"><code>addmargins(samples)</code></pre>
+<pre><code>##      A+  A-  Sum
+## B+  208  19  227
+## B-   11 762  773
+## Sum 219 781 1000</code></pre>
+<p>Ausgedrückt als relative Häufigkeiten:</p>
+<pre class="r"><code>addmargins(samples) / sum(samples)</code></pre>
+<pre><code>##        A+    A-   Sum
+## B+  0.208 0.019 0.227
+## B-  0.011 0.762 0.773
+## Sum 0.219 0.781 1.000</code></pre>
+<div id="sensitivität" class="section level3">
+<h3>Sensitivität</h3>
+<p>Sensitivität ist die Wahrscheinlichkeit, dass ein Test eine
+tatsächlich vorliegende Merkmalsausprägung auch erfasst.</p>
+<p>Im Beispiel: dass bei vorliegender Schwangerschaft (<span class="math inline">\(B_+\)</span>), der Test positiv ausfällt (<span class="math inline">\(A_+\)</span>)</p>
+<p><span class="math display">\[Pr(A_+|B_+) = \frac{Pr(A_+ \cap
+B_+)}{Pr(B_+)}\]</span></p>
+<p><span class="math display">\[Pr(A_+|B_+) = \frac{0.208}{0.227}
+\approx 0.916 \]</span></p>
+</div>
+<div id="spezifität" class="section level3">
+<h3>Spezifität</h3>
+<p><em>(engl.: specificity)</em></p>
+<p>Spezifität ist die Wahrscheinlichkeit, dass eine nicht vorhandene
+Ausprägung zu einem negativen Testergebnis führt.</p>
+<p>Im Beispiel: dass bei nicht vorhandener Schwangerschaft der Test
+negativ ausfällt</p>
+<p><span class="math display">\[Pr(A_-|B_-) = \frac{Pr(A_- \cap
+B_-)}{Pr(B_-)}\]</span></p>
+<p><span class="math display">\[Pr(A_-|B_-) = \frac{0.762}{0.773}
+\approx 0.987 \]</span></p>
+<p><strong>Sensitivität und Spezifität geben NICHT an, ob eine positiv
+ode negativ ausgefallener Test zuverlässig ist. Dafür sind <a href="#positiver-vorhersagewert">PPV</a> und <a href="#negativer-vorhersagewert">NPV</a> relevant.</strong></p>
+</div>
+<div id="positiver-vorhersagewert" class="section level3">
+<h3>Positiver Vorhersagewert</h3>
+<p><em>(engl.: positive preditive value, PPV)</em></p>
+<p>Der PPV gibt an wie wahrscheinlich eine Merkmalsausprägung bei einem
+positiven Test vorliegt.</p>
+<p>Im Beispiel: wie wahrscheinlich jemand bei einem positiver
+Schwangerschaftstest tatsächlich schwanger ist.</p>
+<p><span class="math display">\[Pr(B_+|A_+) = \frac{Pr(B_+ \cap
+A_+)}{Pr(A_+)}\]</span></p>
+<p><span class="math display">\[Pr(B_+|A_+) = \frac{0.762}{0.781}
+\approx 0.976 \]</span></p>
+</div>
+<div id="negativer-vorhersagewert" class="section level3">
+<h3>Negativer Vorhersagewert</h3>
+<p><em>(engl.: negative predictive value, NPV)</em></p>
+<p>Der NPV gibt an wie wahrscheinlich bei einem negativen Test die
+getestete Merkmalsausprägung auch tatsächlich nicht vorliegt.</p>
+<p>Im Beispiel: wie wahrscheinlich eine negativer Schwangerschaftstest
+bedeutet, dass die getestete Person wirklich nicht schwanger ist.</p>
+<p><span class="math display">\[Pr(B_-|A_-) = \frac{Pr(B_- \cap
+A_-)}{Pr(A_-)}\]</span></p>
+<p><span class="math display">\[Pr(A_-|B_-) = \frac{0.762}{0.773}
+\approx 0.987 \]</span></p>
+</div>
+<div id="weitere-test-charakteristiken" class="section level3">
+<h3>Weitere Test-Charakteristiken</h3>
+<ul>
+<li>Falsch-Positiv-Rate: <span class="math inline">\(1 -
+Spezifität\)</span>, weil <span class="math inline">\(Pr(B_-|A_+) +
+Pr(B_+|A_+) = 1\)</span>
+</li>
+<li>Falsch-Negativ-Rate: <span class="math inline">\(1 -
+Sensitivität\)</span>, weil <span class="math inline">\(Pr(B_+|A_-) +
+Pr(B_-|A_-) = 1\)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="korrelation" class="section level1">
 <h1>Korrelation</h1>
-<p><strong>TODO</strong></p>
+<p>Korrelation beschreibt den Zusammenhang zwischen zwei Merkmalen, also
+wie stark eine Merkmal sich ändert, wenn ein damit korreliertes geändert
+wird.</p>
+<p>Korrelationskoeffizienten sind normierte Maße für die beobachteten
+Zusammenhänge zwischen Variablen. Sie treffen jedoch keine Aussage über
+kausale Zusammenhänge.</p>
+<p>Beispiel: Alter von Kindern und Körpergröße</p>
+<p>Die meisten Kinder werden mit zunehmendem Alter größer. Alter und
+Größe sind positiv korreliert.</p>
+<p>Es existieren verschiedene Korrelationsmaße für verschiedene
+Einsatzfälle.</p>
+<table>
+<colgroup>
+<col width="70%">
+<col width="29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Korrelationsmaß</th>
+<th>Skalenniveau</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Matthew-Phi<br>Chancenverhältnis</td>
+<td>Nominal (dichotom )</td>
+</tr>
+<tr class="even">
+<td>Chi-Quadrat<br>Cramer-V</td>
+<td>Nominal (polytom)</td>
+</tr>
+<tr class="odd">
+<td>Spearman-Rho<br>Kendall-Tau</td>
+<td>mindestens Ordinal</td>
+</tr>
+<tr class="even">
+<td>Bravais-Pearson<br>(Produkt-Moment-Korrelation)</td>
+<td>minestens Intervall</td>
+</tr>
+</tbody>
+</table>
+<div id="matthew-korrelationskoeffizient" class="section level2">
+<h2>Matthew-Korrelationskoeffizient</h2>
+<ul>
+<li>geeignet für nominal-skalierte Merkmale mit je zwei Ausprägungen
+(dichotom).</li>
+<li>Wertebereich: <span class="math inline">\([-1, +1]\)</span>
+</li>
+<li>bei <span class="math inline">\(\phi = 0\)</span> besteht kein
+Zusammenhang zwischen den Merkmalen</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><span class="math inline">\(A_1\)</span></th>
+<th><span class="math inline">\(A_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(B_1\)</span></td>
+<td><span class="math inline">\(n_{1,1}\)</span></td>
+<td><span class="math inline">\(n_{1,2}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(B_2\)</span></td>
+<td><span class="math inline">\(n_{2,1}\)</span></td>
+<td><span class="math inline">\(n_{2,2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\phi = \frac{n_{1,1} \cdot n_{2,2} -
+n_{1,2} \cdot n_{2,1}}{\sqrt{(n_{1,1} + n_{2,1}) \cdot (n_{1,2} +
+n_{2,2}) \cdot (n_{1,2} + n_{2,1}) \cdot (n_{2,1} +
+n_{2,2})}}\]</span></p>
+</div>
+<div id="chancenverhältnis-odds-ratio" class="section level2">
+<h2>Chancenverhältnis (Odds Ratio)</h2>
+<ul>
+<li>geeignet für nominal-skalierte Merkmale mit je zwei Ausprägungen
+(dichotom)</li>
+<li>Wertebereich: <span class="math inline">\([0, +\infty]\)</span>
+</li>
+<li>bei <span class="math inline">\(OR = 1\)</span> besteht kein
+Zusammenhang zwischen den Merkmalen</li>
+</ul>
+<p>Eine Chance ist das Verhältnis zweier Häufigkeiten</p>
+<p><span class="math display">\[OR =
+\frac{\frac{n_{1,1}}{n_{1,2}}}{\frac{n_{2,1}}{n_{2,2}}} = \frac{n_{1,1}
+\cdot {n_{2,2}}}{n_{1,2} \cdot n_{2,1}}\]</span></p>
+</div>
+<div id="chi-quadrat-koeffizient" class="section level2">
+<h2>Chi-Quadrat-Koeffizient</h2>
+<ul>
+<li>geeignet für nominal-skalierte Merkmale mit mehreren Ausprägungen
+(polytom)</li>
+<li>Wertebereich: <span class="math inline">\([0, +\infty]\)</span>
+</li>
+<li>bei <span class="math inline">\(\chi^2 = 0\)</span> besteht kein
+Zusammenhang zwischen den Merkmalen</li>
+<li>
+<span class="math inline">\(\chi^2\)</span> gibt keine Auskunft über
+die Richtung des Zusammenhangs</li>
+<li>abhängig von der Stichprobengröße</li>
+</ul>
+<p><span class="math display">\[\chi^2 = \sum_{i=1}^k\sum_{j =
+1}^l\frac{(n_{ij} - e_{ij})^2}{e_{ij}}\]</span> <span class="math inline">\(e_{ij}\)</span> ist die erwartete Häufigkeit unter
+der Annahme, dass kein Zusammenhang besteht:</p>
+<p><span class="math display">\[e_{ij} = \frac{n_i \cdot
+n_j}{n}\]</span></p>
+</div>
+<div id="craver-v-keoffizient" class="section level2">
+<h2>Craver-V-Keoffizient</h2>
+<ul>
+<li>abgeleitet von <span class="math inline">\(\chi^2\)</span>
+</li>
+<li>geeignet für nominal-skalierte Merkmale mit mehreren Ausprägungen
+(polytom)</li>
+<li>Wertebereich: <span class="math inline">\([0,1]\)</span>
+</li>
+<li>bei <span class="math inline">\(V = 0\)</span> besteht kein
+Zusammenhang zwischen den Merkmalen</li>
+<li>
+<span class="math inline">\(V\)</span> gibt keine Auskunft über die
+Richtung des Zusammenhangs</li>
+<li>unabhängig von der Stichprobengröße</li>
+</ul>
+<p><span class="math display">\[V = \sqrt{\frac{\chi^2}{n \cdot
+(s-1)}}\]</span></p>
+<p><span class="math inline">\(s\)</span> ist die kleinere Anzahl an
+Kategorien (Ausprägungen) der Variablen. Wenn z.B. eine Variable 5
+Kategorien aufweist, die andere jedoch nur 3, so ist <span class="math inline">\(s=3\)</span>.</p>
+</div>
+<div id="spearman-rho-korrelationskoeffizient" class="section level2">
+<h2>Spearman-Rho-Korrelationskoeffizient</h2>
+<ul>
+<li>geeignet für ordinal-skalierte Variablen mit Rangbindung, bzw.
+rang-transformierte metrische Variablen</li>
+<li>Wertebereich: [-1, +1]</li>
+<li>bei <span class="math inline">\(\rho = 0\)</span> besteht kein
+Zusammenhang</li>
+</ul>
+<p><span class="math display">\[\rho =
+\frac{1}{n-1}\sum_{i=1}^{n}{\frac{(r_{i,1} - \overline{x}_1)}{s_1} \cdot
+\frac{(r_{i,2} - \overline{x}_2)}{s_2}}\]</span> - <span class="math inline">\(r_{i,1}\)</span>, <span class="math inline">\(r_{i,2}\)</span>: rang-transformierte Ausprägungen
+von Merkmal 1 und 2 - <span class="math inline">\(\overline{x}_1\)</span>, <span class="math inline">\(\overline{x}_2\)</span>: arithmetische Mittel der
+Rangreihe 1 und 2 - <span class="math inline">\(s_1\)</span>, <span class="math inline">\(s_2\)</span>: Stichproben-Standardabweichungen der
+Rangreihen 1 und 2 - <span class="math inline">\(n\)</span>: Anzahl der
+Zeilen (Stichprobengröße)</p>
+<p><span class="math inline">\(\rho\)</span> ist vereinfacht die
+mittlere Produktsumme der <a href="#z-werte-z-standardisierung">z-transformierten</a> Rangwerte:</p>
+<p><span class="math display">\[\rho = \frac{1}{n-1}\sum_{i=1}^{n}{z_1
+\cdot z_2}\]</span></p>
+</div>
+<div id="kendall-tau-korrelationskoeffzient" class="section level2">
+<h2>Kendall-Tau-Korrelationskoeffzient</h2>
+<ul>
+<li>geeignet für ordinal-skalierte Variablen ohne Rangbindung</li>
+<li>ohne Modifikation nicht geeignet, wenn geteilte Ränge vorliegen</li>
+<li>Wertebereich: [-1, +1]</li>
+<li>bei <span class="math inline">\(\tau = 0\)</span> besteht kein
+Zusammenhang</li>
+</ul>
+<p><span class="math display">\[\tau = \frac{n_K - n_D}{n_k +
+n_D}\]</span> - <span class="math inline">\(n_K\)</span>: Anzahl der
+konkordanten Paarvergleiche - <span class="math inline">\(n_D\)</span>:
+Anzahl der Diskordanten Paarvergleiche</p>
+<p><strong>Konkordanz/Diskordanz:</strong></p>
+<p>Eine Tabelle mit beiden ordinalen Merkmalen (A und B) wird nach
+Merkmal A aufsteigend sortiert:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">A</th>
+<th align="right">B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">24</td>
+<td align="right">35</td>
+</tr>
+<tr class="even">
+<td align="right">32</td>
+<td align="right">42</td>
+</tr>
+<tr class="odd">
+<td align="right">36</td>
+<td align="right">24</td>
+</tr>
+<tr class="even">
+<td align="right">42</td>
+<td align="right">29</td>
+</tr>
+<tr class="odd">
+<td align="right">54</td>
+<td align="right">61</td>
+</tr>
+<tr class="even">
+<td align="right">58</td>
+<td align="right">53</td>
+</tr>
+<tr class="odd">
+<td align="right">59</td>
+<td align="right">78</td>
+</tr>
+<tr class="even">
+<td align="right">74</td>
+<td align="right">69</td>
+</tr>
+<tr class="odd">
+<td align="right">74</td>
+<td align="right">73</td>
+</tr>
+<tr class="even">
+<td align="right">76</td>
+<td align="right">84</td>
+</tr>
+</tbody>
+</table>
+<p>Anschließend wird Zeilenweise verglichen, wie viele nachfolgende
+Werte in Spalte B größer sind als B in der aktuellen Zeile. Z.B in Zeile
+1 ist <span class="math inline">\(B=35\)</span> und 7 der darauf
+folgenden Werte in Spalte B (42, 61, 53, 78, 69, 73, 84) sind größer,
+diese sind konkordante Paare. Paare, bei denen der weiter unten stehende
+Wert kleiner ist, sind diskordant. Beide werden ausgezählt.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">A</th>
+<th align="right">B</th>
+<th align="right">konkordant</th>
+<th align="right">diskordant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">24</td>
+<td align="right">35</td>
+<td align="right">7</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">32</td>
+<td align="right">42</td>
+<td align="right">6</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">36</td>
+<td align="right">24</td>
+<td align="right">7</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">42</td>
+<td align="right">29</td>
+<td align="right">6</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">54</td>
+<td align="right">61</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">58</td>
+<td align="right">53</td>
+<td align="right">4</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">59</td>
+<td align="right">78</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">74</td>
+<td align="right">69</td>
+<td align="right">2</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">74</td>
+<td align="right">73</td>
+<td align="right">1</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">76</td>
+<td align="right">84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>Dann werden die Anzahlen der konkordanten und diskordanten Paare
+summiert:</p>
+<pre><code>## $n_k
+## [1] 38
+## 
+## $n_d
+## [1] 7</code></pre>
+</div>
+<div id="kovarianz" class="section level2">
+<h2>Kovarianz</h2>
+<ul>
+<li>geeignet für metrische Variablen</li>
+<li>Wertebereich: <span class="math inline">\([0, +\infty]\)</span>
+</li>
+<li><strong>keine Korrelation</strong></li>
+<li>empfindlich für Extremwerte</li>
+</ul>
+<p><span class="math display">\[COV = \frac{1}{n-1} \cdot
+\sum_{i=1}^n{(x_{i,1} - \overline{x}_1)\cdot((x_{i,2} -
+\overline{x}_2)}\]</span></p>
+<p>Analog zur <a href="#stichprobenvarianz">Stichprobenvarianz</a>.
+Diese ist die Kovarianz eines Merkmals mit sich selbst.</p>
+</div>
+<div id="bravias-pearson-korrealationskoeffzient" class="section level2">
+<h2>Bravias-Pearson-Korrealationskoeffzient</h2>
+<ul>
+<li>geeignet für metrische Variablen</li>
+<li>abgeleitet aus der Kovarianz</li>
+<li>Wertebereich: <span class="math inline">\([-1, +1]\)</span>
+</li>
+</ul>
+<p><span class="math display">\[r = \frac{COV}{s_1 \cdot s_2} =
+\frac{1}{n-1} \cdot \sum_{i=1}^n{\frac{(x_{i,1} - \overline{x}_1)}{s_1}
+\cdot \frac{(x_{i,2} - \overline{x}_2)}{s_2}}\]</span></p>
+<p>Analog zu <a href="#spearman-rho-korrelationskoeffizient">Spearman-<span class="math inline">\(\rho\)</span></a> ist auch <span class="math inline">\(r\)</span> die mittlere Produktsumme der Z-Werte
+der beiden Merkmale:</p>
+<p><span class="math display">\[r = \frac{1}{n-1}\sum_{i=1}^{n}{z_1
+\cdot z_2}\]</span></p>
+</div>
 </div>
 <div id="modellbildung" class="section level1">
 <h1>Modellbildung</h1>
