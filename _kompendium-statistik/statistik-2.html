@@ -931,7 +931,9 @@ class="math inline">\(n = 20\)</span></p>
 ##  [7] -0.42856703  0.20527955  0.49423283  2.90465339  1.26359346 -0.29900925
 ## [13] -0.64765701  0.21053843  0.20078488  0.08848917  0.75222345 -0.39192113
 ## [19]  0.93568330 -0.73753842</code></pre>
-<pre class="r"><code>z.test(samples, mu = 0, sigma.x = 1, conf.level = 0.95, alternative = &quot;greater&quot;)</code></pre>
+<pre class="r"><code># Paket: BSDA
+
+z.test(samples, mu = 0, sigma.x = 1, conf.level = 0.95, alternative = &quot;greater&quot;)</code></pre>
 <pre><code>## 
 ##  One-sample z-Test
 ## 
@@ -1205,7 +1207,9 @@ t.result</code></pre>
 ##  118.1253  101.1334</code></pre>
 <p>Bestimmung der Konfidenzintervalle des Effekts (Cohen’s <span
 class="math inline">\(d\)</span>):</p>
-<pre class="r"><code>ci.smd(t.result$statistic,
+<pre class="r"><code># Paket: MBESS
+
+ci.smd(t.result$statistic,
        n.1 = length(samples1),
        n.2 = length(samples2),
        conf.level = 0.95)</code></pre>
@@ -1242,7 +1246,7 @@ class="math inline">\(\alpha\)</span>-Niveau und der minimale als
 signifikant akzeptierte Effekt bekannt sein.</p>
 <div id="stichprobenplanung-in-r" class="section level3">
 <h3>Stichprobenplanung in R</h3>
-<pre class="r"><code>library(pwr)
+<pre class="r"><code># Paket: pwr
 
 # post-hoc Power-Analyse für einseitigen Gauss-Test/Z-Test
 # - Stichproben-Signifikanztest
@@ -1292,10 +1296,10 @@ tibble(
   power5 = power(n, d = 0.7, alpha = 0.05),
   power1 = power(n, d = 0.7, alpha = 0.01),
   ) %&gt;% ggplot(aes(x = n, y = power)) +
-  geom_col(aes(y = power5), fill = &quot;skyblue3&quot;) +
-  geom_col(aes(y = power1), fill = &quot;hotpink3&quot;) +
-  annotate(&quot;text&quot;, label = &quot;alpha[1] == 0.05&quot;, parse = TRUE, x = 2, y = 0.95, color = &quot;skyblue3&quot;) +
-  annotate(&quot;text&quot;, label = &quot;alpha[2] == 0.01&quot;, parse = TRUE, x = 2, y = 0.90, color = &quot;hotpink3&quot;) +
+  geom_col(aes(y = power5), fill = colors[2]) +
+  geom_col(aes(y = power1), fill = colors[1]) +
+  annotate(&quot;text&quot;, label = &quot;alpha[1] == 0.05&quot;, parse = TRUE, x = 2, y = 0.95, color = colors[2]) +
+  annotate(&quot;text&quot;, label = &quot;alpha[2] == 0.01&quot;, parse = TRUE, x = 2, y = 0.90, color = colors[1]) +
   xlab(&quot;Stichprobengröße&quot;) +
   ylab(&quot;Power&quot;) +
   theme_custom</code></pre>
@@ -1910,10 +1914,10 @@ ggplot() +
   geom_function(fun = df, args = list(df1 = df_zw, df2 = df_inn)) +
   stat_function(fun = df, args = list(df1 = df_zw, df2 = df_inn),
                 geom = &quot;area&quot;,
-                fill = &quot;hotpink3&quot;, alpha = 0.3,
+                fill = colors[1], alpha = 0.3,
                 xlim = c(f_crit, 13)) +
-  geom_vline(xintercept = f_emp, color = &quot;skyblue3&quot;) +
-  annotate(&quot;text&quot;, label = paste(&quot;F =&quot;, round(f_emp,2)), x = 10, y = 0.025, hjust = 0, color = &quot;skyblue3&quot;) +
+  geom_vline(xintercept = f_emp, color = colors[2]) +
+  annotate(&quot;text&quot;, label = paste(&quot;F =&quot;, round(f_emp,2)), x = 10, y = 0.025, hjust = 0, color = colors[2]) +
   labs(x = &quot;F-Wert&quot;, y = &quot;Wahrscheinlichkeitsdichte&quot;) +
   theme_custom</code></pre>
 <p><img src="statistik-2_files/figure-html/unnamed-chunk-66-1.png" width="768" style="display: block; margin: auto;" /></p>
@@ -2169,7 +2173,7 @@ Regressionsgeraden, “Slope”</li>
 Residuen:</p>
 <pre class="r"><code>samples %&gt;% ggplot(aes(x = x, y = y - y_fit)) +
   geom_point() +
-  geom_segment(aes(xend = x, yend = 0), color = &quot;hotpink3&quot;, alpha = 0.4) +
+  geom_segment(aes(xend = x, yend = 0), color = colors[1], alpha = 0.4) +
   labs(y = &quot;Residuum&quot;) +
   theme_custom</code></pre>
 <p><img src="statistik-2_files/figure-html/unnamed-chunk-69-1.png" width="768" style="display: block; margin: auto;" /></p>

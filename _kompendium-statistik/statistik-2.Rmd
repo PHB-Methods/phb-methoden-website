@@ -22,6 +22,8 @@ theme_linedraw() %+replace% theme(
 
 ) -> theme_custom
 
+colors = c("hotpink3", "skyblue3", "seagreen4", "brown3")
+
 knitr::opts_chunk$set(
   fig.align = "center",
   fig.retina = 2,
@@ -103,8 +105,8 @@ sigma <- 1
 # Grafik
 ggplot() +
   xlim(-5, 5) +
-  geom_function(fun = dnorm, args = list(mean = mu, sd = sigma), color = "skyblue3") +
-  geom_function(fun = dt, args = list(df = n - 1), color = "seagreen4") +
+  geom_function(fun = dnorm, args = list(mean = mu, sd = sigma), color = colors[2]) +
+  geom_function(fun = dt, args = list(df = n - 1), color = colors[3]) +
   theme_custom
 ```
 
@@ -135,7 +137,7 @@ for (i in 1:k) {
 # Grafik
 samples %>% filter(i == 1) %>%
   ggplot(aes(x=x)) +
-  geom_histogram(color="white", fill = "hotpink3", bins = 30) +
+  geom_histogram(color="white", fill = colors[1], bins = 30) +
   xlab("Mermmalsausprägung in der Stichprobe") +
   ylab("Wahrscheinlichkeits-Dichte") +
   theme_custom
@@ -224,8 +226,8 @@ samples %>%
 summary %>%
   ggplot(aes(x = i, y = x.mean)) +
   geom_point(alpha = 0.4) + 
-  geom_line(aes(y = mu.hat), color = "brown3") +
-  geom_hline(yintercept = 0, color = "skyblue3") +
+  geom_line(aes(y = mu.hat), color = colors[4]) +
+  geom_hline(yintercept = 0, color = colors[2]) +
   xlab("Stichprobe (i)") +
   ylab("Stichprobenmittelwert") +
   theme_custom
@@ -272,9 +274,9 @@ samples %>% group_by(i) %>%
 # Grafik
 summary %>%
   ggplot(aes(x = i)) +
-  geom_line(aes(y = s2.hat), color = "seagreen4") +
-  geom_line(aes(y = s2.star.hat), color = "brown3") +
-  geom_hline(yintercept = sigma^2, color = "skyblue3") +
+  geom_line(aes(y = s2.hat), color = colors[3]) +
+  geom_line(aes(y = s2.star.hat), color = colors[4]) +
+  geom_hline(yintercept = sigma^2, color = colors[2]) +
   xlab("Stichprobe (i)") +
   ylab("(Stichproben-) Varianz") +
   theme_custom
@@ -334,8 +336,8 @@ ggplot() +
   stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area", xlim = c(x.mean.lower, x.mean.upper),
                 fill = "hotpink2", alpha = 0.4) +
-  geom_vline(xintercept = mu, color = "skyblue3") +
-  geom_vline(xintercept = x.mean, color = "seagreen4") +
+  geom_vline(xintercept = mu, color = colors[2]) +
+  geom_vline(xintercept = x.mean, color = colors[3]) +
   geom_vline(xintercept = x.mean.lower, linetype = "dotted") +
   geom_vline(xintercept = x.mean.upper, linetype = "dotted") +
   xlab("Stichprobenmittelwert") +
@@ -393,9 +395,9 @@ samples %>%
     alpha = 0.6
   ) +
   geom_point() +
-  geom_hline(yintercept = mu, color = "skyblue3") +
+  geom_hline(yintercept = mu, color = colors[2]) +
   guides(color = "none") +
-  scale_color_manual(values = c("grey", "brown3")) +
+  scale_color_manual(values = c("grey", colors[4])) +
   xlab("Stichprobe") +
   ylab("Stichprobenmittelwert") +
   theme_void()
@@ -448,8 +450,8 @@ ggplot() +
   stat_function(fun = dt, args = list(df = n - 1),
                 geom = "area", xlim = c(x.mean.lower, x.mean.upper),
                 fill = "hotpink2", alpha = 0.4) +
-  geom_vline(xintercept = 0, color = "skyblue3") +
-  geom_vline(xintercept = x.mean, color = "seagreen4") +
+  geom_vline(xintercept = 0, color = colors[2]) +
+  geom_vline(xintercept = x.mean, color = colors[3]) +
   geom_vline(xintercept = x.mean.lower, linetype = "dotted") +
   geom_vline(xintercept = x.mean.upper, linetype = "dotted") +
   xlab("Stichprobenmittelwert, standardisiert") +
@@ -497,7 +499,7 @@ ggplot() + xlim(90, 110) +
                 geom = "area", xlim = c(x2.mean.lower, x2.mean.upper),
                 fill = "hotpink2", alpha = 0.3) +
   geom_vline(xintercept = x2.mean, color = "hotpink2") +
-  geom_vline(xintercept = mu, color = "skyblue3") +
+  geom_vline(xintercept = mu, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlichkeits-Dichte") +
   theme_custom
@@ -540,7 +542,7 @@ ggplot() +
                 xlim = c(x.crit, 120),
                 fill = "hotpink2", alpha = 0.3) +
   geom_function(fun = dnorm, args = list(mean = mu, sd = stderr)) +
-  geom_vline(xintercept = x.mean, color = "skyblue3") +
+  geom_vline(xintercept = x.mean, color = colors[2]) +
   xlim(80, 120) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
@@ -579,7 +581,7 @@ ggplot() +
                 xlim = c(x.crit.upper, 120),
                 fill = "hotpink2", alpha = 0.3) +
   geom_function(fun = dnorm, args = list(mean = mu, sd = stderr)) +
-  geom_vline(xintercept = x.mean, color = "skyblue3") +
+  geom_vline(xintercept = x.mean, color = colors[2]) +
   xlim(80, 120) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
@@ -610,7 +612,7 @@ ggplot() +
                 xlim = c(x.crit, 5),
                 fill = "hotpink2", alpha = 0.3) +
   geom_function(fun = dnorm) +
-  geom_vline(xintercept = (x.mean - mu) / stderr, color = "skyblue3") +
+  geom_vline(xintercept = (x.mean - mu) / stderr, color = colors[2]) +
   xlim(-5, 5) +
   xlab(expression(z[bar(x)])) +
   ylab("Wahrscheinlihckeits-Dichte") +
@@ -657,7 +659,7 @@ ggplot() +
                 xlim = c(x.crit, 5),
                 fill = "hotpink2", alpha = 0.3) +
   geom_function(fun = dt,  args = list(df = t.df)) +
-  geom_vline(xintercept = t.value, color = "skyblue3") +
+  geom_vline(xintercept = t.value, color = colors[2]) +
   xlim(-5, 5) +
   xlab(expression(t[bar(x)])) +
   ylab("Wahrscheinlihckeits-Dichte") +
@@ -709,13 +711,13 @@ ggplot() +
     stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area",
                 xlim = c(0, x.crit),
-                fill = "skyblue3",
+                fill = colors[2],
                 alpha = 0.3) +
   geom_function(fun = dnorm, args = list(mean = mu, sd = stderr)) +
   geom_function(fun = dnorm, args = list(mean = x.mean, sd = stderr)) +
   geom_vline(xintercept = x.crit, linetype = "dashed") +
-  geom_vline(xintercept = mu, color = "seagreen4") +
-  geom_vline(xintercept = x.mean, color = "skyblue3") +
+  geom_vline(xintercept = mu, color = colors[3]) +
+  geom_vline(xintercept = x.mean, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -740,13 +742,13 @@ ggplot() +
     stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area",
                 xlim = c(0, x.crit),
-                fill = "skyblue3",
+                fill = colors[2],
                 alpha = 0.3) +
   geom_function(fun = dnorm, args = list(mean = mu, sd = stderr)) +
   geom_function(fun = dnorm, args = list(mean = x.mean, sd = stderr)) +
   geom_vline(xintercept = x.crit, linetype = "dashed") +
-  geom_vline(xintercept = mu, color = "seagreen4") +
-  geom_vline(xintercept = x.mean, color = "skyblue3") +
+  geom_vline(xintercept = mu, color = colors[3]) +
+  geom_vline(xintercept = x.mean, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -770,13 +772,13 @@ ggplot() +
     stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area",
                 xlim = c(0, x.crit),
-                fill = "skyblue3",
+                fill = colors[2],
                 alpha = 0.3) +
   geom_function(fun = dnorm, args = list(mean = mu, sd = stderr)) +
   geom_function(fun = dnorm, args = list(mean = x.mean, sd = stderr)) +
   geom_vline(xintercept = x.crit, linetype = "dashed") +
-  geom_vline(xintercept = mu, color = "seagreen4") +
-  geom_vline(xintercept = x.mean, color = "skyblue3") +
+  geom_vline(xintercept = mu, color = colors[3]) +
+  geom_vline(xintercept = x.mean, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -809,8 +811,8 @@ ggplot() +
            x = mu, xend = x.mean,
            y = 1.38, yend = 1.38,
            arrow = arrow(ends = "both"),
-           color = "hotpink3") +
-  annotate("text", x = x.mean/2, y = 1.35, label = "d", color = "hotpink3") +
+           color = colors[1]) +
+  annotate("text", x = x.mean/2, y = 1.35, label = "d", color = colors[1]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -852,18 +854,18 @@ ggplot() +
   geom_function(fun = dnorm, args = list(mean = x.mean, sd = stderr)) +
   geom_vline(xintercept = mu, linetype = "dotted") +
   geom_vline(xintercept = x.mean, linetype = "dotted") +
-  geom_vline(xintercept = d.conf.lower, color = "hotpink3") +
-  geom_vline(xintercept = d.conf.upper, color = "hotpink3") +
+  geom_vline(xintercept = d.conf.lower, color = colors[1]) +
+  geom_vline(xintercept = d.conf.upper, color = colors[1]) +
   stat_function(fun = dnorm, geom = "area",
                 args = list(mean = x.mean, sd = stderr),
                 xlim = c(d.conf.lower, d.conf.upper),
-                alpha = 0.2, fill = "hotpink3") +
+                alpha = 0.2, fill = colors[1]) +
   annotate("segment",
            x = d.conf.lower, xend = d.conf.upper,
            y = 1.38, yend = 1.38,
            arrow = arrow(ends = "both"),
-           color = "hotpink3") +
-  annotate("text", x = d, y = 1.34, label = "95%", color = "hotpink3") +
+           color = colors[1]) +
+  annotate("text", x = d, y = 1.34, label = "95%", color = colors[1]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -975,16 +977,16 @@ ggplot() +
   geom_function(fun = dt, args = list(df = n1 - 1)) +
   stat_function(fun = dt, args = list(df = n1 - 1),
                 geom = "area", xlim = c(x.crit1, 4),
-                alpha = 0.2, fill = "hotpink3")+
-  geom_function(fun = dt, args = list(df = n2 - 1), color = "seagreen4") +
+                alpha = 0.2, fill = colors[1])+
+  geom_function(fun = dt, args = list(df = n2 - 1), color = colors[3]) +
   stat_function(fun = dt, args = list(df = n2 - 1),
                 geom = "area", xlim = c(x.crit2, 4),
-                alpha = 0.2, fill = "seagreen4")+
-  geom_vline(xintercept = x.mean, color = "hotpink3") +
+                alpha = 0.2, fill = colors[3])+
+  geom_vline(xintercept = x.mean, color = colors[1]) +
   xlab("Prüfgröße") +
   ylab("Wahrscheinlihckeitsdichte") +
   annotate("text", label = "n = 10", x = 0.1, y = 0.22, hjust = 0) +
-  annotate("text", label = "n = 100", x = 0.1, y = 0.18, hjust = 0, color = "seagreen4") +
+  annotate("text", label = "n = 100", x = 0.1, y = 0.18, hjust = 0, color = colors[3]) +
   theme_custom
 ```
 
@@ -1087,10 +1089,10 @@ samples <- tibble(x = 1:n, p = dbinom(x, size = n, prob = pi))
 ggplot(mapping = aes(x = x, y = p)) +
   xlim(0, 61) +
   geom_point(data = samples0) +
-  geom_point(data = samples, color = "skyblue3") +
-  geom_col(data = samples0.alpha, alpha = 0.4, fill = "hotpink3") +
+  geom_point(data = samples, color = colors[2]) +
+  geom_col(data = samples0.alpha, alpha = 0.4, fill = colors[1]) +
   geom_vline(xintercept = x.crit, linetype = "dotted") +
-  geom_vline(xintercept = pi * n, color = "skyblue3") +
+  geom_vline(xintercept = pi * n, color = colors[2]) +
   theme_custom
 ```
 
@@ -1168,8 +1170,8 @@ ggplot() +
   geom_function(fun = dt, args = list(df = df1)) +
   stat_function(fun = dt, geom = "area", args = list(df = df1),
                 xlim = c(t.crit, 5),
-                fill = "hotpink3", alpha = 0.2) +
-  geom_vline(xintercept = t, color = "hotpink3") +
+                fill = colors[1], alpha = 0.2) +
+  geom_vline(xintercept = t, color = colors[1]) +
   xlab("T") +
   ylab("Wahrscheinlichkeitsdichte") +
   theme_custom
@@ -1216,14 +1218,14 @@ ggplot() +
   stat_function(fun = dnorm, args = list(mean = mu, sd = stderr),
                 geom = "area",
                 xlim = c(x.crit, 4),
-                alpha = 0.2, fill = "hotpink3") +
+                alpha = 0.2, fill = colors[1]) +
   stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area",
                 xlim = c(-4, x.crit),
-                alpha = 0.2, fill = "skyblue3") +
-  geom_vline(xintercept = x.mean, color = "hotpink3") +
-  annotate("text", label = "alpha", parse = TRUE, x = 0.45, y = 0.04, color = "hotpink3") +
-  annotate("text", label = "beta", parse = TRUE, x = 0.25, y = 0.04, color = "skyblue3") +
+                alpha = 0.2, fill = colors[2]) +
+  geom_vline(xintercept = x.mean, color = colors[1]) +
+  annotate("text", label = "alpha", parse = TRUE, x = 0.45, y = 0.04, color = colors[1]) +
+  annotate("text", label = "beta", parse = TRUE, x = 0.25, y = 0.04, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -1246,14 +1248,14 @@ ggplot() +
   stat_function(fun = dnorm, args = list(mean = mu, sd = stderr),
                 geom = "area",
                 xlim = c(x.crit, 4),
-                alpha = 0.2, fill = "hotpink3") +
+                alpha = 0.2, fill = colors[1]) +
   stat_function(fun = dnorm, args = list(mean = x.mean, sd = stderr),
                 geom = "area",
                 xlim = c(-4, x.crit),
-                alpha = 0.2, fill = "skyblue3") +
-  geom_vline(xintercept = x.mean, color = "hotpink3") +
-  annotate("text", label = "alpha", parse = TRUE, x = 0.8, y = 0.04, color = "hotpink3") +
-  annotate("text", label = "beta", parse = TRUE, x = 0.5, y = 0.04, color = "skyblue3") +
+                alpha = 0.2, fill = colors[2]) +
+  geom_vline(xintercept = x.mean, color = colors[1]) +
+  annotate("text", label = "alpha", parse = TRUE, x = 0.8, y = 0.04, color = colors[1]) +
+  annotate("text", label = "beta", parse = TRUE, x = 0.5, y = 0.04, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -1304,10 +1306,10 @@ tibble(
   power5 = power(n, d = 0.7, alpha = 0.05),
   power1 = power(n, d = 0.7, alpha = 0.01),
   ) %>% ggplot(aes(x = n, y = power)) +
-  geom_col(aes(y = power5), fill = "skyblue3") +
-  geom_col(aes(y = power1), fill = "hotpink3") +
-  annotate("text", label = "alpha[1] == 0.05", parse = TRUE, x = 2, y = 0.95, color = "skyblue3") +
-  annotate("text", label = "alpha[2] == 0.01", parse = TRUE, x = 2, y = 0.90, color = "hotpink3") +
+  geom_col(aes(y = power5), fill = colors[2]) +
+  geom_col(aes(y = power1), fill = colors[1]) +
+  annotate("text", label = "alpha[1] == 0.05", parse = TRUE, x = 2, y = 0.95, color = colors[2]) +
+  annotate("text", label = "alpha[2] == 0.01", parse = TRUE, x = 2, y = 0.90, color = colors[1]) +
   xlab("Stichprobengröße") +
   ylab("Power") +
   theme_custom
@@ -1421,7 +1423,7 @@ tibble(
   fwer = 1 - (1 - alpha)^k
 ) %>%
 ggplot(aes(x = k, y = fwer)) +
-  geom_col(fill = "hotpink3") +
+  geom_col(fill = colors[1]) +
   geom_vline(xintercept = 14, linetype = "dotted") +
   geom_hline(yintercept = 0.5, linetype = "dotted") +
   xlab("Anzahl Endpunkte") +
@@ -1465,19 +1467,19 @@ ggplot() +
   geom_function(fun = dnorm, args = list(mean = x2.mean, sd = stderr)) +
   geom_vline(xintercept = x1.crit, linetype = "dotted") +
   geom_vline(xintercept = x2.crit, linetype = "dotted") +
-  geom_vline(xintercept = x1.mean, color = "hotpink3") +
-  geom_vline(xintercept = x2.mean, color = "skyblue3") +
+  geom_vline(xintercept = x1.mean, color = colors[1]) +
+  geom_vline(xintercept = x2.mean, color = colors[2]) +
   stat_function(fun = dnorm, geom = "area",
                 args = list(mean = mu, sd = stderr),
                 xlim = c(-2, x2.crit),
-                alpha = 0.2, fill = "skyblue3") +
+                alpha = 0.2, fill = colors[2]) +
   stat_function(fun = dnorm, geom = "area",
                 args = list(mean = mu, sd = stderr),
                 xlim = c(x1.crit, 3),
-                alpha = 0.2, fill = "hotpink3") +
+                alpha = 0.2, fill = colors[1]) +
   annotate("text", label = "H['0,1']", parse = TRUE, x = 0, y = 0.5, alpha = 0.4) +
-  annotate("text", label = "H['1,1']", parse = TRUE, x = 1.2, y = 0.5, color = "hotpink3") +
-  annotate("text", label = "H['1,2']", parse = TRUE, x = -0.8, y = 0.5, color = "skyblue3") +
+  annotate("text", label = "H['1,1']", parse = TRUE, x = 1.2, y = 0.5, color = colors[1]) +
+  annotate("text", label = "H['1,2']", parse = TRUE, x = -0.8, y = 0.5, color = colors[2]) +
   xlab("Stichprobenmittelwert") +
   ylab("Wahrscheinlihckeits-Dichte") +
   theme_custom
@@ -1661,10 +1663,10 @@ $\lambda$ ist der Nicht-Zentralitäts-Parameter der F-Verteilung. Je größer $\
 ```{r echo=FALSE}
 ggplot() +
   xlim(0, 10) +
-  geom_function(fun = df, args = list(df1 = 2, df2 = 20, ncp = 0), color = "skyblue3") +
-  geom_function(fun = df, args = list(df1 = 2, df2 = 20, ncp = 10), color = "hotpink3") +
-  annotate("text", label = "lambda == 0", parse = TRUE, x = 8, y = 0.47, hjust = 0, color = "skyblue3") +
-  annotate("text", label = "lambda == 10", parse = TRUE, x = 8, y = 0.4, hjust = 0, color = "hotpink3") +
+  geom_function(fun = df, args = list(df1 = 2, df2 = 20, ncp = 0), color = colors[2]) +
+  geom_function(fun = df, args = list(df1 = 2, df2 = 20, ncp = 10), color = colors[1]) +
+  annotate("text", label = "lambda == 0", parse = TRUE, x = 8, y = 0.47, hjust = 0, color = colors[2]) +
+  annotate("text", label = "lambda == 10", parse = TRUE, x = 8, y = 0.4, hjust = 0, color = colors[1]) +
   labs(x = "F-Wert", y = "Wahrscheinlichkeitsdichte") +
   theme_custom
 ```
@@ -1711,17 +1713,17 @@ ncp_upper <- n * eta_sq_upper / (1 - eta_sq_upper)
 
 ggplot() +
   xlim(2, 10) +
-  geom_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_lower), color = "hotpink3") +
-  geom_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_upper), color = "skyblue3") +
+  geom_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_lower), color = colors[1]) +
+  geom_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_upper), color = colors[2]) +
   stat_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_upper),
-                xlim = c(2, f_v), geom = "area", fill = "skyblue3", alpha = 0.2) +
+                xlim = c(2, f_v), geom = "area", fill = colors[2], alpha = 0.2) +
   stat_function(fun = df, args = list(df1 = df1, df2 = df2, ncp = ncp_lower),
-                xlim = c(f_v, 10), geom = "area", fill = "hotpink3", alpha = 0.2) +
+                xlim = c(f_v, 10), geom = "area", fill = colors[1], alpha = 0.2) +
   geom_vline(xintercept = f_v, linetype = "dotted") +
-  annotate("text", label = paste("lambda[o] == ", ncp_upper), parse = T, x = 3, y = 0.021, hjust = 0, color = "skyblue3") +
-  annotate("text", label = "2.5%", x = 3, y = 0.011, hjust = 0, color = "skyblue3") +
-  annotate("text", label = "2.5%", x = 8, y = 0.011, hjust = 0, color = "hotpink3") +
-  annotate("text", label = paste("lambda[u] == ", ncp_lower), parse = T, x = 8, y = 0.021, hjust = 0, color = "hotpink3") +
+  annotate("text", label = paste("lambda[o] == ", ncp_upper), parse = T, x = 3, y = 0.021, hjust = 0, color = colors[2]) +
+  annotate("text", label = "2.5%", x = 3, y = 0.011, hjust = 0, color = colors[2]) +
+  annotate("text", label = "2.5%", x = 8, y = 0.011, hjust = 0, color = colors[1]) +
+  annotate("text", label = paste("lambda[u] == ", ncp_lower), parse = T, x = 8, y = 0.021, hjust = 0, color = colors[1]) +
   labs(x = "F-Wert", y = "Wahrscheinlichkeitsdichte") +
   theme_custom
 ```
@@ -1900,10 +1902,10 @@ ggplot() +
   geom_function(fun = df, args = list(df1 = df_zw, df2 = df_inn)) +
   stat_function(fun = df, args = list(df1 = df_zw, df2 = df_inn),
                 geom = "area",
-                fill = "hotpink3", alpha = 0.3,
+                fill = colors[1], alpha = 0.3,
                 xlim = c(f_crit, 13)) +
-  geom_vline(xintercept = f_emp, color = "skyblue3") +
-  annotate("text", label = paste("F =", round(f_emp,2)), x = 10, y = 0.025, hjust = 0, color = "skyblue3") +
+  geom_vline(xintercept = f_emp, color = colors[2]) +
+  annotate("text", label = paste("F =", round(f_emp,2)), x = 10, y = 0.025, hjust = 0, color = colors[2]) +
   labs(x = "F-Wert", y = "Wahrscheinlichkeitsdichte") +
   theme_custom
 ```
@@ -2101,12 +2103,12 @@ bind_cols(samples, "y_fit" = fitted(lm1)) -> samples
 
 samples %>% ggplot(aes(x = x, y = y)) +
   geom_point() +
-  geom_abline(intercept = b0, slope = b1, color = "skyblue3") +
-  geom_segment(aes(xend = x, yend = y_fit), color = "hotpink3", alpha = 0.4) +
+  geom_abline(intercept = b0, slope = b1, color = colors[2]) +
+  geom_segment(aes(xend = x, yend = y_fit), color = colors[1], alpha = 0.4) +
   
-  annotate("text", label = paste("b[0] ==", b0), parse = TRUE, x = 31, y = 12, hjust = 0, color = "skyblue3") +
+  annotate("text", label = paste("b[0] ==", b0), parse = TRUE, x = 31, y = 12, hjust = 0, color = colors[2]) +
   
-  annotate("text", label = paste("b[1] ==", b1), parse = TRUE, x = 31, y = 11, hjust = 0, color = "skyblue3") +
+  annotate("text", label = paste("b[1] ==", b1), parse = TRUE, x = 31, y = 11, hjust = 0, color = colors[2]) +
   theme_custom
 
 ```
@@ -2129,7 +2131,7 @@ Der Abstand der Messpunkte zur Regressionsgeraden sind die Residuen:
 ```{r}
 samples %>% ggplot(aes(x = x, y = y - y_fit)) +
   geom_point() +
-  geom_segment(aes(xend = x, yend = 0), color = "hotpink3", alpha = 0.4) +
+  geom_segment(aes(xend = x, yend = 0), color = colors[1], alpha = 0.4) +
   labs(y = "Residuum") +
   theme_custom
 ```
@@ -2369,7 +2371,7 @@ Rsq_mean <- mean(samples$Rsq)
 
 samples %>%
   ggplot(aes(x = Rsq)) +
-  geom_histogram(bins = 50, color = "white", fill = "hotpink3") +
+  geom_histogram(bins = 50, color = "white", fill = colors[1]) +
   geom_vline(xintercept = Rsq_mean, linetype = "dashed") +
   labs(x = expression(R^2), y = "Häufigkeit") +
   theme_custom
@@ -2401,7 +2403,7 @@ Rsq_adj_mean <- mean(samples$Rsq_adj)
 
 samples %>%
   ggplot(aes(x = Rsq_adj)) +
-  geom_histogram(bins = 50, color = "white", fill = "hotpink3") +
+  geom_histogram(bins = 50, color = "white", fill = colors[1]) +
   geom_vline(xintercept = Rsq_adj_mean, linetype = "dashed") +
   labs(x = expression(R^2), y = "Häufigkeit") +
   theme_custom
@@ -2625,8 +2627,8 @@ samples %>%
 samples %>%
   ggplot(aes(x = fit_e, y = res_e)) +
   geom_point(alpha = 0.2) +
-  geom_path(aes(x = fit_e_mean, y = res_e_mean), data = means, color = "hotpink3") +
-  geom_point(aes(x = fit_e_mean, y = res_e_mean), data = means, color = "hotpink3") +
+  geom_path(aes(x = fit_e_mean, y = res_e_mean), data = means, color = colors[1]) +
+  geom_point(aes(x = fit_e_mean, y = res_e_mean), data = means, color = colors[1]) +
   labs(x = "Vorhersage", y = "Residuum") +
   theme_custom
 ```
@@ -2638,8 +2640,8 @@ samples %>%
 samples %>%
   ggplot(aes(x = fit_u, y = res_u)) +
   geom_point(alpha = 0.2) +
-  geom_path(aes(x = fit_u_mean, y = res_u_mean), data = means, color = "hotpink3") +
-  geom_point(aes(x = fit_u_mean, y = res_u_mean), data = means, color = "hotpink3") +
+  geom_path(aes(x = fit_u_mean, y = res_u_mean), data = means, color = colors[1]) +
+  geom_point(aes(x = fit_u_mean, y = res_u_mean), data = means, color = colors[1]) +
   labs(x = "Vorhersage", y = "Residuum") +
   theme_custom
 ```
@@ -2695,7 +2697,7 @@ Wenn $p \ge 0.05$, dann kann Normalverteilung der Residuen angenommen werden.
 ```{r echo=FALSE}
 samples %>%
   ggplot(aes(x = res_u)) +
-  geom_histogram(bins = 12, color = "white", fill = "hotpink3") +
+  geom_histogram(bins = 12, color = "white", fill = colors[1]) +
   labs(x = "Residuum", y = "Häufigkeit") +
   theme_custom
 ```
