@@ -1,0 +1,10 @@
+---
+title: "B.Sc. Psychologie Statisik II"
+author: "Esther Weidauer"
+layout: post
+---
+
+BODY_FROM: _kompendium-statistik/statistik-2.html
+ASSETS_FROM: _kompendium-statistik/statistik-2_files
+ASSETS_TO: lehre/kompendium-statistik/statistik-2_files
+ASSETS_GLOB: **/*

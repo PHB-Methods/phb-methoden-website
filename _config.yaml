@@ -16,6 +16,16 @@ links:
 #   youtube: YourLabChannel
 
 ### jekyll settings
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
 
 # front matter defaults
 defaults:
@@ -50,6 +60,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-toc
 
 # code block syntax highlighting
 highlighter: rouge
@@ -71,3 +82,4 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+
