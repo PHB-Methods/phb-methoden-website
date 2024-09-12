@@ -33,7 +33,9 @@ storms %>% filter(year >= 2010, year < 2020) -> data.short
 
 # Einleitung 
 
-**still TODO**
+Statistik I umfasst Grundlagen der Wahrscheinlichkeitstheorie, Datenmanagement, sowie diverse deskriptive Statistiken und wie sie in R angewendet werden können.
+
+Diese Zusammenfassung basiert auf der Vorlesung Statistik I im Wintersemester 2023/24 an der PHB bei Professor Robert Miller, sowie dem Lehrbuch "Statistik und Forschungsmethoden" von Eid, Gollwitzer und Schmitt (5.Auflage).
 
 # Wahrscheinlichkeitstheorie
 

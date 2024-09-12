@@ -35,6 +35,12 @@ storms -> data.long
 storms %>% filter(year >= 2010, year < 2020) -> data.short
 ```
 
+# Einleitung
+
+Statistik II umfasst hauptsächlich Inferenzstatistik und hypothesen-prüfende Tests sowie Verfahren zur Behandlung von Fehlerwahrscheinlichkeiten in wissenschaftlichen Studien.
+
+Diese Zusammenfassung basiert auf der Vorlesung Statistik II im Sommersemester 2024 an der PHB bei Professor Robert Miller, sowie dem Lehrbuch "Statistik und Forschungsmethoden" von Eid, Gollwitzer und Schmitt (5.Auflage).
+
 # Stichprobenkennwerte-Verteilung
 
 ## Beispiel: Mittelwert
