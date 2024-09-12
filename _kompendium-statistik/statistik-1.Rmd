@@ -9,6 +9,7 @@ output:
 
 ```{r Setup, include=FALSE}
 library(tidyverse)
+library(scico)
 
 set.seed(0)
 
@@ -696,4 +697,103 @@ $$r = \frac{1}{n-1}\sum_{i=1}^{n}{z_1 \cdot z_2}$$
 
 # Modellbildung
 
-**TODO**
+Modelle beschreiben eine idealisierte Verteilung von Merkmalen in einer Population und sind durch ihre Parameter definiert.
+
+Beispiele:
+
+| Modell               | Parameter                                        |
+|----------------------|--------------------------------------------------|
+| Normalverteilung     | Standardabweichung $\sigma$<br>Mittelwert $\mu$  |
+| Student-t-Verteilung | Freiheitsgrade $df$                              |
+| Binomialverteilung   | Einzelwahrscheinlichkeit $p$<br>Ziehungszahl $n$ |
+
+
+## Parameterschatzung durch Likelihood-Maximierung
+
+Die Likelihood ist die verkettete Wahrscheinlichkeit des Auftretens aller beobachteten Ausprägungen unter der Annahme bestimmter Modellparameter:
+
+$$Lik = \prod_{i = 1}^n x_n = Pr(x_1) \cdot Pr(x_2) \cdot \ldots \cdot Pr(x_n)$$
+
+Da Wahrscheinlichkeiten immer $\le 1$ sind, wird die Likelihood oft eine sehr kleine Zahl. Um sie besser handhaben zu können und Präzisionsprobleme bei der Auswertung mit Computern zu vermeiden, wird sie oft logarithmiert (mit dem natürlichen Logarithmus $log_e(x)$) als Log-Likelihood ($LogLik$). Nach den Logarithmengesetzen (Produktregel) ist $LogLik$ die Summe der logarithmierten Wahrscheinlichkeiten:
+
+$$LogLik = log(Lik) = \sum_{i=1}^n log(Pr(x_n))$$
+
+**Hinweis:** die Log-Likelihood ist immer negativ, weil Wahrscheinlichkeiten immer $\le 1$ sind. Das kann zu Irrtümern bei der Maximierung führen, da kleinere negative Zahlen eine größeren Betrag haben (z.B. $-8253 \lt -2417$).
+
+Die maximale Likelihood wird meist numerisch bestimmt. Ein einfaches Verfahren ist, die Likelihood für Werte der Modellparameter in einem bestimmten Bereich zu testen und dann das Maximum durch Sortierung zu finden.
+
+Beispiel:
+
+```{r echo=FALSE}
+set.seed(0)
+rnorm(n = 100, mean = 105.6, sd = 2.1) -> samples
+tibble(samples) %>%
+  ggplot(aes(x = samples)) +
+  geom_histogram(bins = 10, color = "white", fill = "hotpink3") +
+  labs(x = "Samples (n = 100)", y = "Häufigkeit") +
+  theme_custom
+```
+
+Anhand des Histogramms, wird der Mittelwert bei ca. 106 vermutet, die Standardabweichung bei 2.
+
+Modellanpassung einer Normalverteilung mittels Optimierung in R:
+
+```{r warning=FALSE}
+# Berechnung der LogLikelihood der Samples in einer Funktion
+loglik_samples <- function(params) {
+  m <- params[1]
+  s <- params[2]
+  
+  sum(log(dnorm(samples, mean = m, sd = s)))
+}
+
+optim(
+  c(106,2), # initiale vermutete Werte, mit denen die Optimierung beginnt
+  loglik_samples, # Funktion, die optimiert werden soll
+  control = list(fnscale = -1) # Einstellung für Maximierung statt Minimierung
+  )
+```
+
+# Power-Transformationen
+
+- erzeugt Werte die näher an einer Normalverteilung liegen
+- nur für positive Ausprägungen geeignet
+
+Power-Transformationen dienen dazu, Daten in einfachere Verteilungen zu überführen (z.B. Normalverteilung).
+
+## Ein-Parameter Power-Transformation nach Box & Cox (1964)
+
+$$
+y_i(\lambda) = \begin{cases}
+  \frac{y_i^{\lambda}-1}{\lambda} ,& \lambda \ne 0 \\
+  ln(y_i) ,& \lambda = 0
+\end{cases}
+$$
+
+Der am besten passende Parameter $\lambda$ kann mittels [Likelihood-Maximierung](#parameterschatzung-durch-likelihood-maximierung) geschätzt werden.
+
+## Zwei-Parameter Power-Transformation nach Box & Cox (1964)
+
+- erzeugt Werte die näher an einer Normalverteilung liegen
+- nur für positive Ausprägungen geeignet
+
+$$
+y_i(\lambda_1, \lambda_2) = \begin{cases}
+  \frac{(y_i + \lambda_2)^{\lambda_1}-1}{\lambda_1} ,& \lambda_1 \ne 0 \\
+  ln(y_i + \lambda_2) ,& \lambda_1 = 0
+\end{cases}
+$$
+
+## Power-Transformation nach Yeo & Johnson (2000)
+
+- erzeugt Werte die näher an der Normalverteilung liegen
+- auch geeignet für negative Ausprägungen
+
+$$
+y_i(\lambda) = \begin{cases}
+  ((y_i + 1) ^\lambda -1) / \lambda ,& \lambda \ne 0, y \ge 0 \\
+  ln(y_i +1) ,& \lambda = 0, y \ge 0\\
+  -((-y_i + 1)^{2-\lambda}-1) / (2-\lambda) ,& \lambda \ne 2, y \lt 0 \\
+  -ln(-y_i +1) ,& \lambda = 2, y \lt 0
+\end{cases}
+$$
