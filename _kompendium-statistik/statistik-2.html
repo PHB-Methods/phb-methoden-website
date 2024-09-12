@@ -869,7 +869,6 @@ Effekt</li>
 <li><span class="math inline">\(|d|  \approx 0.57\)</span>: “großer”
 Effekt</li>
 </ul>
-<p><strong>TODO: ci.smd in R (MBESS)</strong></p>
 </div>
 <div id="einstichproben-gauss-test" class="section level3">
 <h3>Einstichproben-Gauss-Test</h3>
@@ -932,9 +931,7 @@ class="math inline">\(n = 20\)</span></p>
 ##  [7] -0.42856703  0.20527955  0.49423283  2.90465339  1.26359346 -0.29900925
 ## [13] -0.64765701  0.21053843  0.20078488  0.08848917  0.75222345 -0.39192113
 ## [19]  0.93568330 -0.73753842</code></pre>
-<pre class="r"><code>library(BSDA)
-
-z.test(samples, mu = 0, sigma.x = 1, conf.level = 0.95, alternative = &quot;greater&quot;)</code></pre>
+<pre class="r"><code>z.test(samples, mu = 0, sigma.x = 1, conf.level = 0.95, alternative = &quot;greater&quot;)</code></pre>
 <pre><code>## 
 ##  One-sample z-Test
 ## 
@@ -1193,7 +1190,8 @@ class="math inline">\(n = 100\)</span></p>
 <p><img src="statistik-2_files/figure-html/unnamed-chunk-37-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div id="zweistichproben-t-test-in-r" class="section level4">
 <h4>Zweistichproben T-Test in R</h4>
-<pre class="r"><code>t.test(samples2$x, y = samples1$x, alternative = &quot;greater&quot;, conf.level = 0.95)</code></pre>
+<pre class="r"><code>t.test(samples2$x, y = samples1$x, alternative = &quot;greater&quot;, conf.level = 0.95) -&gt; t.result
+t.result</code></pre>
 <pre><code>## 
 ##  Welch Two Sample t-test
 ## 
@@ -1205,6 +1203,21 @@ class="math inline">\(n = 100\)</span></p>
 ## sample estimates:
 ## mean of x mean of y 
 ##  118.1253  101.1334</code></pre>
+<p>Bestimmung der Konfidenzintervalle des Effekts (Cohen’s <span
+class="math inline">\(d\)</span>):</p>
+<pre class="r"><code>ci.smd(t.result$statistic,
+       n.1 = length(samples1),
+       n.2 = length(samples2),
+       conf.level = 0.95)</code></pre>
+<pre><code>## $Lower.Conf.Limit.smd
+## [1] -0.5441647
+## 
+## $smd
+##        t 
+## 2.571521 
+## 
+## $Upper.Conf.Limit.smd
+## [1] 5.534741</code></pre>
 </div>
 </div>
 </div>
@@ -1216,13 +1229,13 @@ class="math inline">\(1-\beta\)</span></strong></p>
 Standardfehler und damit von der Stichprobengröße ab.</p>
 <p>Beispiel <span class="math inline">\(n = 20\)</span>, <span
 class="math inline">\(\beta\)</span>-Fehler ist gering:</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-39-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-40-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Bei <span class="math inline">\(n = 7\)</span> ist der <span
 class="math inline">\(\beta\)</span>-Fehler deutlich höher und die Power
 daher geringer, während <span
 class="math inline">\(\alpha\)</span>-Niveau weiterhin unterschritten
 wird:</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-40-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-41-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><span class="math inline">\(\beta\)</span> ist ebenfalls vom Effekt
 abhängig. Zur Planung der Stichprobengröße müssen <span
 class="math inline">\(\alpha\)</span>-Niveau und der minimale als
@@ -1286,7 +1299,7 @@ tibble(
   xlab(&quot;Stichprobengröße&quot;) +
   ylab(&quot;Power&quot;) +
   theme_custom</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-43-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-44-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Für ein strengeres <span class="math inline">\(\alpha_2 =
 1\%\)</span> ist gegenüber <span class="math inline">\(\alpha_1 =
 5\%\)</span> eine größere Stichrobe nötig, um die gleiche Power zu
@@ -1414,7 +1427,7 @@ Endpunkten:</p>
 \alpha_{FWER}\]</span></p>
 <p>Bei 14 Endpunkten und <span class="math inline">\(\alpha =
 0.05\)</span> wird eine FWER von 50% überschritten:</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-49-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-50-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div id="bonferroni-korrektur" class="section level2">
 <h2>Bonferroni-Korrektur</h2>
 <ul>
@@ -1440,7 +1453,7 @@ class="math inline">\(\alpha\)</span> ebenfalls auf beide Seiten
 aufgeteilt wird. Siehe <a
 href="#zweiseitiger-signifikanztest">Zweiseitiger
 Signifikanztest</a>)</em></p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-50-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-51-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><span class="math inline">\(\overline{x}_1\)</span> liegt über dem
 kritischen Wert für <span class="math inline">\(\alpha_i =
 0.025\)</span> in positiver Richtung während <span
@@ -1683,7 +1696,7 @@ class="math inline">\(\sigma\)</span> des Merkmals angibt.</p>
 Nicht-Zentralitäts-Parameter der F-Verteilung. Je größer <span
 class="math inline">\(\lambda\)</span>, umso weiter nach rechts
 verschoben und flacher ist die Dichtefunktion der F-Verteilung:</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-52-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-53-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Die Kurve für <span class="math inline">\(\lambda = 0\)</span>
 (“zentrale F-Verteilung”) ist die Verteilung unter der Nullhypothese dar
 während die Kurve mit <span class="math inline">\(\lambda \gt 0\)</span>
@@ -1736,7 +1749,7 @@ ci_result</code></pre>
 ## [1] 0.95</code></pre>
 <p>Dargestellt als F-Verteilungen mit <span
 class="math inline">\(\lambda\)</span>-Konfidenzintervall:</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-54-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-55-1.png" width="768" style="display: block; margin: auto;" /></p>
 </div>
 <div id="schätzung-der-populationsparameter" class="section level3">
 <h3>Schätzung der Populationsparameter</h3>
@@ -1825,7 +1838,7 @@ sind.</p>
 <h4>Beispiel für F-Test</h4>
 <p>Zwei Faktorgruppen (Studienarme), je 10 Versuchspersonen, <span
 class="math inline">\(J = 2, n_j = 10\)</span></p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-55-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-56-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Gesamtquadratsumme <span
 class="math inline">\(QS_{total}\)</span>:</strong></p>
 <pre class="r"><code>samples %&gt;%
@@ -1903,7 +1916,7 @@ ggplot() +
   annotate(&quot;text&quot;, label = paste(&quot;F =&quot;, round(f_emp,2)), x = 10, y = 0.025, hjust = 0, color = &quot;skyblue3&quot;) +
   labs(x = &quot;F-Wert&quot;, y = &quot;Wahrscheinlichkeitsdichte&quot;) +
   theme_custom</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-65-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-66-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Der empirische F-Wert überschreitet den kritischen F-Wert für <span
 class="math inline">\(\alpha = 0.05\)</span>. Die Nullhypothese wird
 also verworfen. Es besteht ein signifikanter Unterschied zwischen den
@@ -2136,7 +2149,7 @@ Modells.</p>
 <p>Bei der linearen Regression wird versucht, eine Gerade so zu legen,
 dass deren mittlerer Abstand zu den empirischen Messwerten möglichst
 gering ist.</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-67-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-68-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Modellgleichung mit einer unabhängigen
 Variablen:</strong></p>
 <p>In einer Stichprobe:</p>
@@ -2159,7 +2172,7 @@ Residuen:</p>
   geom_segment(aes(xend = x, yend = 0), color = &quot;hotpink3&quot;, alpha = 0.4) +
   labs(y = &quot;Residuum&quot;) +
   theme_custom</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-68-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-69-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Der Mittelwert der Residuen ist immer 0.</p>
 <p>Die Varianz der Residuen wird auch als <strong>Fehlervarianz</strong>
 bezeichnet, da die angibt, wie weit die empirischen Werte um die
@@ -2445,7 +2458,7 @@ class="math inline">\(X_2\)</span> und <span
 class="math inline">\(Y\)</span>. Alle Variablen sind zufällig generiert
 und normalverteilt.</p>
 <p>Korrelationsplot der ersten 20 Stichproben (200 Messwerte):</p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-74-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-75-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Es sollte also keine Korrelation zwischen den Variablen geben und
 damit auch keine Varianzaufklärung. Entsprechend sollte in jeder
 Stichprobe <span class="math inline">\(R^2 \approx 0\)</span>
@@ -2453,7 +2466,7 @@ gelten.</p>
 <pre class="r"><code>samples %&gt;% group_by(stichprobe) %&gt;% mutate(
   Rsq = summary(lm(Y ~ X1 + X2))$r.squared
 ) -&gt; samples</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-76-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-77-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Durchschnittlicher Determinationskoeffizient, <span
 class="math inline">\(\overline{R}^2\)</span>:</p>
 <pre><code>## [1] 0.2174016</code></pre>
@@ -2469,7 +2482,7 @@ Regressionsgewichte)</p>
 <pre class="r"><code>samples %&gt;% group_by(stichprobe) %&gt;% mutate(
   Rsq_adj = summary(lm(Y ~ X1 + X2))$adj.r.squared
 ) -&gt; samples</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-79-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-80-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Durchschnittlicher adjustierter Determinationskoeffizient, <span
 class="math inline">\(\overline{R}_{Wherry-1}^2\)</span>:</p>
 <pre><code>## [1] -0.006197947</code></pre>
@@ -2570,7 +2583,7 @@ class="math inline">\(X_2\)</span> leicht negativ</li>
 <li>im Datensatz ist ein simulierter Interaktionseffekt vorhanden</li>
 <li>normalverteiltes Residuum</li>
 </ul>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-83-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-84-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Vergleich von uneingeschränktem Modell (mit Interaktion) und
 eingeschränktem (ohne Interaktion):</p>
 <pre class="r"><code>lm_u &lt;- lm(Y ~ X1 * X2, samples)
@@ -2662,9 +2675,9 @@ aufklären, sind im Modell enthalten.</p>
 <h4>Prüfung der Linearität</h4>
 <p>Plot der Residuen gegenüber den vorhergesagten (fitted) Werten</p>
 <p><strong>Eingeschränktes Modell:</strong></p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-86-1.png" width="768" style="display: block; margin: auto;" /></p>
-<p><strong>Uneingeschränktes Modell:</strong></p>
 <p><img src="statistik-2_files/figure-html/unnamed-chunk-87-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><strong>Uneingeschränktes Modell:</strong></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-88-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><strong>Die durchschnittlichen Residuen aller Kombinationen der UVs
 sollten einer Geraden mit Steigung 0 folgen, wenn Linearität gegeben
 ist.</strong></p>
@@ -2702,7 +2715,7 @@ class="section level4">
   geom_point() +
   labs(x = &quot;Vorhersage&quot;, y = &quot;Residuum&quot;) +
   theme_custom</code></pre>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-89-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-90-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Es sind keine offensichtlichen Unterschieden in der Varianz der
 Residuen erkennbar. Damit liegt vermutlich Homoskedastizität vor, sollte
 aber dennoch genau getestet werden.</p>
@@ -2727,9 +2740,9 @@ Normalverteilung der Residuen angenommen werden.</p>
 <div id="visuelle-prüfung-der-normalverteilung" class="section level4">
 <h4>Visuelle Prüfung der Normalverteilung</h4>
 <p><strong>Histogram der Residuen</strong></p>
-<p><img src="statistik-2_files/figure-html/unnamed-chunk-91-1.png" width="768" style="display: block; margin: auto;" /></p>
-<p><strong>Q-Q-Plot, Quantil-Quantil-Diagramm</strong></p>
 <p><img src="statistik-2_files/figure-html/unnamed-chunk-92-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><strong>Q-Q-Plot, Quantil-Quantil-Diagramm</strong></p>
+<p><img src="statistik-2_files/figure-html/unnamed-chunk-93-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p>Wenn die Residuumswerte nah an der theoretischen Normalverteilung
 (entlang der diagonalen Geraden) liegen, liegt vermutlich
 Normalverteilung vor, sollte aber noch genau getestet werden.</p>

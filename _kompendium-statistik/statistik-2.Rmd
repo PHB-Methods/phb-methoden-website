@@ -874,8 +874,6 @@ Konventionen für Effektinterpretationen für $\delta$ nach Cohen:
 - $|d|  \approx 0.35$: "mittlerer" Effekt
 - $|d|  \approx 0.57$: "großer" Effekt
 
-**TODO: ci.smd in R (MBESS)**
-
 ### Einstichproben-Gauss-Test
 
 Voraussetzungen:
@@ -926,7 +924,7 @@ samples
 ```
 
 ```{r message=FALSE}
-library(BSDA)
+# Paket: BSDA
 
 z.test(samples, mu = 0, sigma.x = 1, conf.level = 0.95, alternative = "greater")
 ```
@@ -1180,7 +1178,19 @@ ggplot() +
 #### Zweistichproben T-Test in R
 
 ```{r}
-t.test(samples2$x, y = samples1$x, alternative = "greater", conf.level = 0.95)
+t.test(samples2$x, y = samples1$x, alternative = "greater", conf.level = 0.95) -> t.result
+t.result
+```
+
+Bestimmung der Konfidenzintervalle des Effekts (Cohen's $d$):
+
+```{r}
+# Paket: MBESS
+
+ci.smd(t.result$statistic,
+       n.1 = length(samples1),
+       n.2 = length(samples2),
+       conf.level = 0.95)
 ```
 
 ## Power und Stichprobenplanung
@@ -1254,7 +1264,7 @@ $\beta$ ist ebenfalls vom Effekt abhängig. Zur Planung der Stichprobengröße m
 ### Stichprobenplanung in R
 
 ```{r}
-library(pwr)
+# Paket: pwr
 
 # post-hoc Power-Analyse für einseitigen Gauss-Test/Z-Test
 # - Stichproben-Signifikanztest
