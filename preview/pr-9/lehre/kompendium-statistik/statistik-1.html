@@ -63,10 +63,10 @@
 
   <meta name="author" content="Esther Weidauer">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2024-09-12T11:54:53+00:00">
+  <meta property="og:updated_time" content="2024-09-12T12:40:17+00:00">
   <meta property="article:published_time" content="">
-  <meta property="article:modified_time" content="2024-09-12T11:54:53+00:00">
-  <meta name="revised" content="2024-09-12T11:54:53+00:00">
+  <meta property="article:modified_time" content="2024-09-12T12:40:17+00:00">
+  <meta name="revised" content="2024-09-12T12:40:17+00:00">
 
 
 <script type="application/ld+json">
@@ -76,7 +76,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "B.Sc. Psychologie Statisik I" },
       "datePublished": "",
-      "dateModified": "2024-09-12T11:54:53+00:00",
+      "dateModified": "2024-09-12T12:40:17+00:00",
     
     "name": "B.Sc. Psychologie Statisik I",
     "description": "Psychologische Methodenlehre. Statistik und Forschungsmethoden an der Psychologischen Hochschule Berlin",
@@ -668,7 +668,13 @@ nach Yeo &amp; Johnson (2000)</a></li>
 
 <div id="einleitung" class="section level1">
 <h1>Einleitung</h1>
-<p><strong>still TODO</strong></p>
+<p>Statistik I umfasst Grundlagen der Wahrscheinlichkeitstheorie,
+Datenmanagement, sowie diverse deskriptive Statistiken und wie sie in R
+angewendet werden können.</p>
+<p>Diese Zusammenfassung basiert auf der Vorlesung Statistik I im
+Wintersemester 2023/24 an der PHB bei Professor Robert Miller, sowie dem
+Lehrbuch “Statistik und Forschungsmethoden” von Eid, Gollwitzer und
+Schmitt (5.Auflage).</p>
 </div>
 <div id="wahrscheinlichkeitstheorie" class="section level1">
 <h1>Wahrscheinlichkeitstheorie</h1>
@@ -1277,7 +1283,7 @@ Daten</li>
 </ul>
 <pre class="r"><code>data.long %&gt;%
   ggplot(aes(x = wind)) +
-  geom_histogram(bins = 30, color = "white", fill = "skyblue4") +
+  geom_histogram(bins = 30, color = "white", fill = colors[2]) +
   theme_custom</code></pre>
 <p><img src="statistik-1_files/figure-html/unnamed-chunk-18-1.png" width="768" style="display: block; margin: auto;"></p>
 <div id="kerndichteschätzer" class="section level3">
