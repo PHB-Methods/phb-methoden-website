@@ -63,10 +63,10 @@
 
   <meta name="author" content="Esther Weidauer">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2024-09-11T23:48:11+00:00">
+  <meta property="og:updated_time" content="2024-09-12T11:54:53+00:00">
   <meta property="article:published_time" content="">
-  <meta property="article:modified_time" content="2024-09-11T23:48:11+00:00">
-  <meta name="revised" content="2024-09-11T23:48:11+00:00">
+  <meta property="article:modified_time" content="2024-09-12T11:54:53+00:00">
+  <meta name="revised" content="2024-09-12T11:54:53+00:00">
 
 
 <script type="application/ld+json">
@@ -76,7 +76,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "B.Sc. Psychologie Statisik I" },
       "datePublished": "",
-      "dateModified": "2024-09-11T23:48:11+00:00",
+      "dateModified": "2024-09-12T11:54:53+00:00",
     
     "name": "B.Sc. Psychologie Statisik I",
     "description": "Psychologische Methodenlehre. Statistik und Forschungsmethoden an der Psychologischen Hochschule Berlin",
@@ -510,7 +510,7 @@
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>September 11, 2024</span>
+      <span>September 12, 2024</span>
     </span>
   
 </div>
@@ -645,7 +645,24 @@ Ratio)</a></li>
 <li><a href="#bravias-pearson-korrealationskoeffzient" id="toc-bravias-pearson-korrealationskoeffzient">Bravias-Pearson-Korrealationskoeffzient</a></li>
 </ul>
 </li>
-<li><a href="#modellbildung" id="toc-modellbildung">Modellbildung</a></li>
+<li>
+<a href="#modellbildung" id="toc-modellbildung">Modellbildung</a>
+<ul>
+<li><a href="#parameterschatzung-durch-likelihood-maximierung" id="toc-parameterschatzung-durch-likelihood-maximierung">Parameterschatzung
+durch Likelihood-Maximierung</a></li>
+</ul>
+</li>
+<li>
+<a href="#power-transformationen" id="toc-power-transformationen">Power-Transformationen</a>
+<ul>
+<li><a href="#ein-parameter-power-transformation-nach-box-cox-1964" id="toc-ein-parameter-power-transformation-nach-box-cox-1964">Ein-Parameter
+Power-Transformation nach Box &amp; Cox (1964)</a></li>
+<li><a href="#zwei-parameter-power-transformation-nach-box-cox-1964" id="toc-zwei-parameter-power-transformation-nach-box-cox-1964">Zwei-Parameter
+Power-Transformation nach Box &amp; Cox (1964)</a></li>
+<li><a href="#power-transformation-nach-yeo-johnson-2000" id="toc-power-transformation-nach-yeo-johnson-2000">Power-Transformation
+nach Yeo &amp; Johnson (2000)</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -1868,7 +1885,147 @@ der beiden Merkmale:</p>
 </div>
 <div id="modellbildung" class="section level1">
 <h1>Modellbildung</h1>
-<p><strong>TODO</strong></p>
+<p>Modelle beschreiben eine idealisierte Verteilung von Merkmalen in
+einer Population und sind durch ihre Parameter definiert.</p>
+<p>Beispiele:</p>
+<table>
+<colgroup>
+<col width="30%">
+<col width="69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normalverteilung</td>
+<td>Standardabweichung <span class="math inline">\(\sigma\)</span><br>Mittelwert <span class="math inline">\(\mu\)</span>
+</td>
+</tr>
+<tr class="even">
+<td>Student-t-Verteilung</td>
+<td>Freiheitsgrade <span class="math inline">\(df\)</span>
+</td>
+</tr>
+<tr class="odd">
+<td>Binomialverteilung</td>
+<td>Einzelwahrscheinlichkeit <span class="math inline">\(p\)</span><br>Ziehungszahl <span class="math inline">\(n\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="parameterschatzung-durch-likelihood-maximierung" class="section level2">
+<h2>Parameterschatzung durch Likelihood-Maximierung</h2>
+<p>Die Likelihood ist die verkettete Wahrscheinlichkeit des Auftretens
+aller beobachteten Ausprägungen unter der Annahme bestimmter
+Modellparameter:</p>
+<p><span class="math display">\[Lik = \prod_{i = 1}^n x_n = Pr(x_1)
+\cdot Pr(x_2) \cdot \ldots \cdot Pr(x_n)\]</span></p>
+<p>Da Wahrscheinlichkeiten immer <span class="math inline">\(\le
+1\)</span> sind, wird die Likelihood oft eine sehr kleine Zahl. Um sie
+besser handhaben zu können und Präzisionsprobleme bei der Auswertung mit
+Computern zu vermeiden, wird sie oft logarithmiert (mit dem natürlichen
+Logarithmus <span class="math inline">\(log_e(x)\)</span>) als
+Log-Likelihood (<span class="math inline">\(LogLik\)</span>). Nach den
+Logarithmengesetzen (Produktregel) ist <span class="math inline">\(LogLik\)</span> die Summe der logarithmierten
+Wahrscheinlichkeiten:</p>
+<p><span class="math display">\[LogLik = log(Lik) = \sum_{i=1}^n
+log(Pr(x_n))\]</span></p>
+<p><strong>Hinweis:</strong> die Log-Likelihood ist immer negativ, weil
+Wahrscheinlichkeiten immer <span class="math inline">\(\le 1\)</span>
+sind. Das kann zu Irrtümern bei der Maximierung führen, da kleinere
+negative Zahlen eine größeren Betrag haben (z.B. <span class="math inline">\(-8253 \lt -2417\)</span>).</p>
+<p>Die maximale Likelihood wird meist numerisch bestimmt. Ein einfaches
+Verfahren ist, die Likelihood für Werte der Modellparameter in einem
+bestimmten Bereich zu testen und dann das Maximum durch Sortierung zu
+finden.</p>
+<p>Beispiel:</p>
+<p><img src="statistik-1_files/figure-html/unnamed-chunk-32-1.png" width="768" style="display: block; margin: auto;"></p>
+<p>Anhand des Histogramms, wird der Mittelwert bei ca. 106 vermutet, die
+Standardabweichung bei 2.</p>
+<p>Modellanpassung einer Normalverteilung mittels Optimierung in R:</p>
+<pre class="r"><code># Berechnung der LogLikelihood der Samples in einer Funktion
+loglik_samples &lt;- function(params) {
+  m &lt;- params[1]
+  s &lt;- params[2]
+  
+  sum(log(dnorm(samples, mean = m, sd = s)))
+}
+
+optim(
+  c(106,2), # initiale vermutete Werte, mit denen die Optimierung beginnt
+  loglik_samples, # Funktion, die optimiert werden soll
+  control = list(fnscale = -1) # Einstellung für Maximierung statt Minimierung
+  )</code></pre>
+<pre><code>## $par
+## [1] 105.647904   1.844083
+## 
+## $value
+## [1] -203.1024
+## 
+## $counts
+## function gradient 
+##       65       NA 
+## 
+## $convergence
+## [1] 0
+## 
+## $message
+## NULL</code></pre>
+</div>
+</div>
+<div id="power-transformationen" class="section level1">
+<h1>Power-Transformationen</h1>
+<ul>
+<li>erzeugt Werte die näher an einer Normalverteilung liegen</li>
+<li>nur für positive Ausprägungen geeignet</li>
+</ul>
+<p>Power-Transformationen dienen dazu, Daten in einfachere Verteilungen
+zu überführen (z.B. Normalverteilung).</p>
+<div id="ein-parameter-power-transformation-nach-box-cox-1964" class="section level2">
+<h2>Ein-Parameter Power-Transformation nach Box &amp; Cox (1964)</h2>
+<p><span class="math display">\[
+y_i(\lambda) = \begin{cases}
+  \frac{y_i^{\lambda}-1}{\lambda} ,&amp; \lambda \ne 0 \\
+  ln(y_i) ,&amp; \lambda = 0
+\end{cases}
+\]</span></p>
+<p>Der am besten passende Parameter <span class="math inline">\(\lambda\)</span> kann mittels <a href="#parameterschatzung-durch-likelihood-maximierung">Likelihood-Maximierung</a>
+geschätzt werden.</p>
+</div>
+<div id="zwei-parameter-power-transformation-nach-box-cox-1964" class="section level2">
+<h2>Zwei-Parameter Power-Transformation nach Box &amp; Cox (1964)</h2>
+<ul>
+<li>erzeugt Werte die näher an einer Normalverteilung liegen</li>
+<li>nur für positive Ausprägungen geeignet</li>
+</ul>
+<p><span class="math display">\[
+y_i(\lambda_1, \lambda_2) = \begin{cases}
+  \frac{(y_i + \lambda_2)^{\lambda_1}-1}{\lambda_1} ,&amp; \lambda_1 \ne
+0 \\
+  ln(y_i + \lambda_2) ,&amp; \lambda_1 = 0
+\end{cases}
+\]</span></p>
+</div>
+<div id="power-transformation-nach-yeo-johnson-2000" class="section level2">
+<h2>Power-Transformation nach Yeo &amp; Johnson (2000)</h2>
+<ul>
+<li>erzeugt Werte die näher an der Normalverteilung liegen</li>
+<li>auch geeignet für negative Ausprägungen</li>
+</ul>
+<p><span class="math display">\[
+y_i(\lambda) = \begin{cases}
+  ((y_i + 1) ^\lambda -1) / \lambda ,&amp; \lambda \ne 0, y \ge 0 \\
+  ln(y_i +1) ,&amp; \lambda = 0, y \ge 0\\
+  -((-y_i + 1)^{2-\lambda}-1) / (2-\lambda) ,&amp; \lambda \ne 2, y \lt
+0 \\
+  -ln(-y_i +1) ,&amp; \lambda = 2, y \lt 0
+\end{cases}
+\]</span></p>
+</div>
 </div>
 
 
