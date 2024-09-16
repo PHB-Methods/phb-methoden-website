@@ -581,7 +581,7 @@ $e_{ij}$ ist die erwartete Häufigkeit unter der Annahme, dass kein Zusammenhang
 
 $$e_{ij} = \frac{n_i \cdot n_j}{n}$$
 
-## Craver-V-Keoffizient
+## Cramer's-V-Koeffizient
 
 - abgeleitet von $\chi^2$
 - geeignet für nominal-skalierte Merkmale mit mehreren Ausprägungen (polytom)
@@ -611,7 +611,7 @@ $\rho$ ist vereinfacht die mittlere Produktsumme der [z-transformierten](#z-wert
 $$\rho = \frac{1}{n-1}\sum_{i=1}^{n}{z_1 \cdot z_2}$$
 
 
-## Kendall-Tau-Korrelationskoeffzient
+## Kendall's-Tau-Korrelationskoeffizient
 
 - geeignet für ordinal-skalierte Variablen ohne Rangbindung
 - ohne Modifikation nicht geeignet, wenn geteilte Ränge vorliegen
@@ -687,7 +687,7 @@ $$COV = \frac{1}{n-1} \cdot \sum_{i=1}^n{(x_{i,1} - \overline{x}_1)\cdot((x_{i,2
 
 Analog zur [Stichprobenvarianz](#stichprobenvarianz). Diese ist die Kovarianz eines Merkmals mit sich selbst.
 
-## Bravias-Pearson-Korrealationskoeffzient
+## Bravais-Pearson-Korrelationskoeffzient
 
 - geeignet für metrische Variablen
 - abgeleitet aus der Kovarianz
