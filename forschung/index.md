@@ -36,8 +36,6 @@ Our research aims to harmonize research processes and develop consensus guidelin
 
 {% capture text %}
 
-Inference in partial correlation networks (Georg Hosoya)
-
 {%
   include button.html
   link="research"
