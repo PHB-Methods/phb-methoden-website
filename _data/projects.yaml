@@ -27,7 +27,7 @@
 
 - title: Kompendium Statistik I
   subtitle:
-  image: images/photo.jpg
+  image: images/teach-Stat1_Cover.jpg
   link: /lehre/kompendium-statistik/statistik-1.html
   description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik I
   tags:
@@ -35,7 +35,7 @@
 
 - title: Kompendium Statistik II
   subtitle:
-  image: images/photo.jpg
+  image: images/teach-Stat2_Cover.jpg
   link: /lehre/kompendium-statistik/statistik-2.html
   description: Übersicht und Zusammenfassung der Vorlesung und Übung Statistik II
   tags:
@@ -47,8 +47,8 @@
   link: https://learningstatisticswithr.com/
   description: Dieses englisch-sprachige Buch basiert auf einem einführenden Statistikkurs für Psychologiestudenten, der an der Universität von Adelaide angeboten wird und die Statistiksoftware R als primäres Werkzeug verwendet.
   tags:
-    - Resource
     - Publication
+    - Resource
 
 - title: Noise Fields for Procedural Art
   subtitle: a tutorial for procedural art in R
