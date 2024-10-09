@@ -31,6 +31,8 @@ storms -> data.long
 storms %>% filter(year >= 2010, year < 2020) -> data.short
 ```
 
+[&rarr; Statistik II](statistik-2.html)
+
 # Einleitung 
 
 Statistik I umfasst Grundlagen der Wahrscheinlichkeitstheorie, Datenmanagement, sowie diverse deskriptive Statistiken und wie sie in R angewendet werden können.

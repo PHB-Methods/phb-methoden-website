@@ -35,6 +35,8 @@ storms -> data.long
 storms %>% filter(year >= 2010, year < 2020) -> data.short
 ```
 
+[&rarr; Statistik I](statistik-1.html)
+
 # Einleitung
 
 Statistik II umfasst hauptsächlich Inferenzstatistik und hypothesen-prüfende Tests sowie Verfahren zur Behandlung von Fehlerwahrscheinlichkeiten in wissenschaftlichen Studien.
