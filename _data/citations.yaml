@@ -501,6 +501,23 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
+- id: pmid:27050418
+  title: Measuring Hair Cortisol Concentrations to Assess the Effect of Anthropogenic
+    Impacts on Wild Chimpanzees (Pan troglodytes).
+  authors:
+  - Esther H D Carlitz
+  - Robert Miller
+  - Clemens Kirschbaum
+  - Wei Gao
+  - "Daniel C H\xE4nni"
+  - Carel P van Schaik
+  publisher: PloS one
+  date: '2016-04-06'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27050418
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: pmid:26545614
   title: 'Therapists'' and patients'' stress responses during graduated versus flooding
     in vivo exposure in the treatment of specific phobia: A preliminary observational
@@ -531,25 +548,6 @@
   publisher: General and comparative endocrinology
   date: '2015-09-26'
   link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
-  orcid: 0000-0002-8665-5248
-  robert-miller: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: pmid:26072152
-  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
-    symptom increase after trauma exposure during military deployment.
-  authors:
-  - Susann Steudte-Schmiedgen
-  - Tobias Stalder
-  - "Sabine Sch\xF6nfeld"
-  - Hans-Ulrich Wittchen
-  - Sebastian Trautmann
-  - Nina Alexander
-  - Robert Miller
-  - Clemens Kirschbaum
-  publisher: Psychoneuroendocrinology
-  date: '2015-05-23'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
