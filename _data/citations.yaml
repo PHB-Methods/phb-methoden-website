@@ -288,6 +288,24 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
+- id: pmid:28135674
+  title: 'Stress-related and basic determinants of hair cortisol in humans: A meta-analysis.'
+  authors:
+  - Tobias Stalder
+  - Susann Steudte-Schmiedgen
+  - Nina Alexander
+  - Tim Klucken
+  - Annika Vater
+  - Susann Wichmann
+  - Clemens Kirschbaum
+  - Robert Miller
+  publisher: Psychoneuroendocrinology
+  date: '2017-01-10'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28135674
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1037/int0000086
   title: "Habituation of stress in psychotherapists performing subsequent in vivo\
     \ exposures\u2014A case series."
@@ -386,6 +404,22 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
+- id: pmid:27378327
+  title: Hydrocortisone Counteracts Adverse Stress Effects on Dual-Task Performance
+    by Improving Visual Sensory Processes.
+  authors:
+  - Lisa J Weckesser
+  - Nina C Alexander
+  - Clemens Kirschbaum
+  - Eva Mennigen
+  - Robert Miller
+  publisher: Journal of cognitive neuroscience
+  date: '2016-07-05'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27378327
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: pmid:27147264
   title: "Effects of Ginkgo biloba extract EGb 761\xAE on cognitive control functions,\
     \ mental activity of the prefrontal cortex and stress reactivity in elderly adults\
@@ -402,6 +436,27 @@
   publisher: Human psychopharmacology
   date: '2016-05-01'
   link: https://www.ncbi.nlm.nih.gov/pubmed/27147264
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26649618
+  title: Impact of Antenatal Glucocorticoid Therapy and Risk of Preterm Delivery on
+    Intelligence in Term-Born Children.
+  authors:
+  - Nina Alexander
+  - "Franziska Rosenl\xF6cher"
+  - Lucia Dettenborn
+  - Tobias Stalder
+  - Julia Linke
+  - Wolfgang Distler
+  - Joachim Morgner
+  - Robert Miller
+  - Matthias Kliegel
+  - Clemens Kirschbaum
+  publisher: The Journal of clinical endocrinology and metabolism
+  date: '2015-12-09'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26649618
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
@@ -446,23 +501,6 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
-- id: pmid:27050418
-  title: Measuring Hair Cortisol Concentrations to Assess the Effect of Anthropogenic
-    Impacts on Wild Chimpanzees (Pan troglodytes).
-  authors:
-  - Esther H D Carlitz
-  - Robert Miller
-  - Clemens Kirschbaum
-  - Wei Gao
-  - "Daniel C H\xE4nni"
-  - Carel P van Schaik
-  publisher: PloS one
-  date: '2016-04-06'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/27050418
-  orcid: 0000-0002-8665-5248
-  robert-miller: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: pmid:26545614
   title: 'Therapists'' and patients'' stress responses during graduated versus flooding
     in vivo exposure in the treatment of specific phobia: A preliminary observational
@@ -493,6 +531,25 @@
   publisher: General and comparative endocrinology
   date: '2015-09-26'
   link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26072152
+  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
+    symptom increase after trauma exposure during military deployment.
+  authors:
+  - Susann Steudte-Schmiedgen
+  - Tobias Stalder
+  - "Sabine Sch\xF6nfeld"
+  - Hans-Ulrich Wittchen
+  - Sebastian Trautmann
+  - Nina Alexander
+  - Robert Miller
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2015-05-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
