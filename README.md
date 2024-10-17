@@ -1,5 +1,5 @@
 
-# PHB-MethodsDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# Homepage of the PHB Chair of Psychological Methods 
 
 Visit **[methodenlehre.phb.de](http://methodenlehre.phb.de)** 🚀
 
