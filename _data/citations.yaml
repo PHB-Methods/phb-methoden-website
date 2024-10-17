@@ -1119,12 +1119,8 @@
 - id: doi:10.25656/01:23993
   title: Indicators measuring preschool teachers' stimulation quality. Theoretical
     background and empirical testing
-  authors:
-  - Lara Pohle
-  - Georg Hosoya
-  - Catharina Loftfield
-  - "Lars Jen\xDFen"
-  publisher: "Zeitschrift f\xFCr P\xE4dagogik"
+  authors: []
+  publisher: Beltz Juventa
   date: '2019-01-01'
   link: https://doi.org/g8j6mf
   orcid: 0000-0002-8130-2259
