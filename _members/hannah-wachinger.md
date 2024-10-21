@@ -1,5 +1,5 @@
 ---
-name: Hannah Wachinger
+name: Hannah Wachinger, M.Sc.
 image: images/portrait-hannah-wachinger.jpg
 description: Tutorin
 role: shk
