@@ -12,5 +12,5 @@ links:
 
 ## Lehrveranstaltung: Tutorium Statistik 1
 
-Das Tutorium findem während der Vorlesungszeit Donnerstags zwischen 12 bis 14 Uhr statt. 
+Das Tutorium findet während der Vorlesungszeit Donnerstags zwischen 12 und 14 Uhr statt. 
 
