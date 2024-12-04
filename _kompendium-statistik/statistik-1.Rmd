@@ -243,7 +243,9 @@ Median entspricht $Q_{50}$, Minimum und Maximum entsprechen $Q_{0}$ bzw. $Q_{100
 
 ### Berechnung
 
-Position des Quantils: $Q_{p} \to i = \frac{n}{p}$
+Position des Quantils: $Q_{p} \to i = n \cdot p$
+
+Z.B. bei $n = 200$ für $Q_{75}$: $i = 200 * 0.75 = 150$
 
 Wenn $i$ ganze Zahl ist, dann ist $Q_{p} = \frac{x_{i} + x_{i+1}}{2}$ (Mittelwert aus Position $x_{i}$ und $x_{i + 1}$)
 
