@@ -21,7 +21,16 @@
   group: qualifikation
   image: images/quali-assurance.png
   link: https://www.tandfonline.com/doi/full/10.1080/03610918.2016.1259476
-  description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt sind oder nur sehr unpräzise geschätzt wurde?
+  description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt sind oder nur sehr unpräzise geschätzt wurden?
+  tags:
+    - Bachelor, Master
+    
+- title: Überkonfidenz durch Random-Intercept Modellierung
+  subtitle: "Betreuer: Robert Miller"
+  group: qualifikation
+  image: images/quali-assurance.png
+  link: https://pmc.ncbi.nlm.nih.gov/articles/PMC2657178/
+  description: Wie hoch ist die Prävalenz von Random-Intercept Modellen in der Psychologie? Wie kann die resultierende Überkonfidenz post-hoc adressiert werden? 
   tags:
     - Master
 
