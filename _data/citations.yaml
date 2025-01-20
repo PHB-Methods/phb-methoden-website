@@ -481,6 +481,30 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
+- id: pmid:26563991
+  title: 'Assessment of the cortisol awakening response: Expert consensus guidelines.'
+  authors:
+  - Tobias Stalder
+  - Clemens Kirschbaum
+  - Brigitte M Kudielka
+  - Emma K Adam
+  - Jens C Pruessner
+  - "Stefan W\xFCst"
+  - Samantha Dockray
+  - Nina Smyth
+  - Phil Evans
+  - Dirk H Hellhammer
+  - Robert Miller
+  - Mark A Wetherell
+  - Sonia J Lupien
+  - Angela Clow
+  publisher: Psychoneuroendocrinology
+  date: '2015-10-20'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26563991
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1162/jocn_a_01006
   title: Hydrocortisone Counteracts Adverse Stress Effects on Dual-Task Performance
     by Improving Visual Sensory Processes
@@ -532,21 +556,18 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
-- id: pmid:26072152
-  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
-    symptom increase after trauma exposure during military deployment.
+- id: pmid:26409891
+  title: Effects of body region and time on hair cortisol concentrations in chimpanzees
+    (Pan troglodytes).
   authors:
-  - Susann Steudte-Schmiedgen
-  - Tobias Stalder
-  - "Sabine Sch\xF6nfeld"
-  - Hans-Ulrich Wittchen
-  - Sebastian Trautmann
-  - Nina Alexander
-  - Robert Miller
+  - Esther H D Carlitz
   - Clemens Kirschbaum
-  publisher: Psychoneuroendocrinology
-  date: '2015-05-23'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
+  - Robert Miller
+  - Joshua Rukundo
+  - Carel P van Schaik
+  publisher: General and comparative endocrinology
+  date: '2015-09-26'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
