@@ -14,7 +14,7 @@
   link: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/
   description: Themen-offene Evaluation der Wirksamkeit und Sicherheit von psychotherapeutischen oder pharmakotherapeutischen Interventionen.
   tags:
-    - Master
+    - Bachelor, Master
 
 - title: Assurance-basierte Stichprobenplanung
   subtitle: "Betreuer: Robert Miller"
@@ -38,7 +38,7 @@
   subtitle: "Betreuer: Georg Hosoya"
   group: qualifikation
   image: images/quali-network.jpg
-  link: 
+  link: https://www.nature.com/articles/s43586-021-00055-w
   description: Überprüfen Sie den Bias, den Standardfehler-Bias und die Coverage bei unregularisierten Partialkorrelationsnetzwerken in Abhängigkeit der Stichprobengröße und der Anzahl der Knoten.
   tags:
     - Bachelor, Master
