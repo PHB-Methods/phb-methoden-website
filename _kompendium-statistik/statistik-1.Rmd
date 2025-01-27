@@ -683,7 +683,7 @@ list(
 ## Kovarianz
 
 - geeignet für metrische Variablen
-- Wertebereich: $[0, +\infty]$
+- Wertebereich: $[-\infty, +\infty]$
 - **keine Korrelation**
 - empfindlich für Extremwerte
 
