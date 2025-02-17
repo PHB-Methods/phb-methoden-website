@@ -1,5 +1,18 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.31234/osf.io/mg23h_v2
+  title: 'Regions of Evidence: a Bayesian method for assessing the impact of prior
+    evidence on the credibility of hypotheses'
+  authors:
+  - "Michael H\xF6fler"
+  - Robert Miller
+  publisher: Center for Open Science
+  date: '2025-02-12'
+  link: https://doi.org/g848ps
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/kx7h2
   title: Mathematical modeling of the cortisol stress response to develop indicators
     that are applicable across studies
