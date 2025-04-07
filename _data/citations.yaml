@@ -585,6 +585,25 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
+- id: pmid:26072152
+  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
+    symptom increase after trauma exposure during military deployment.
+  authors:
+  - Susann Steudte-Schmiedgen
+  - Tobias Stalder
+  - "Sabine Sch\xF6nfeld"
+  - Hans-Ulrich Wittchen
+  - Sebastian Trautmann
+  - Nina Alexander
+  - Robert Miller
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2015-05-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1002/cpp.1936
   title: 'Baseline Patient Characteristics Predicting Outcome and Attrition in Cognitive
     Therapy for Social Phobia: Results from a Large Multicentre Trial'
