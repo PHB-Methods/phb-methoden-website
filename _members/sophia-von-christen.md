@@ -10,7 +10,7 @@ links:
   email: s.vonchristen@stud.phb.de
 ---
 
-## Lehrveranstaltung: Tutorium Statistik 1
+## Lehrveranstaltung: Tutorium Statistik 1 & 2
 
-Das Tutorium findet während der Vorlesungszeit Donnerstags zwischen 12 und 14 Uhr statt. 
+Die Tutorien findet während der Vorlesungszeit Donnerstags zwischen 12 und 14 Uhr statt. 
 
