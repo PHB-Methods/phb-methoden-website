@@ -10,7 +10,7 @@ links:
   email: j.niederleithner@stud.phb.de
 ---
 
-## Lehrveranstaltung: Tutorium Statistik 1
+## Lehrveranstaltung: Tutorium Statistik 1 & 2
 
-Das Tutorium findet während der Vorlesungszeit Donnerstags zwischen 12 und 14 Uhr statt.
+Die Tutorien finden während der Vorlesungszeit Donnerstags zwischen 12 und 14 Uhr statt.
 
