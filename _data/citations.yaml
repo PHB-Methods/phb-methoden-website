@@ -586,18 +586,21 @@
   robert-miller: true
   plugin: orcid.py
   file: orcid.yaml
-- id: pmid:26409891
-  title: Effects of body region and time on hair cortisol concentrations in chimpanzees
-    (Pan troglodytes).
+- id: pmid:26072152
+  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
+    symptom increase after trauma exposure during military deployment.
   authors:
-  - Esther H D Carlitz
-  - Clemens Kirschbaum
+  - Susann Steudte-Schmiedgen
+  - Tobias Stalder
+  - "Sabine Sch\xF6nfeld"
+  - Hans-Ulrich Wittchen
+  - Sebastian Trautmann
+  - Nina Alexander
   - Robert Miller
-  - Joshua Rukundo
-  - Carel P van Schaik
-  publisher: General and comparative endocrinology
-  date: '2015-09-26'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
+  - Clemens Kirschbaum
+  publisher: Psychoneuroendocrinology
+  date: '2015-05-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
