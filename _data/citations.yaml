@@ -1,5 +1,34 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1177/10775595251352425
+  title: 'Lost Narratives: Identifying Predictors of Attrition and Differences in
+    Recruitment Effort in a Longitudinal Study on Child Maltreatment'
+  authors:
+  - Jan Keil
+  - Josephine Breuer
+  - "Romy K\xFCchler"
+  - Angelika J. Bracher
+  - Charlotte C. Schulz
+  - "Dorukhan A\xE7\u0131l"
+  - Sarah Bergmann
+  - Nina Alexander
+  - Tobias Stalder
+  - Robert Miller
+  - Maria Licata-Dandel
+  - Volker Mall
+  - Michaela Augustin
+  - Anne Sophie Wenzel
+  - Georg von Polier
+  - Daniel Radeloff
+  - Kai von Klitzing
+  - Lars O. White
+  publisher: Child Maltreatment
+  date: '2025-07-04'
+  link: https://doi.org/g9sgz8
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/4mejy_v1
   title: A meta-analysis on the relation between acute stress exposure, alcohol consumption
     and cortisol levels in individuals with a personal, familial or no alcohol use
@@ -598,25 +627,6 @@
   publisher: General and comparative endocrinology
   date: '2015-09-26'
   link: https://www.ncbi.nlm.nih.gov/pubmed/26409891
-  orcid: 0000-0002-8665-5248
-  robert-miller: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: pmid:26072152
-  title: Hair cortisol concentrations and cortisol stress reactivity predict PTSD
-    symptom increase after trauma exposure during military deployment.
-  authors:
-  - Susann Steudte-Schmiedgen
-  - Tobias Stalder
-  - "Sabine Sch\xF6nfeld"
-  - Hans-Ulrich Wittchen
-  - Sebastian Trautmann
-  - Nina Alexander
-  - Robert Miller
-  - Clemens Kirschbaum
-  publisher: Psychoneuroendocrinology
-  date: '2015-05-23'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/26072152
   orcid: 0000-0002-8665-5248
   robert-miller: true
   plugin: orcid.py
