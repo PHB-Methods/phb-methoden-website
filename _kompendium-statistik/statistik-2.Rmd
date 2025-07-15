@@ -1124,7 +1124,7 @@ Prüfgröße:
 
 $$T = t_{\overline{x}_1} - t_{\overline{x}_2} = \frac{\overline{x}_1 - \overline{x}_2} {\hat{\sigma}_{\overline{x}_1 - \overline{x}_2}}$$
 
-$T$ folgt der Student-T-Verteilung mit $df = n_1 + n_2 - 2$$ Freiheitsgraden
+$T$ folgt der Student-T-Verteilung mit $df = n_1 + n_2 - 2$ Freiheitsgraden
 
 $$T \sim Student(0, 1, n_1 + n_2 - 2)$$
 
