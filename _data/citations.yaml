@@ -1282,3 +1282,88 @@
   georg-hosoya: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1026/0012-1924/a000347
+  title: Kritische-Lebensereignis-Kategorien-Skala (KLEKS) zur Erfassung bedeutsamer           Lebenserfahrungen
+  authors:
+  - Lara Oeltjen
+  - Alexandra Zapko-Willmes
+  - Yannik Wiechers
+  - Christian Kandler
+  publisher: Diagnostica
+  date: '2025-05-14'
+  link: https://doi.org/g9vvsh
+  orcid: 0000-0001-8640-2956
+  lara-oeltjen: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1037/met0000592
+  title: "A general framework for the inclusion of time-varying and time-invariant\
+    \ covariates in latent state\u2013trait models."
+  authors:
+  - Lara Oeltjen
+  - Tobias Koch
+  - Jana Holtmann
+  - "Fabian F. M\xFCnch"
+  - Michael Eid
+  - Fridtjof W. Nussbeck
+  publisher: Psychological Methods
+  date: '2023-10-01'
+  link: https://doi.org/gswph9
+  orcid: 0000-0001-8640-2956
+  lara-oeltjen: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0269327
+  title: "A DSM-5 AMPD and ICD-11 compatible measure for an early identification of\
+    \ personality disorders in adolescence\u2013LoPF-Q 12\u201318 latent structure\
+    \ and short form"
+  authors:
+  - Ronan Zimmermann
+  - Martin Steppan
+  - Johannes Zimmermann
+  - Lara Oeltjen
+  - "Marc Birkh\xF6lzer"
+  - Klaus Schmeck
+  - Kirstin Goth
+  publisher: PLOS ONE
+  date: '2022-09-21'
+  link: https://doi.org/g9vvsj
+  orcid: 0000-0001-8640-2956
+  lara-oeltjen: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.05.19.22275330
+  title: "A DSM-5 AMPD and ICD-11 compatible measure for an early identification of\
+    \ personality disorders in adolescence \u2013 LoPF-Q 12-18 latent structure and\
+    \ short form"
+  authors:
+  - Ronan Zimmermann
+  - Martin Steppan
+  - Johannes Zimmermann
+  - Lara Oeltjen
+  - "Marc Birkh\xF6lzer"
+  - Klaus Schmeck
+  - Kirstin Goth
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-05-21'
+  link: https://doi.org/g9vvsk
+  orcid: 0000-0001-8640-2956
+  lara-oeltjen: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1080/17437199.2020.1854051
+  title: "The effects of patients\u2019 expectations on surgery outcome in total hip\
+    \ and knee arthroplasty: a prognostic factor meta-analysis"
+  authors:
+  - Johannes A. C. Laferton
+  - Lara Oeltjen
+  - Karolin Neubauer
+  - David D. Ebert
+  - Thomas Munder
+  publisher: Health Psychology Review
+  date: '2020-12-21'
+  link: https://doi.org/g9vvsm
+  orcid: 0000-0001-8640-2956
+  lara-oeltjen: true
+  plugin: orcid.py
+  file: orcid.yaml
