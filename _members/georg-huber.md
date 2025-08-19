@@ -1,13 +1,13 @@
 ---
-name: Lil Majewski, B.Sc.
-image: images/portrait-lil-majewski.jpg
-description: Tutorin
+name: Georg Huber, B.Sc.
+image: images/portrait-georg-huber.jpg
+description: Tutor
 role: shk
 aliases:
-  - L Majewski
-  - Lil Majewski
+  - G Huber
+  - Georg Huber
 links:
-  email: l.majewski@stud.phb.de
+  email: g.huber@stud.phb.de
 ---
 
 ## Lehrveranstaltung: Tutorium Multivariate Datenanalyse
