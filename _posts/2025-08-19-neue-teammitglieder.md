@@ -4,4 +4,4 @@ image: images/photo.jpg
 author: robert-miller
 ---
 
-Die Arbeitsgruppe erhält in den kommenden Semester Unterstützung durch Julia Niederleithner und Sophia von Christen, welche die Tutorien Statistik 1 und 2 leiten werden. Außerdem freuen wir uns Ida Hawlitschek als Projektstudentin im [Team](/team/) begrüßen zu dürfen.
+Die Arbeitsgruppe erhält im den kommenden Wintersemester 2025/2026 Unterstützung durch Lil Majewski und Georg Huber, welche die Tutorien Multivariate Datenanalyse leiten werden.
