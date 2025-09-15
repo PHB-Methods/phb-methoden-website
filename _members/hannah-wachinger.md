@@ -8,9 +8,10 @@ aliases:
   - Hannah Wachinger
 links:
   email: h.wachinger@stud.phb.de
+active: "former"
 ---
 
 ## Lehrveranstaltung: Tutorium Multivariate Datenanalyse
 
-Das Tutorium findet während der Vorlesungszeit Montags zwischen 16 und 18 Uhr statt. 
+Das Tutorium fand im WiSe 2024/2025 während der Vorlesungszeit Montags zwischen 16 und 18 Uhr statt. 
 
