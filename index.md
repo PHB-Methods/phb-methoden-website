@@ -45,7 +45,7 @@ Das Team der Psychologischen Methodenlehre stellt sich vor.
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/team.png"
   link="team"
   title="Unser Team"
   flip="true"
