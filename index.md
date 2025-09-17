@@ -22,7 +22,7 @@ Services für interne und externe Kollegen und Studierende.
 
 {%
   include feature.html
-  image="images/kolloquium.jpg"
+  image="images/consult.png"
   link="research"
   title="Beratung"
   text=text
