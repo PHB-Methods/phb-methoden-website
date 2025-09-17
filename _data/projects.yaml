@@ -1,7 +1,7 @@
 - title: Reproduktion und Replikation von Forschungsbefunden
   subtitle: "Betreuer: Robert Miller"
   group: qualifikation
-  image: images/quali-ouroboros.jpg
+  image:
   link: https://i4replication.org/
   description: Themen-offene Studien zur Bestätigung existierender Forschungsbefunde. Sowohl Reanalysen von publizierten Primärdaten als auch die Durchführung eigener Replikationsstudien sind möglich.
   tags:
@@ -10,7 +10,7 @@
 - title: Meta-Analysen von Interventionsstudien
   subtitle: "Betreuer: Robert Miller"
   group: qualifikation
-  image: images/quali-Asklepios-staff.jpg
+  image:
   link: https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/
   description: Themen-offene Evaluation der Wirksamkeit und Sicherheit von psychotherapeutischen oder pharmakotherapeutischen Interventionen.
   tags:
@@ -19,7 +19,7 @@
 - title: Assurance-basierte Stichprobenplanung
   subtitle: "Betreuer: Robert Miller"
   group: qualifikation
-  image: images/quali-assurance.png
+  image:
   link: https://www.tandfonline.com/doi/full/10.1080/03610918.2016.1259476
   description: Stichprobenplanungen basieren auf kleinsten relevanten Effektstärken. Wie werden Stichprobenplanungen jedoch durchgeführt, wenn diese unbekannt sind oder nur sehr unpräzise geschätzt wurden?
   tags:
@@ -28,7 +28,7 @@
 - title: Überkonfidenz durch Random-Intercept Modellierung
   subtitle: "Betreuer: Robert Miller"
   group: qualifikation
-  image: images/quali-assurance.png
+  image:
   link: https://pmc.ncbi.nlm.nih.gov/articles/PMC2657178/
   description: Wie hoch ist die Prävalenz von Random-Intercept Modellen in der Psychologie? Wie kann die resultierende Überkonfidenz post-hoc adressiert werden? 
   tags:
@@ -37,7 +37,7 @@
 - title: Simulationsstudie unregularisierte Partialkorrelationsnetzwerke
   subtitle: "Betreuer: Georg Hosoya"
   group: qualifikation
-  image: images/quali-network.jpg
+  image:
   link: https://www.nature.com/articles/s43586-021-00055-w
   description: Überprüfen Sie den Bias, den Standardfehler-Bias und die Coverage bei unregularisierten Partialkorrelationsnetzwerken in Abhängigkeit der Stichprobengröße und der Anzahl der Knoten.
   tags:
