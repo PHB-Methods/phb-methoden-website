@@ -1,5 +1,22 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s41398-025-03641-8
+  title: A systematic review with meta-analysis on the relation between acute stress,
+    alcohol consumption and cortisol levels in individuals with a personal, familial
+    or no alcohol use disorder
+  authors:
+  - Lisa J. Weckesser
+  - Maximilian Pilhatsch
+  - Markus Muehlhan
+  - "Tanja Endra\xDF"
+  - Robert Miller
+  publisher: Translational Psychiatry
+  date: '2025-10-20'
+  link: https://doi.org/g97486
+  orcid: 0000-0002-8665-5248
+  robert-miller: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1177/10775595251352425
   title: 'Lost Narratives: Identifying Predictors of Attrition and Differences in
     Recruitment Effort in a Longitudinal Study on Child Maltreatment'
@@ -1283,14 +1300,15 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1026/0012-1924/a000347
-  title: Kritische-Lebensereignis-Kategorien-Skala (KLEKS) zur Erfassung bedeutsamer           Lebenserfahrungen
+  title: Kritische-Lebensereignis-Kategorien-Skala (KLEKS) zur Erfassung bedeutsamer
+    Lebenserfahrungen
   authors:
   - Lara Oeltjen
   - Alexandra Zapko-Willmes
   - Yannik Wiechers
   - Christian Kandler
   publisher: Diagnostica
-  date: '2025-05-14'
+  date: '2025-07-01'
   link: https://doi.org/g9vvsh
   orcid: 0000-0001-8640-2956
   lara-oeltjen: true
