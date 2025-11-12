@@ -50,8 +50,8 @@ Our research aims to harmonize research processes and develop consensus guidelin
 {%
   include feature.html
   image="images/photo.jpg"
-  link="research"
-  title="Maecenas tempus"
+  link="https://chanse.org/switch/"
+  title="Kindliches Wohlbefinden im Übergang vom Kindergarten in die Grundschule"
   text=text
 %}
 
