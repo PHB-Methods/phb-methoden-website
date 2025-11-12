@@ -46,8 +46,8 @@ link:
 
 website:
   icon: fa-solid fa-globe
-  text: Website
-  tooltip: Website
+  text: PHB Website
+  tooltip: PHB Website
 
 external:
   icon: fa-solid fa-up-right-from-square
@@ -57,7 +57,7 @@ external:
 home-page:
   icon: fa-solid fa-house-user
   text: Home Page
-  tooltip: Home page
+  tooltip: Persoenliche Homepage
 
 email:
   icon: fa-solid fa-envelope
