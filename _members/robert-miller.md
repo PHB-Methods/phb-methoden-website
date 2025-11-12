@@ -8,6 +8,7 @@ aliases:
   - Robert Miller
 links:
   home-page: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
+  phone: +49 30 209166 230
   email: r.miller@phb.de
   github: waidschrat
   calendar: https://calendly.com/rmllr1984
