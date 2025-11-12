@@ -71,6 +71,11 @@ phone:
   tooltip: Phone number
   link: tel:$VALUE
 
+calendar:
+  icon: fa-solid fa-calendar-days
+  text: Calendar
+  tooltip: Meeting
+
 address:
   icon: fa-solid fa-map-location-dot
   text: Address
