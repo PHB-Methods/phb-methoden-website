@@ -7,8 +7,8 @@ aliases:
   - G Hosoya
   - Georg Hosoya
 links:
-  home-page: https://www.psychologische-hochschule.de/forschung-lehre/dr-georg-hosoya/
   email: g.hosoya@phb.de
+  website: https://www.psychologische-hochschule.de/forschung-lehre/dr-georg-hosoya/
 ---
 
 ## Forschungs- und Arbeitsschwerpunkte
