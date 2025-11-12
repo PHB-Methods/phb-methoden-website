@@ -133,8 +133,14 @@ youtube:
 linkedin:
   icon: fa-brands fa-linkedin
   text: LinkedIn
-  tooltip: LinkedIn
+  tooltip: LinkedIn Profil
   link: https://www.linkedin.com/in/$VALUE
+
+bluesky:
+  icon: fa-brands fa-bluesky
+  text: Bluesky
+  tooltip: Bluesky Profil
+  link: https://bsky.app/profile/$VALUE
 
 # alerts
 
