@@ -9,6 +9,7 @@ aliases:
 links:
   home-page: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
   email: r.miller@phb.de
+  github: waidschrat
   calendar: https://calendly.com/rmllr1984
 ---
 
