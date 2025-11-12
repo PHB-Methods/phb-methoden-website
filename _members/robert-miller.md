@@ -8,9 +8,12 @@ aliases:
   - Robert Miller
 links:
   home-page: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
-  e-mail: r.miller@phb.de
+  email: r.miller@phb.de
   calendar: https://calendly.com/rmllr1984
 ---
+
+Bei Interesse an oder Unterstützungsbedarf bzgl. Qualifikationsarbeiten buchen Sie bitte einen Termin über Moodle. 
+Für statistische und methodische Beratung buchen Sie gerne einen Zoom-Termin über https://calendly.com/rmllr1984
 
 ## Forschungsschwerpunkte
 
