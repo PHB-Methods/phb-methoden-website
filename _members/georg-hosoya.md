@@ -7,6 +7,7 @@ aliases:
   - G Hosoya
   - Georg Hosoya
 links:
+  phone: +49 30 209166 282
   email: g.hosoya@phb.de
   website: https://www.psychologische-hochschule.de/forschung-lehre/dr-georg-hosoya/
 ---
