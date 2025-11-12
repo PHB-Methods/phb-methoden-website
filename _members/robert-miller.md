@@ -9,10 +9,10 @@ aliases:
 links:
   phone: +49 30 209166 230
   email: r.miller@phb.de
+  calendar: https://calendly.com/rmllr1984
   github: waidschrat
   google-scholar: -LFXFlYAAAAJ
-  calendar: https://calendly.com/rmllr1984
-  home-page: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
+  website: https://www.psychologische-hochschule.de/forschung-lehre/professuren/prof-dr-robert-miller/
 ---
 
 ## Forschungsschwerpunkte
