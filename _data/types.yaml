@@ -62,19 +62,19 @@ home-page:
 email:
   icon: fa-solid fa-envelope
   text: Email
-  tooltip: Email
+  tooltip: Email Senden
   link: mailto:$VALUE
 
 phone:
   icon: fa-solid fa-phone
-  text: Phone Number
-  tooltip: Phone number
+  text: Telefon
+  tooltip: Anrufen
   link: tel:$VALUE
 
 calendar:
   icon: fa-solid fa-calendar-days
-  text: Calendar
-  tooltip: Meeting
+  text: Kalender
+  tooltip: Meeting Planen
 
 address:
   icon: fa-solid fa-map-location-dot
