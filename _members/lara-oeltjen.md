@@ -9,6 +9,7 @@ aliases:
 links:
   email: oeltjen.phb@gmail.com
   link: https://www.uni-bremen.de/pppd/team/oeltjen
+active: "former"
 ---
 
 ## Kurzbiografie
