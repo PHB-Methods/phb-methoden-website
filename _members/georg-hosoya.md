@@ -30,7 +30,7 @@ links:
 * **02/2013:** **Promotion zum Dr. phil.**, Freie Universität Berlin
 *Thema der Dissertation:* „Ein probabilistisches Testmodell zur Erfassung intraindividueller Variabilität“
 * **05/2003:** **Diplom in Psychologie**, Freie Universität Berlin
-*Thema der Diplomarbeit:* „Semantisches Priming und Cluster-Identifikation“
+*Thema der Diplomarbeit:* „Semantisches Priming und Cluster-Identifikation“ 
 
 ## Profil & Zusatzqualifikationen
 
@@ -55,7 +55,7 @@ links:
 
 ## Publikationen (Schriftenverzeichnis)
 
-### 1. Empirische Ästhetik & Emotionsforschung
+### 1. Empirische Ästhetik & Emotionsforschung 
 
 * **Beermann, U., Hosoya, G., Schindler, I., Scherer, K., Eid, M., Wagner, V., & Menninghaus, W.** (2021). Dimensions and Clusters of Aesthetic Emotions: A Semantic Profile Analysis. *Frontiers in Psychology*. [[https://doi.org/10.3389/fpsyg.2021.667173](https://doi.org/10.3389/fpsyg.2021.667173)]
 * **Hosoya, G.** (2019). The artwork and the beholder – a probabilistic model for the joint scaling of objects and persons. *Psychology of Aesthetics, Creativity and the Arts*, 14(2), 224–236. [[https://doi.org/10.1037/aca0000239](https://doi.org/10.1037/aca0000239)]
