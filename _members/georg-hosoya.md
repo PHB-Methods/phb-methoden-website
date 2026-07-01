@@ -91,7 +91,7 @@ links:
 * **Vorlesungen & Übungen: Statistik I & II (BSc/MSc)** - Kontinuierliche Durchführung (inkl. Blended Learning/Videoaufzeichnungen); PHB (2022–2026), FU Berlin (2022), TU Berlin (2009–2010). *Umfang bis zu 8 SWS pro Semester.*
 * **Vorlesungen & Seminare: Multivariate Analyseverfahren (MSc)** - PHB (2022/2023), FU Berlin (2021/2022).
 * **Vorlesung: Forschungsmethoden (BSc/MSc)** - Regelmäßige Durchführung; PHB (2023–2026)
-* **Vorlesung: Forschungsmethoden (Allgemeines Lineares Modell, Mehrebenenanalyse, logistische Regression) (MsC)** | FU Berlin (2015–2017).
+* **Vorlesung: Forschungsmethoden (Allgemeines Lineares Modell, Mehrebenenanalyse, logistische Regression) (MsC)** - FU Berlin (2015–2017).
 
 ### Spezifische & Höhere methodische Verfahren
 
