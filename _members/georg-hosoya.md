@@ -122,7 +122,7 @@ links:
 
 ### Bayesianische Statistik
 
-* **Einführung in Bayesianische Methoden für Psycholog*innen** - Regelmäßige, mehrtägige Intensiv-Workshops für wissenschaftliche Mitarbeiter*innen u.a. an der Freien Universität Berlin (2021), der Psychologischen Hochschule Berlin (2019) und der Universität Hildesheim (2018).
+* **Einführung in Bayesianische Methoden für Psycholog:innen** - Regelmäßige, mehrtägige Intensiv-Workshops für wissenschaftliche Mitarbeiter*innen u.a. an der Freien Universität Berlin (2021), der Psychologischen Hochschule Berlin (2019) und der Universität Hildesheim (2018).
 * **Einführung in Bayesianische Methoden mit R und JAGS** - FU Berlin (2016, 2017; Ko-Leitung).
 
 ### Mehrebenenanalyse & R-Programmierung
