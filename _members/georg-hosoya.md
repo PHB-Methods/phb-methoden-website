@@ -44,9 +44,9 @@ links:
 
 ### Akademische Selbstverwaltung & Kommissionen
 
-* **Akademischer Senat** | Psychologische Hochschule Berlin (PHB)
-* **Berufungs-, Habilitations- und Promotionskommissionen** | Kontinuierliche Mitwirkung in akademischen Prüfungsverfahren an der Freien Universität Berlin und Technischen Universität Berlin
-* **Fakultätsrat & Prüfungsausschuss** | Gremienarbeit und Mitgestaltung der akademischen Selbstverwaltung am Institut für Psychologie und Arbeitswissenschaft, Technische Universität Berlin
+* **Akademischer Senat** - Psychologische Hochschule Berlin (PHB)
+* **Berufungs-, Habilitations- und Promotionskommissionen** - Kontinuierliche Mitwirkung in akademischen Prüfungsverfahren an der Freien Universität Berlin und Technischen Universität Berlin
+* **Fakultätsrat & Prüfungsausschuss** - Gremienarbeit und Mitgestaltung der akademischen Selbstverwaltung am Institut für Psychologie und Arbeitswissenschaft, Technische Universität Berlin
 
 ### Betreuung wissenschaftlicher Arbeiten
 
@@ -88,22 +88,22 @@ links:
 
 ### Quantitative Methoden & Fortgeschrittene Statistik
 
-* **Vorlesungen & Übungen: Statistik I & II (BSc/MSc)** | Kontinuierliche Durchführung (inkl. Blended Learning/Videoaufzeichnungen); PHB (2022–2026), FU Berlin (2022), TU Berlin (2009–2010). *Umfang bis zu 8 SWS pro Semester.*
-* **Vorlesungen & Seminare: Multivariate Analyseverfahren (MSc)** | PHB (2022/2023), FU Berlin (2021/2022).
-* **Vorlesung: Forschungsmethoden (BSc/MSc)** | Regelmäßige Durchführung; PHB (2023–2026)
+* **Vorlesungen & Übungen: Statistik I & II (BSc/MSc)** - Kontinuierliche Durchführung (inkl. Blended Learning/Videoaufzeichnungen); PHB (2022–2026), FU Berlin (2022), TU Berlin (2009–2010). *Umfang bis zu 8 SWS pro Semester.*
+* **Vorlesungen & Seminare: Multivariate Analyseverfahren (MSc)** - PHB (2022/2023), FU Berlin (2021/2022).
+* **Vorlesung: Forschungsmethoden (BSc/MSc)** - Regelmäßige Durchführung; PHB (2023–2026)
 * **Vorlesung: Forschungsmethoden (Allgemeines Lineares Modell, Mehrebenenanalyse, logistische Regression) (MsC)** | FU Berlin (2015–2017).
 
 ### Spezifische & Höhere methodische Verfahren
 
-* **Bayesianische Methoden für Psycholog*innen (MSc)** | FU Berlin (WiSe 2018/2019).
-* **Einführung in die Mehrebenenanalyse mit R (MSc)** | FU Berlin (2010–2013).
-* **Forschungswerkstatt: Verteilungsfreie / Nonparametrische Verfahren (MSc)** | FU Berlin (2017–2022), TU Berlin (2005–2010).
+* **Bayesianische Methoden für Psycholog*innen (MSc)** - FU Berlin (WiSe 2018/2019).
+* **Einführung in die Mehrebenenanalyse mit R (MSc)** - FU Berlin (2010–2013).
+* **Forschungswerkstatt: Verteilungsfreie / Nonparametrische Verfahren (MSc)** - FU Berlin (2017–2022), TU Berlin (2005–2010).
 
 ### Testtheorie, Evaluation & Angewandte Methoden
 
-* **Testtheorie und Testkonstruktion** | Durchgehende Durchführung; TU Berlin (2004–2009).
-* **Evaluation & Methodenkolloquium (MSc)** | PHB (2023, 2026), FU Berlin (2015).
-* **Versuchsplanung** | Verknüpfung mit ingenieurwissenschaftlichen Studiengängen (Human Factors); TU Berlin (2007, 2009).
+* **Testtheorie und Testkonstruktion** - Durchgehende Durchführung; TU Berlin (2004–2009).
+* **Evaluation & Methodenkolloquium (MSc)** - PHB (2023, 2026), FU Berlin (2015).
+* **Versuchsplanung** - Verknüpfung mit ingenieurwissenschaftlichen Studiengängen (Human Factors); TU Berlin (2007, 2009).
 
 
 ## Wissenschaftliche Vorträge (Auswahl)
@@ -122,14 +122,14 @@ links:
 
 ### Bayesianische Statistik
 
-* **Einführung in Bayesianische Methoden für Psycholog*innen** | Regelmäßige, mehrtägige Intensiv-Workshops für wissenschaftliche Mitarbeiter*innen u.a. an der Freien Universität Berlin (2021), der Psychologischen Hochschule Berlin (2019) und der Universität Hildesheim (2018).
-* **Einführung in Bayesianische Methoden mit R und JAGS** | FU Berlin (2016, 2017; Ko-Leitung).
+* **Einführung in Bayesianische Methoden für Psycholog*innen** - Regelmäßige, mehrtägige Intensiv-Workshops für wissenschaftliche Mitarbeiter*innen u.a. an der Freien Universität Berlin (2021), der Psychologischen Hochschule Berlin (2019) und der Universität Hildesheim (2018).
+* **Einführung in Bayesianische Methoden mit R und JAGS** - FU Berlin (2016, 2017; Ko-Leitung).
 
 ### Mehrebenenanalyse & R-Programmierung
 
-* **Einführung in die Mehrebenenanalyse mit R** | Eingeladene Key-Workshops u.a. am *LMU Center for Leadership and People Management* (LMU München, 2014), der Universität Hamburg (2015) sowie kontinuierlich an der FU Berlin (2010–2014).
-* **Open Science als Forschungspraxis** | Intensiv-Workshop an der Goethe-Universität Frankfurt (2019).
-* **Einführung in die Statistiksoftware R** | DGfE-Kongress, Berlin (2014).
+* **Einführung in die Mehrebenenanalyse mit R** - Eingeladene Key-Workshops u.a. am *LMU Center for Leadership and People Management* (LMU München, 2014), der Universität Hamburg (2015) sowie kontinuierlich an der FU Berlin (2010–2014).
+* **Open Science als Forschungspraxis** - Intensiv-Workshop an der Goethe-Universität Frankfurt (2019).
+* **Einführung in die Statistiksoftware R** - DGfE-Kongress, Berlin (2014).
 
 ## Gutachtertätigkeit für wissenschaftliche Fachzeitschriften (Ad-hoc-Reviewer)
 
