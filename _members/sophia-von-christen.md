@@ -1,5 +1,5 @@
 ---
-name: Sophia von Christen
+name: Sophia von Christen, B.Sc.
 image: images/portrait-sophia-von-christen.jpg
 description: Tutorin
 role: shk
