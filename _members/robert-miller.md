@@ -29,7 +29,7 @@ links:
 * **seit 10/2023:** Inhaber des Lehrstuhls für Psychologische Methodenlehre, Psychologische Hochschule Berlin (PHB)
 * **06/2019 – 09/2023:** Manager Outcomes Research, Schwerpunkt Real World Evidence für Digitale Gesundheitsanwendungen und Arzneimittel der Geschäftseinheit Innere Medizin, Pfizer Berlin
 * **06/2019 – 09/2023:** Postdoctoral Research Fellow an den Professuren Diagnostik und Intervention, sowie Klinische Psychologie und E-Mental-Health, Technische Universität Dresden
-* **11/2018 – 05/2019:** Postdoctoral Research Fellow in der Abteilung Epidemiologie, Biostatistik und Expositionsmodellierung, Bundesinstitut für Risikobewertung Berlin
+* **11/2018 – 05/2019:** Wissenschaftlicher Mitarbeiter in der Abteilung Epidemiologie, Biostatistik und Expositionsmodellierung, Bundesinstitut für Risikobewertung Berlin
 * **01/2014 – 05/2019:** Principal Investigator am Institut für Allgemeine Psychologie, Biopsychologie und Psychologische Methoden, DFG Sonderforschungsbereich 940 „Volition und kognitive Kontrolle“, Technische Universität Dresden
   * **01/2017 – 09/2017:** Vertretung des Lehrstuhls für Forschungsmethodik, Medical School Berlin (MSB)
   * **08/2016 – 12/2016:** Postdoctoral Research Fellow in der Abteilung für Medizinische Epidemiologie und Biostatistik, Karolinsches Institut Stockholm
