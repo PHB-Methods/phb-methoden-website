@@ -1,5 +1,5 @@
 ---
-name: Julia Niederleithner
+name: Julia Niederleithner, B.Sc.
 image: images/portrait-julia-niederleithner.jpg
 description: Tutorin
 role: shk
